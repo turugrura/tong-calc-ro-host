@@ -133,11 +133,47 @@
       "Merchant",
       "Thief Cls",
       "Soul Linker",
-      "Ninja Cls"
+      "Ninja"
     ],
     "script": {
       "p_infiltration": [
         "1"
+      ]
+    }
+  },
+  "1231": {
+    "id": 1231,
+    "aegisName": "Bazerald",
+    "name": "Bazerald",
+    "unidName": "Dagger",
+    "resName": "바제랄드",
+    "description": "เป็นมีดที่ประดับด้วยสัญลักษณ์ที่สวยงาม ถูกใช้โดยขุนนางชั้นสูงในงานพิธีมงคล\nINT + 5 / MATK + 105\nประเภท : ^777777Dagger^000000\nพลังโจมตี : ^77777770^000000\nน้ำหนัก : ^77777750^000000\nธาตุ : ^777777Fire^000000\nLv ของอาวุธ : ^7777774^000000\nLv ที่ต้องการ : ^77777736^000000\nอาชีพ : ^777777Swordman, Mage, Archer, Merchant,\nThief Cls, Soul Linker, และ Ninja Cls^000000",
+    "slots": 0,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 70,
+    "propertyAtk": "Fire",
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 36,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Mage",
+      "Archer",
+      "Merchant",
+      "Thief",
+      "Soul Linker",
+      "Ninja"
+    ],
+    "script": {
+      "int": [
+        "5"
+      ],
+      "matk": [
+        "105"
       ]
     }
   },
@@ -2869,6 +2905,30 @@
     "cardPrefix": "Ghost",
     "script": {}
   },
+  "4060": {
+    "id": 4060,
+    "aegisName": "Goblin_Card",
+    "name": "Goblin Card",
+    "unidName": "Card",
+    "resName": "이름없는카드",
+    "description": "โจมตี Monster Race Brute แรงขึ้น 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Clamorous",
+    "script": {
+      "p_race_brute": [
+        "20"
+      ]
+    }
+  },
   "4064": {
     "id": 4064,
     "aegisName": "Zerom_Card",
@@ -3496,7 +3556,7 @@
     "compositionPos": 0,
     "cardPrefix": "Blast",
     "script": {
-      "atkPercent": [
+      "p_class_all": [
         "20"
       ]
     }
@@ -3988,6 +4048,30 @@
     "script": {
       "matk": [
         "100"
+      ]
+    }
+  },
+  "4464": {
+    "id": 4464,
+    "aegisName": "Aunoe_Card",
+    "name": "Aunoe Card",
+    "unidName": "Aunoe Card",
+    "resName": "이름없는카드",
+    "description": "ความเสียหายจาก Critical Damage เพิ่มขึ้น 20%\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fatal",
+    "script": {
+      "criDmg": [
+        "20"
       ]
     }
   },
@@ -4491,12 +4575,6 @@
       ],
       "matkPercent": [
         "15"
-      ],
-      "spLoss": [
-        "66"
-      ],
-      "hpLoss": [
-        "666"
       ]
     }
   },
@@ -4524,12 +4602,6 @@
       ],
       "matkPercent": [
         "20"
-      ],
-      "spLoss": [
-        "66"
-      ],
-      "hpLoss": [
-        "666"
       ]
     }
   },
@@ -8351,6 +8423,216 @@
       ]
     }
   },
+  "4897": {
+    "id": 4897,
+    "aegisName": "Matk3p",
+    "name": "MATK + 3%",
+    "unidName": "MATK + 3%",
+    "resName": "마력석_빨강",
+    "description": "MATK +3%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "cardPrefix": "<Matk+3%>",
+    "script": {
+      "matkPercent": [
+        "3"
+      ]
+    }
+  },
+  "4898": {
+    "id": 4898,
+    "aegisName": "Matk4p",
+    "name": "MATK + 4%",
+    "unidName": "MATK + 4%",
+    "resName": "마력석_빨강",
+    "description": "MATK +4%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "cardPrefix": "<Matk+4%>",
+    "script": {
+      "matkPercent": [
+        "4"
+      ]
+    }
+  },
+  "4899": {
+    "id": 4899,
+    "aegisName": "Matk5p",
+    "name": "MATK + 5%",
+    "unidName": "MATK + 5%",
+    "resName": "마력석_빨강",
+    "description": "MATK +5%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "cardPrefix": "<Matk+5%>",
+    "script": {
+      "matkPercent": [
+        "5"
+      ]
+    }
+  },
+  "4939": {
+    "id": 4939,
+    "aegisName": "Critical2",
+    "name": "Critical Level 2",
+    "unidName": "Critical Level 2",
+    "resName": "하얀묘안석",
+    "description": "CRIT +2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "2"
+      ]
+    }
+  },
+  "4940": {
+    "id": 4940,
+    "aegisName": "Critical3",
+    "name": "Critical Level 3",
+    "unidName": "Critical Level 3",
+    "resName": "하얀묘안석",
+    "description": "CRIT +4",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "4"
+      ]
+    }
+  },
+  "4941": {
+    "id": 4941,
+    "aegisName": "Critical4",
+    "name": "Critical Level 4",
+    "unidName": "Critical Level 4",
+    "resName": "하얀묘안석",
+    "description": "CRIT +6",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cri": [
+        "6"
+      ]
+    }
+  },
+  "4948": {
+    "id": 4948,
+    "aegisName": "Skill_Delay1",
+    "name": "Post-Skill Delay Level 1",
+    "unidName": "Post-Skill Delay Level 1",
+    "resName": "하얀묘안석",
+    "description": "ลดดีเลย์หลังจากใช้สกิล 2%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "2"
+      ]
+    }
+  },
+  "4949": {
+    "id": 4949,
+    "aegisName": "Skill_Delay2",
+    "name": "Post-Skill Delay Level 2",
+    "unidName": "Post-Skill Delay Level 2",
+    "resName": "하얀묘안석",
+    "description": "ลดดีเลย์หลังจากใช้สกิล 4%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "4"
+      ]
+    }
+  },
+  "4950": {
+    "id": 4950,
+    "aegisName": "Skill_Delay3",
+    "name": "Post-Skill Delay Level 3",
+    "unidName": "Post-Skill Delay Level 3",
+    "resName": "하얀묘안석",
+    "description": "ลดดีเลย์หลังจากใช้สกิล 6%",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "6"
+      ]
+    }
+  },
   "4982": {
     "id": 4982,
     "aegisName": "Reactor_A_STR",
@@ -9345,6 +9627,38 @@
       ]
     }
   },
+  "9126": {
+    "id": 9126,
+    "aegisName": "Kiel_Egg",
+    "name": "Kiel-D-01 Egg",
+    "unidName": "Kiel-D-01 Egg",
+    "resName": "Kiel_Egg",
+    "description": "ไข่ที่มี Q-Pet Kiel-D-01 อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\nหากความสัมพันธ์อยู่ในระดับไม่คุ้นเคยหรือเขินอาย ASPD + 4%, HIT + 9\nหากความสัมพันธ์อยู่ในระดับปกติ ASPD + 5%, HIT + 12, เพิ่ม Damage ทางกายภาพระยะใกล้ 1%\nหากความสัมพันธ์อยู่ในระดับเป็นมิตร ASPD + 6%, HIT + 15, เพิ่ม Damage ทางกายภาพระยะใกล้ 3%\nหากความสัมพันธ์อยู่ในระดับสนิทสนม ASPD + 7%, HIT + 18, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nประเภท : Monster Egg",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "7"
+      ],
+      "hit": [
+        "18"
+      ],
+      "melee": [
+        "5"
+      ]
+    }
+  },
   "9128": {
     "id": 9128,
     "aegisName": "Dark_Priest_Egg",
@@ -9402,6 +9716,35 @@
         "130"
       ],
       "m_my_element_earth": [
+        "5"
+      ]
+    }
+  },
+  "9131": {
+    "id": 9131,
+    "aegisName": "Fire_Golem_Egg",
+    "name": "Fire Golem Egg",
+    "unidName": "Fire Golem Egg",
+    "resName": "화속성알",
+    "description": "ไข่ที่มี Q-Pet Fire Golem อยู่ภายใน สามารถปลุกให้ตื่นขึ้นมาได้ด้วย [Pet Incubator]\n\nในกรณีที่ความสัมพันธ์อยู่ระดับไม่คุ้นเคย หรือเขินอาย, MaxHP + 200\nหากความสัมพันธ์อยู่ระดับปกติ MaxHP + 300\nหากความสัมพันธ์อยู่ระดับเป็นมิตร MaxHP + 400, เพิ่มความเสียหายทางเวทย์ธาตุ Fire ขึ้น 3%\nหากความสัมพันธ์อยู่ระดับสนิทสนม MaxHP + 500, เพิ่มความเสียหายทางเวทย์ธาตุ Fire ขึ้น 5%\nประเภท : ^777777Monster Egg^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 518,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "500"
+      ],
+      "m_my_element_fire": [
         "5"
       ]
     }
@@ -9826,13 +10169,39 @@
       "Merchant",
       "Thief Cls",
       "Soul Linker",
-      "Ninja Cls"
+      "Ninja"
     ],
     "script": {
       "p_infiltration": [
         "1"
       ]
     }
+  },
+  "13027": {
+    "id": 13027,
+    "aegisName": "Scalpel",
+    "name": "Scalpel [3]",
+    "unidName": "Dagger",
+    "resName": "메스",
+    "description": "มีดแหลมคมขนาดเล็กที่มีน้ำหนักเบา เหมาะสำหรับใช้โจมตีแบบฉับพลัน\nมีโอกาสทำให้ศัตรูติดสถานะ Bleeding เมื่อทำการโจมตี\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777120^000000\nน้ำหนัก : ^77777750^000000\nอาวุธเลเวล : ^7777774^000000\nเลเวลที่ต้องการ : ^77777755^000000\nอาชีพ : ^777777Hi-Class อาชีพสาย Swordman/Magician/Archer/Merchant/Thief^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 120,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 55,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman",
+      "Magician",
+      "Archer",
+      "Merchant",
+      "Thief"
+    ],
+    "script": {}
   },
   "13034": {
     "id": 13034,
@@ -10385,7 +10754,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Ninja Cls"
+      "Ninja"
     ],
     "script": {
       "matk": [
@@ -10485,7 +10854,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Ninja Cls"
+      "Ninja"
     ],
     "script": {
       "matk": [
@@ -10994,7 +11363,7 @@
   "14766": {
     "id": 14766,
     "aegisName": "Limit_Power_Booster",
-    "name": "Limit Power Booster",
+    "name": "Power Booster",
     "unidName": "Limit Power Booster",
     "resName": "태국향수MATK",
     "description": "^ff0000ไอเท็มชิ้นนี้ไม่สามารถแลกเปลี่ยนกับผู้เล่นคนอื่นได้^000000\nยาบูสเตอร์ที่กระตุ้นพลังงานในร่างกายของคุณ ช่วยเพิ่มกำลังเป็นอย่างมาก\nATK, MATK + 30, ATK, MATK + 1% เป็นเวลา 30 นาที\nHIT, FLEE + 30, ASPD + 1, ลดปริมาณการใช้ SP 5%\nลดระยะเวลาร่ายแบบคงตัว 30%\n(เอฟเฟกต์การเพิ่ม % ของการร่ายเวทย์แบบคงตัว จะถูกใช้งานค่าที่สูงที่สุด)\n^000088เอฟเฟกต์ของไอเท็มจะหายไปเมื่อตัวละครอยู่ในสถานะที่ไม่สามารถต่อสู้ได้^000000\nน้ำหนัก : ^7777771^000000",
@@ -13980,6 +14349,38 @@
     ],
     "script": {}
   },
+  "18122": {
+    "id": 18122,
+    "aegisName": "Gigantic_Bow",
+    "name": "Gigantic Bow [1]",
+    "unidName": "Bow",
+    "resName": "거궁",
+    "description": "Giant Bow มีขนาดใหญ่และหนักมากจึงทำให้มีความแม่นยำต่ำ แต่พลังโจมตีก็รุนแรงเกินคาด\nพลังดาเมจจากการโจมตีกายภาพระยะไกล +40%\nความเร็วโจมตีลดลง 15%\nHit -50\nประเภท: ^777777Bow ^000000 โจมตี: ^777777195^000000\nน้ำหน้ก : ^777777300^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777130^000000\nติดตั้ง: ^777777Ranger^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 4,
+    "attack": 195,
+    "defense": null,
+    "weight": 300,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "range": [
+        "40"
+      ],
+      "aspdPercent": [
+        "-15"
+      ],
+      "hit": [
+        "-50"
+      ]
+    }
+  },
   "18130": {
     "id": 18130,
     "aegisName": "Scarlet_Bow",
@@ -14270,6 +14671,42 @@
       "Arrow Storm": [
         "9===30",
         "11===20"
+      ]
+    }
+  },
+  "18179": {
+    "id": 18179,
+    "aegisName": "MH_P89_OS",
+    "name": "MH-P89-OS [2]",
+    "unidName": "Bow",
+    "resName": "MH_P89_OS",
+    "description": "หน้าไม้ที่สลักหมายเลขรุ่นทดลองที่ 89 เอาไว้บนด้าม\nว่ากันว่าเมื่อยิงออกไปแล้ว จะสามารถทราบพลังโจมตีของลูกธนูได้จากตัวเลขที่ปรากฏอยู่บนจอ\nATK + 3%\nเมื่ออัปเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพระยะไกล 7%\nเมื่ออัปเกรดถึงขั้น 9 ลด Cooldown ของสกิล Severe Rainstorm 2 วินาที\nเมื่ออัปเกรดถึงขั้น 11 เพิ่ม Damage สกิล Severe Rainstorm 15%\n^ffffff_^000000\nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777170^000000\nน้ำหนัก : ^777777120^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel, Wanderer^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 267,
+    "itemLevel": 4,
+    "attack": 170,
+    "defense": null,
+    "weight": 120,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "atkPercent": [
+        "3"
+      ],
+      "range": [
+        "7===7"
+      ],
+      "cd__Severe Rainstorm": [
+        "9===2"
+      ],
+      "Severe Rainstorm": [
+        "11===15"
       ]
     }
   },
@@ -14995,12 +15432,6 @@
       "matk": [
         "20",
         "1---5"
-      ],
-      "hpDrain": [
-        "100"
-      ],
-      "hpLoss": [
-        "50"
       ]
     },
     "usableClass": [
@@ -17001,6 +17432,47 @@
     "script": {
       "m_my_element_all": [
         "1---1"
+      ]
+    }
+  },
+  "19268": {
+    "id": 19268,
+    "aegisName": "FaceWorm_Breath",
+    "name": "Giant Snake Breath",
+    "unidName": "Hat",
+    "resName": "이프리트의숨결",
+    "description": "หุ่นจำลองที่คล้ายกับงูยักษ์\nแค่ใส่มันไว้ก็รู้สึกเป็นงูยักษ์\nเพิ่มพลังโจมตีทางเวทย์ธาตุ Fire 1%\n\nเมื่อสวมใส่กับ Giant God Snake Skin/Giant God Snake Skin[1]\nทุกๆ Base STR 20 ATK + 5\nทุกๆ Base AGI 20 ลดดีเลย์หลังโจมตีลง 3%\nทุกๆ Base VIT 20 เพิ่มความทนทานต่อธาตุ Neutral 1%\nทุกๆ Base INT 20 ลดการร่ายแบบแปรผัน 4%\nทุกๆ Base DEX 20 เพิ่มพลังโจมตีระยะไกล 1%\nทุกๆ Base LUK 20 เพิ่ม Critical Damage 3%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777772^000000\nตำแหน่ง : ^777777Lower ^000000น้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 2,
+    "weight": 30,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "m_my_element_fire": [
+        "1"
+      ],
+      "atk": [
+        "EQUIP[Giant God Snake Skin]SUM[str==20]---5"
+      ],
+      "acd": [
+        "EQUIP[Giant God Snake Skin]SUM[agi==20]---3"
+      ],
+      "vct": [
+        "EQUIP[Giant God Snake Skin]SUM[int==20]---4"
+      ],
+      "range": [
+        "EQUIP[Giant God Snake Skin]SUM[dex==20]---1"
+      ],
+      "criDmg": [
+        "EQUIP[Giant God Snake Skin]SUM[luk==20]---3"
       ]
     }
   },
@@ -22884,6 +23356,148 @@
       ]
     }
   },
+  "24236": {
+    "id": 24236,
+    "aegisName": "S_Boned_Earring",
+    "name": "Boned Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่มดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลาง 1%\nเมื่ออัพเกรดขั้น 7, ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 1%\nเมื่ออัพเกรดขั้น 9, ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 2%\nเมื่อสวมใส่ ^32CD32Boned Shadow Earring^000000 กับ \n^32CD32Boned Shadow Pendant^000000 ร่วมกัน \nATK + 5.\nเมื่อผลรวมของขั้นอัพเกรดตั้งแต่ 15 ขึ้นไป ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Accessory",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_m": [
+        "1",
+        "7===1",
+        "9===2"
+      ],
+      "m_size_m": [
+        "1",
+        "7===1",
+        "9===2"
+      ]
+    }
+  },
+  "24237": {
+    "id": 24237,
+    "aegisName": "S_Boned_Pendant",
+    "name": "Boned Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่มดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลาง 1%\nเมื่ออัพเกรดขั้น 7, ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 1%\nเมื่ออัพเกรดขั้น 9, ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 2%\nเมื่อสวมใส่ ^32CD32Boned Shadow Earring^000000 กับ \n^32CD32Boned Shadow Pendant^000000 ร่วมกัน \nATK + 5.\nเมื่อผลรวมของขั้นอัพเกรดตั้งแต่ 15 ขึ้นไป ดาเมจทางเวทย์/กายภาพที่สร้างต่อศัตรูขนาดกลางเพิ่มอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Accessory",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_m": [
+        "1",
+        "7===1",
+        "9===2",
+        "EQUIP[Boned Shadow Earring]REFINE[shadowEarring,shadowPendant==15]===2"
+      ],
+      "m_size_m": [
+        "1",
+        "7===1",
+        "9===2",
+        "EQUIP[Boned Shadow Earring]REFINE[shadowEarring,shadowPendant==15]===2"
+      ],
+      "atk": [
+        "EQUIP[Boned Shadow Earring]===5"
+      ]
+    }
+  },
+  "24238": {
+    "id": 24238,
+    "aegisName": "S_Gigantic_Earring",
+    "name": "Gigantic Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคล สร้างเพื่อปกป้องผู้สวมใส่ เพิ่มความสามารถให้กับผู้สวมใส่\nเพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็ก 1%\nเมื่ออัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 1%\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป เพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 2%\n^32CD32Gigantic Shadow Earring^000000 และ\n^32CD32Gigantic Shadow Pendant^000000\nเมื่อสวมใส่กับไอเท็มดังกล่าว ATK + 5\nหากผลรวมของเซตอัพเกรดมากกว่า 15 ขึ้นไปเพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Accessory",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_s": [
+        "1",
+        "7===1",
+        "9===2"
+      ],
+      "m_size_s": [
+        "1",
+        "7===1",
+        "9===2"
+      ]
+    }
+  },
+  "24239": {
+    "id": 24239,
+    "aegisName": "S_Gigantic_Pendant",
+    "name": "Gigantic Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "ต่างหูมงคล สร้างเพื่อปกป้องผู้สวมใส่ เพิ่มความสามารถให้กับผู้สวมใส่\nเพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็ก 1%\nเมื่ออัพเกรดตั้งแต่ 7 ขึ้นไป เพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 1%\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป เพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 2%\n^32CD32Gigantic Shadow Pendant^000000 และ\n^32CD32Gigantic Shadow Earring^000000\nเมื่อสวมใส่กับไอเท็มดังกล่าว ATK + 5\nหากผลรวมของเซตอัพเกรดมากกว่า 15 ขึ้นไปเพิ่มพลังโจมตีทางเวทย์และทางกายภาพต่อศัตรูขนาดเล็กอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Accessory",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_s": [
+        "1",
+        "7===1",
+        "9===2",
+        "EQUIP[Gigantic Shadow Earring]REFINE[shadowEarring,shadowPendant==15]===2"
+      ],
+      "m_size_s": [
+        "1",
+        "7===1",
+        "9===2",
+        "EQUIP[Gigantic Shadow Earring]REFINE[shadowEarring,shadowPendant==15]===2"
+      ],
+      "atk": [
+        "EQUIP[Gigantic Shadow Earring]5"
+      ]
+    }
+  },
   "24243": {
     "id": 24243,
     "aegisName": "S_Reload_Shoes",
@@ -26573,7 +27187,7 @@
     "location": "Armor",
     "compositionPos": null,
     "usableClass": [
-      "Ninja Class"
+      "Ninja"
     ],
     "script": {
       "Swirling Petal": [
@@ -28731,6 +29345,100 @@
       "cd__Arrow Vulcan": [
         "0.2",
         "3---0.1"
+      ]
+    }
+  },
+  "24506": {
+    "id": 24506,
+    "aegisName": "S_Metalic_Armor",
+    "name": "Metallic Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิ่ม Damage สกิล Metalic Sound 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล Metalic Sound ขึ้นอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel/Wanderer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "Metalic Sound": [
+        "5",
+        "2---2"
+      ]
+    }
+  },
+  "24507": {
+    "id": 24507,
+    "aegisName": "S_Metalic_Shield",
+    "name": "Metallic Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral ขึ้นอีก 3%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Neutral ขึ้นอีก 4%\nเมื่อสวมใส่ Metallic Shadow Armor/Shield/Shoes ร่วมกัน,\nเพิ่ม Damage สกิล Metalic Sound % เท่ากับค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Minstrel/Wanderer Shadow Weapon,\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางเวทมนตร์เพิ่มอีกตามค่าอัพเกรดรวมกันของ Metallic Shadow Shield และ Minstrel/Wanderer Shadow Weapon\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel/Wanderer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "m_my_element_neutral": [
+        "3",
+        "7===3",
+        "9===4"
+      ],
+      "Metalic Sound": [
+        "EQUIP[Metallic Shadow Armor&&Metallic Shadow Shoes]REFINE[shadowArmor,shadowShield,shadowBoot==1]---1"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Minstrel Shadow Weapon]===40",
+        "EQUIP[Minstrel Shadow Weapon]REFINE[shadowWeapon,shadowShield==1]---1",
+        "EQUIP[Wanderer Shadow Weapon]===40",
+        "EQUIP[Wanderer Shadow Weapon]REFINE[shadowWeapon,shadowShield==1]---1"
+      ]
+    }
+  },
+  "24508": {
+    "id": 24508,
+    "aegisName": "S_Metalic_Shoes",
+    "name": "Metallic Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nลดปริมาณการใช้ SP สกิล Metalic Sound 2%\nทุก ๆ การอัพเกรด 2 ขั้น ลดปริมาณการใช้ SP สกิล Metalic Sound ลงอีก 1%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Minstrel/Wanderer^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "spPercent__Metalic Sound": [
+        "2",
+        "2---1"
       ]
     }
   },
@@ -38490,7 +39198,7 @@
       "Thief Cls",
       "Mage Cls",
       "Merchant Cls",
-      "Ninja Cls",
+      "Ninja",
       "Soul Linker Cls"
     ],
     "script": {
@@ -38554,7 +39262,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Ninja Class"
+      "Ninja"
     ],
     "script": {
       "chance__str": [
@@ -38583,7 +39291,7 @@
     "location": null,
     "compositionPos": null,
     "usableClass": [
-      "Ninja Class"
+      "Ninja"
     ],
     "script": {
       "atk": [
@@ -55117,6 +55825,89 @@
       ]
     }
   },
+  "510002": {
+    "id": 510002,
+    "aegisName": "Boost_Nindo",
+    "name": "Boosting Nindo [2]",
+    "unidName": "Dagger",
+    "resName": "빛나는대거",
+    "description": "มีดสุดพิเศษที่เตรียมไว้เพื่อทำให้นักผจญภัยพัฒนาไปอย่างรวดเร็ว\n\nMATK +160\nเพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind, Fire 3%, ATK +3%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +2, MATK +2\nทุก ๆ Base Lv. 15, ATK +3, MATK +3 (ใช้งานสูงสุดถึง Lv. 180)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Ninja Mastery 1 เลเวล ลดระยะเวลาร่ายแบบแปรผัน 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Elemental Booster (Robe/Muffler/Shoes/Earring),\nMATK +20, ลด Delay หลังใช้สกิล 10%,\nทุก ๆ Base Lv. 15 เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade 2% (ใช้งานสูงสุดถึง Lv. 180),\nเมื่อใช้สกิล Ninja Aura เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade ขึ้นอีก 35% เป็นเวลา 60 วินาที\n\nเมื่อสวมใส่ร่วมกับ Range Booster (Suit/Manteau/Boots/Brooch), \nATK +20, ลด Cooldown สกิล Cross Slash 1 วินาที,\nทุก ๆ Base Lv. 15 เพิ่ม Damage สกิล Kunai Splash 1% (ใช้งานสูงสุดถึง Lv. 180),\nเมื่อใช้สกิล Ninja Aura เพิ่ม Damage สกิล Kunai Splash ขึ้นอีก 20% เป็นเวลา 60 วินาที\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ninja Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 150,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "matk": [
+        "160",
+        "1---2",
+        "SUM[level==15]---3",
+        "SUM[level==195]===-3",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]===20"
+      ],
+      "m_my_element_water": [
+        "3"
+      ],
+      "m_my_element_wind": [
+        "3"
+      ],
+      "m_my_element_fire": [
+        "3"
+      ],
+      "atkPercent": [
+        "3"
+      ],
+      "atk": [
+        "1---2",
+        "SUM[level==15]---3",
+        "SUM[level==195]===-3",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]===20"
+      ],
+      "vct": [
+        "REFINE[7]LEARN_SKILL[Ninja Mastery==1]---1"
+      ],
+      "p_size_all": [
+        "9===10"
+      ],
+      "m_size_all": [
+        "9===10"
+      ],
+      "acd": [
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]===10"
+      ],
+      "Flaming Petals": [
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==15]---2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==195]===-2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]ACTIVE_SKILL[Ninja Aura]===35"
+      ],
+      "Freezing Spear": [
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==15]---2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==195]===-2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]ACTIVE_SKILL[Ninja Aura]===35"
+      ],
+      "Wind Blade": [
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==15]---2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]SUM[level==195]===-2",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]ACTIVE_SKILL[Ninja Aura]===35"
+      ],
+      "cd__Cross Slash": [
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]===1"
+      ],
+      "Kunai Splash": [
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]SUM[level==15]---1",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]SUM[level==195]===-1",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]ACTIVE_SKILL[Ninja Aura]===20"
+      ]
+    }
+  },
   "510006": {
     "id": 510006,
     "aegisName": "Fatalist",
@@ -55478,6 +56269,7 @@
         "165",
         "1---3",
         "level:15---3",
+        "level:195===-3",
         "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]20",
         "EQUIP[Defunct Booster Robe&&Defunct Booster Muffler&&Defunct Booster Shoes&&Defunct Booster Earring]20"
       ],
@@ -55494,6 +56286,7 @@
       ],
       "Psychic Wave": [
         "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]level:15---1",
+        "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]level:185===-1",
         "EQUIP[Elemental Booster Robe&&Elemental Booster Muffler&&Elemental Booster Shoes&&Elemental Booster Earring]ACTIVE_SKILL[Foresight]===20"
       ],
       "aspd": [
