@@ -243,6 +243,59 @@
       ]
     }
   },
+  "1336": {
+    "id": 1336,
+    "aegisName": "G_Knight_Axe",
+    "name": "Guardian Knight Axe [2]",
+    "unidName": "Axe",
+    "resName": "G_Knight_Axe",
+    "description": "ขวานที่ใช้ประกอบพิธีระลึกถึงบรรพบุรุษโดยกองทัพทหารแห่ง Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nไม่สามารถทำลายได้, ATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Power Swing, Axe Boomerang 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Axe^000000 รวมกันตั้งแต่ 30 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777One-Handed Axe^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 261,
+    "itemLevel": 4,
+    "attack": 210,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "1---1"
+      ],
+      "Power Swing": [
+        "9===20"
+      ],
+      "Axe Boomerang": [
+        "9===20"
+      ],
+      "atk": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ]
+    }
+  },
   "1433": {
     "id": 1433,
     "aegisName": "Imperial_Spear",
@@ -1034,6 +1087,102 @@
       "all"
     ]
   },
+  "1839": {
+    "id": 1839,
+    "aegisName": "Scarlet_Knuckle",
+    "name": "Knuckle of Crimson [2]",
+    "unidName": "Claw",
+    "resName": "진홍의너클",
+    "description": "สนับมือที่เปล่งแสงสีแดง\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nตัวละครเลเวล 70 ขึ้นไป : ทุกครั้งที่ BaseLv เพิ่มขึ้น 10 เลเวล จะเพิ่ม ATK ทีละ +5 \nประเภท : ^777777Knuckle^000000 โจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^77777770^000000\nอาชีพที่ใส่ได้ : ^777777 Priest / Monk^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 3,
+    "attack": 100,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 70,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Priest",
+      "Monk"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29",
+        "level:80===5",
+        "level:90===5",
+        "level:100===5",
+        "level:110===5",
+        "level:120===5",
+        "level:130===5",
+        "level:140===5",
+        "level:150===5",
+        "level:160===5",
+        "level:170===5",
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
+      ]
+    }
+  },
+  "1846": {
+    "id": 1846,
+    "aegisName": "Combo_Battle_Glove_IL",
+    "name": "Illusion Combo Battle Glove [2]",
+    "unidName": "Knuckle",
+    "resName": "Combo_Battle_Glove_IL",
+    "description": "คำสวดอวยพรที่สลักอยู่บนสนับมือ สนองต่อความแน่วแน่ของเหล่า Monk ที่ปกป้องเจตนารมณ์ของพระเจ้า มอบพลังโจมตีอันแข็งแกร่ง\nยิ่งเป็น Monk ที่เดินตามทางแห่งพรต ความปรารถนาที่มีต่อพระเจ้าก็จะยิ่งแข็งแกร่งขึ้น\nเพิ่ม Damage ของสกิล Sky Blow 10%\nเพิ่ม Damage ของสกิล Dragon Combo 10%\nทุก ๆ การอัพเกรด 2 ขั้น, เพิ่ม Damage ของสกิล Sky Blow, Dragon Combo 5%\nทุก ๆ การอัพเกรด 3 ขั้น, เพิ่ม Damage ของสกิล Tiger Cannon 5%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Muffler, ATK + 40\nเมื่อค่าอัพเกรดของ Illusion Combo Battle Glove และ Illusion Muffler ตั้งแต่ 7 ขึ้นไป, เพิ่ม Damage ของสกิล Tiger Cannon 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป, ลด Cooldown ของสกิล Flash Combo 1 วินาที\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป, เพิ่ม Damage ของสกิล Tiger Cannon 15% เพิ่มเติม\n^ffffff_^000000\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^77777750^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Sura Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 4,
+    "attack": 250,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "Sky Blow": [
+        "10",
+        "2---5"
+      ],
+      "Dragon Combo": [
+        "10",
+        "2---5"
+      ],
+      "Tiger Cannon": [
+        "3---5",
+        "EQUIP[Illusion Muffler]REFINE[garment==7]7===20",
+        "EQUIP[Illusion Muffler]REFINE[weapon,garment==22]===15"
+      ],
+      "atk": [
+        "EQUIP[Illusion Muffler]===40"
+      ],
+      "cd__Flash Combo": [
+        "EQUIP[Illusion Muffler]REFINE[weapon,garment==18]===1"
+      ]
+    }
+  },
   "1847": {
     "id": 1847,
     "aegisName": "Iron_Nail_K",
@@ -1072,6 +1221,77 @@
       ],
       "chance__atkPercent": [
         "EQUIP[Ancient Hero Boots]===15"
+      ]
+    }
+  },
+  "1865": {
+    "id": 1865,
+    "aegisName": "Combo_Fist",
+    "name": "Raging Dragon Fist [2]",
+    "unidName": "Knuckle",
+    "resName": "Combo_Fist",
+    "description": "ถุงมือที่ใช้โจมตีได้อย่างรุนแรง\n^ffffff_^000000 \nเพิ่ม Damage สกิล Chain Combo 30%\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Combo Finish, Chain Crush Combo 50%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage สกิล Chain Crush Combo ขึ้นอีก 30%\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^77777770^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 4,
+    "attack": 210,
+    "defense": null,
+    "weight": 70,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "Chain Combo": [
+        "30"
+      ],
+      "atk": [
+        "1---4"
+      ],
+      "Combo Finish": [
+        "9===50"
+      ],
+      "Chain Crush Combo": [
+        "9===50",
+        "11===30"
+      ]
+    }
+  },
+  "1866": {
+    "id": 1866,
+    "aegisName": "Asura_Bandage",
+    "name": "Fighting God's Bandage [2]",
+    "unidName": "Knuckle",
+    "resName": "Asura_Bandage",
+    "description": "ผ้าพันแผลสีดำที่ผู้ที่ได้ชื่อว่าเทพแห่งการต่อสู้ใช้พันมือไว้\n^ffffff_^000000 \nเพิ่ม Damage ทางกายภาพระยะไกล 10%\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Knuckle Arrow 40%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิล 7%\nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^77777780^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 4,
+    "attack": 220,
+    "defense": null,
+    "weight": 80,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "range": [
+        "10"
+      ],
+      "atk": [
+        "1---4"
+      ],
+      "Knuckle Arrow": [
+        "9===40"
+      ],
+      "acd": [
+        "11===7"
       ]
     }
   },
@@ -1115,6 +1335,57 @@
       ],
       "chance__p_size_all": [
         "15"
+      ]
+    }
+  },
+  "1870": {
+    "id": 1870,
+    "aegisName": "R_Knuckle",
+    "name": "Royal Knuckle [2]",
+    "unidName": "Knuckle",
+    "resName": "로얄너클",
+    "description": "สนับมือที่นักบวชแห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Rampage Blast 20%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Rampage Blast 1 วินาที, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Knuckle^000000 รวมกันตั้งแต่ 30 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Knuckle^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Sura^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 268,
+    "itemLevel": 4,
+    "attack": 190,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "range": [
+        "15"
+      ],
+      "atk": [
+        "1---4",
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "Rampage Blast": [
+        "9===20"
+      ],
+      "cd__Rampage Blast": [
+        "11===1"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -1508,7 +1779,7 @@
     "description": "ไม้เท้าที่ทำขึ้นจากโลหะลึกลับของโลกอื่น\nเล่าลือกันว่านักเวทย์ผู้ใหญ่ในอดีตเป็นคนทำขึ้น\nดูมีความกลมกลืนเข้ากับ Ancient Hero Boots\nMATK +200\nไม่สามารถทำลายได้\nทุกๆ การอัพเกรด 2 ขั้น MATK +10\nทุกๆ การอัพเกรด 3 ขั้น เพิ่มดาเมจของ Earth Strain 12%\nเมื่ออัพเกรดถึงขั้น 9 ลด Variable Cast Time 10%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown ของ Earth Strain 1 วินาที\nเมื่อโจมตีทางเวทย์ระหว่างสวมใส่ร่วมกับ Ancient Hero Boots มีโอกาสที่ INT +20, MATK +15% เป็นเวลา 7 วินาที\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^77777780^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
     "slots": 2,
     "itemTypeId": 1,
-    "itemSubTypeId": 265,
+    "itemSubTypeId": 266,
     "itemLevel": 4,
     "attack": 100,
     "defense": null,
@@ -1861,6 +2132,12 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__m_my_element_wind": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ],
+      "chance__m_my_element_earth": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -2026,6 +2303,28 @@
     "usableClass": [
       "all"
     ]
+  },
+  "2202": {
+    "id": 2202,
+    "aegisName": "Sunglasses_",
+    "name": "Sunglasses [1]",
+    "unidName": "Glasses",
+    "resName": "선글래스",
+    "description": "แว่นตากันแดด มีเลนส์สีดำสำหรับป้องกันแสงแดด\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nใช้สำหรับ : ^777777Middle^000000 น้ำหนัก : ^77777710^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": null,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {}
   },
   "2367": {
     "id": 2367,
@@ -10355,7 +10654,9 @@
         "level:150===5",
         "level:160===5",
         "level:170===5",
-        "level:180===5"
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
       ]
     }
   },
@@ -11784,6 +12085,49 @@
       ],
       "cd__Swirling Petal": [
         "EQUIP[Huuma Shuriken of Dancing Petals&&Golden Scarf]1"
+      ]
+    }
+  },
+  "15186": {
+    "id": 15186,
+    "aegisName": "Kafra_Suit",
+    "name": "Kafra Uniform [1]",
+    "unidName": "Costume",
+    "resName": "카프라제복",
+    "description": "ชุด Uniform ที่พนักงาน Kafra สวมใส่\nถึงจะดูเหมือนชุด maid ธรรมดา แต่เพราะทำขึ้นด้วยความใส่ใจเป็นพิเศษจึงทำให้สวมใส่สบาย\nค่าประสบการณ์ที่ได้รับจากมอนสเตอร์ + 5%, อัตราการดร็อปไอเท็ม + 5%\nMaxHP +100, MaxSP +20 ทุกๆ 1 อัพเกรด\nเมื่ออัพเกรดถึงขั้น 7 จะเพิ่ม MaxHP +3%, MaxSP +3%\nเมื่ออัพเกรดถึงขั้น 9 จะเพิ่ม MaxHP +5%, MaxSP +5%\nเมื่ออัพเกรดถึงขั้น 12 จะเพิ่ม HP Recovery และ SP Recovery 100%\nประเภท : ^777777Armor^000000 พลังป้องกัน : ^77777740^000000\nน้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 513,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 40,
+    "weight": 50,
+    "requiredLevel": 1,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "exp": [
+        "5"
+      ],
+      "itemDrop": [
+        "5"
+      ],
+      "hp": [
+        "1---100"
+      ],
+      "sp": [
+        "1---20"
+      ],
+      "hpPercent": [
+        "7===3",
+        "9===5"
+      ],
+      "spPercent": [
+        "7===3",
+        "9===5"
       ]
     }
   },
@@ -13863,6 +14207,62 @@
       ]
     }
   },
+  "16040": {
+    "id": 16040,
+    "aegisName": "Scarlet_Mace",
+    "name": "Mace of Crimson [2]",
+    "unidName": "Mace",
+    "resName": "진홍의메이스",
+    "description": "คทาที่เปล่งประกายสีแดง\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nตัวละครเลเวล 70 ขึ้นไป : ทุกครั้งที่ BaseLv เพิ่มขึ้น 10 เลเวล จะเพิ่ม ATK ทีละ +5 \nไม่สามารถทำลายได้\nประเภท : ^777777Mace^000000 โจมตี : ^77777780^000000\nน้ำหนัก : ^77777780^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^77777770^000000\nอาชีพที่ใส่ได้ : ^777777 Novice /Swordman /Acolyte /Merchant^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 3,
+    "attack": 80,
+    "defense": null,
+    "weight": 80,
+    "requiredLevel": 70,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Acolyte",
+      "Merchant"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29",
+        "level:80===5",
+        "level:90===5",
+        "level:100===5",
+        "level:110===5",
+        "level:120===5",
+        "level:130===5",
+        "level:140===5",
+        "level:150===5",
+        "level:160===5",
+        "level:170===5",
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
+      ]
+    }
+  },
   "16088": {
     "id": 16088,
     "aegisName": "Saphir_Hall_OS",
@@ -14002,6 +14402,39 @@
       ],
       "Cart Cannon": [
         "9===25"
+      ]
+    }
+  },
+  "16094": {
+    "id": 16094,
+    "aegisName": "Gene_Rod",
+    "name": "Gene Rod [2]",
+    "unidName": "Club",
+    "resName": "Gene_Rod",
+    "description": "คทาที่ถูกตกแต่งด้วยผลึกที่ได้ชื่อว่าเป็นแก่นแห่งพันธุศาสตร์\n^ffffff_^000000 \nไม่สามารถทำลายได้, เพิ่ม Damage สกิล Crazy Weed 20%\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Crazy Weed ขึ้นอีก 30%\nเมื่ออัพเกรดถึงขั้น 11 ลด Cooldown สกิล Crazy Weed 2 วินาที\nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777195^000000\nน้ำหนัก : ^777777140^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 195,
+    "defense": null,
+    "weight": 140,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "Crazy Weed": [
+        "20",
+        "9===30"
+      ],
+      "atk": [
+        "1---4"
+      ],
+      "cd__Crazy Weed": [
+        "11===2"
       ]
     }
   },
@@ -14430,7 +14863,9 @@
         "level:150===5",
         "level:160===5",
         "level:170===5",
-        "level:180===5"
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
       ]
     }
   },
@@ -14965,7 +15400,7 @@
     "name": "Guardian Knight Bow [2]",
     "unidName": "Bow",
     "resName": "G_Knight_Bow",
-    "description": "อาวุธหน้าไม้ที่กองทัพทหารแห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Triangle Shot 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์ประเภท Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Bow^000000 รวมกันตั้งแต่ 30 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "description": "อาวุธหน้าไม้ที่กองทัพทหารแห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nเพิ่ม Damage ทางกายภาพระยะไกล 15%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Triangle Shot 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Bow^000000 รวมกันตั้งแต่ 30 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Bow^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 267,
@@ -15001,6 +15436,9 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -15052,6 +15490,9 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -15160,6 +15601,46 @@
       "spPercentCost": [
         "10",
         "3---3"
+      ]
+    }
+  },
+  "18570": {
+    "id": 18570,
+    "aegisName": "Ancient_Gold_Deco",
+    "name": "Ancient Gold Deco [1]",
+    "unidName": "Headgear",
+    "resName": "고대의금장식",
+    "description": "เครื่องประดับสีทองอันสวยงามที่แฝงไปด้วยพลังเวทมนตร์โบราณ มันสามารถเปลี่ยนแปลงพลังของตัวมันเองโดยขึ้นอยู่กับผู้ที่ใช้งาน\nถ้า Base Lv 150 จะได้รับ All State + 2\nถ้าใช้งานโดย Swordman , Merchant และ Thief Class เพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 8% , ถ้าใช้งานโดย Magician และ Acolyte Class จะได้รับ MATK + 8% และเพิ่มพลังให้ Skill Heal 7% , ถ้าใช้งานโดย Archer Class จะได้รับ DEX + 3 , เพิ่มพลังโจมตีระยะไกล 10%\nประเภท : ^777777Helemt^000000 ป้องกัน : ^7777777^000000\nตำแหน่ง : ^777777Upper ^000000 น้ำหนัก : ^77777740^000000\nLv ที่ต้องการ : ^777777100^000000\nอาชีพ : ^777777For 3rd Job only/Kagerou/Oboro^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 40,
+    "requiredLevel": 100,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Only 3rd Cls",
+      "Kagerou",
+      "Oboro"
+    ],
+    "script": {
+      "allStatus": [
+        "SUM[level==150]===2"
+      ],
+      "p_class_all": [
+        "USED[Swordman||Merchant||Thief]===8"
+      ],
+      "matkPercent": [
+        "USED[Mage||Acolyte]===8"
+      ],
+      "dex": [
+        "USED[Archer]===3"
+      ],
+      "range": [
+        "USED[Archer]===10"
       ]
     }
   },
@@ -16483,6 +16964,38 @@
       ],
       "cri__fish": [
         "EQUIP[Surfer Swinsuit]===50"
+      ]
+    }
+  },
+  "19168": {
+    "id": 19168,
+    "aegisName": "Kafra_Employee_Band",
+    "name": "Kafra Employee Band [1]",
+    "unidName": "Hairband",
+    "resName": "카프라의머리띠",
+    "description": "ที่คาดผมสัญลักษณ์ของพนักงาน Kafra\nเข้าเซ็ตกันกับ Kafra Uniform\nลด damage จากมอนสเตอร์ทุกประเภท 5%\nเมื่อกำจัดมอนสเตอร์ มีโอกาสที่จะได้รับ [Not For Sale] Kafra Card, Free Ticket for Kafra Transportation, Free Ticket for Kafra Storage\nยิ่งค่าการอัพเกรดสูง ยิ่งเพิ่มโอกาสในการได้รับ\n----------------\nเมื่อใช้ร่วมกันกับ Kafra Uniform EXP ที่ได้รับจากมอนสเตอร์ + 5% เปอร์เซ็นต์ดร็อปไอเท็ม + 5%, All State +4.\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Upper ^000000น้ำหนัก : ^77777750^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 519,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 50,
+    "requiredLevel": 1,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "exp": [
+        "EQUIP[Kafra Uniform]===5"
+      ],
+      "itemDrop": [
+        "EQUIP[Kafra Uniform]===5"
+      ],
+      "allStatus": [
+        "EQUIP[Kafra Uniform]===4"
       ]
     }
   },
@@ -19231,6 +19744,37 @@
       ]
     }
   },
+  "20838": {
+    "id": 20838,
+    "aegisName": "Muffler_IL",
+    "name": "Illusion Muffler [1]",
+    "unidName": "Garment",
+    "resName": "Muffler_IL",
+    "description": "ผ้าคลุมไหล่ดูอบอุ่น ใช้เมื่อต้องการปิดบังบริเวณคอและไหล่ \nMHP + 100, MSP + 10. ทุก ๆ การอัพเกรด 1 ขั้น MHP + 100, MSP+5 เพิ่มเติม\nประเภท : ^777777Garment^000000 พลังป้องกัน : ^7777778^000000\nน้ำหนัก : ^77777740^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 8,
+    "weight": 40,
+    "requiredLevel": 99,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100",
+        "1---100"
+      ],
+      "sp": [
+        "10",
+        "1---5"
+      ]
+    }
+  },
   "20842": {
     "id": 20842,
     "aegisName": "Bag_Of_Antonio_Melee",
@@ -20377,6 +20921,107 @@
       ],
       "acd": [
         "11===20"
+      ]
+    }
+  },
+  "21055": {
+    "id": 21055,
+    "aegisName": "G_Knight_Sword",
+    "name": "Guardian Knight Claymore [2]",
+    "unidName": "Two-Handed Sword",
+    "resName": "G_Knight_Sword",
+    "description": "ดาบสองมือดูเทอะทะและมีน้ำหนักที่กลุ่มทหารรบ Raydric ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 9, CRI + 5, Critical Damage +25%\nเมื่ออัพเกรดถึงขั้น 11 ไม่สามารถทำลายได้, เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่ Critical Damage +20% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Claymore^000000 รวมกันตั้งแต่ 30 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777280^000000\nน้ำหนัก : ^777777400^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 280,
+    "defense": null,
+    "weight": 400,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "atk": [
+        "1---4",
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "cri": [
+        "9===5"
+      ],
+      "criDmg": [
+        "9===25"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__criDmg": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===20"
+      ]
+    }
+  },
+  "21058": {
+    "id": 21058,
+    "aegisName": "Up_Dragonic_Slayer",
+    "name": "Patent Dragonic Slayer [2]",
+    "unidName": "Bastard Sword",
+    "resName": "UpHetairoi_Sword",
+    "description": "ดาบขนาดใหญ่ที่เล่าขานกันว่าผู้ปราบมังกรในอดีตเคยใช้\nฟื้นคืนเกียรติยศในอดีต และเริ่มเผยพลังอันแท้จริงออกมา\nดูกลมกลืนเข้ากับ Great Hero Boots\n\nทุก ๆ การอัพเกรด 2 ขั้น MHP/MSP +5%\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Dragon Breath และ Dragon Breath - WATER 5%\nเมื่ออัพเกรดถึงขั้น 7 ลด Delay หลังใช้สกิล 10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่ออัพเกรดถึงขั้น 11 ลด Delay หลังใช้สกิลลงอีก 7%, MSP +5%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, VIT +10, เพิ่ม Damage ทางกายภาพระยะไกล 5%\n\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777200^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 200,
+    "defense": null,
+    "weight": 200,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "hpPercent": [
+        "2---5"
+      ],
+      "spPercent": [
+        "2---5",
+        "11===5"
+      ],
+      "Dragon Breath": [
+        "3---5"
+      ],
+      "Dragon Breath - WATER": [
+        "3---5"
+      ],
+      "acd": [
+        "7===10",
+        "11===7"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "range": [
+        "9===10",
+        "EQUIP[Great Hero Boots]===5"
+      ],
+      "vit": [
+        "EQUIP[Great Hero Boots]===10"
       ]
     }
   },
@@ -27211,6 +27856,59 @@
       ]
     }
   },
+  "24404": {
+    "id": 24404,
+    "aegisName": "S_Oboro_Armor",
+    "name": "Oboro Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิ่มดาเมจสกิล Flaming Petals, Freezing Spear, Wind Blade 20%\nทุกการอัพเกรด 1 ขั้น เพิ่มดาเมจสกิล Flaming Petals, Freezing Spear, Wind Blade ขึ้นอีกทีละ 5%\nเมื่อสวมใส่กับ Oboro Shadow Shoes, จะได้รับเอฟเฟกต์เพิ่มขึ้น \nเพิ่มดาเมจทางเวทย์ธาตุ Fire, Water, Wind 5%, ลดคูลไทม์ของสกิล Illusion-Shadow 3 วินาที\nหากสวมใส่ Ninja Shadow 2 ชนิด, Oboro Shadow 2 ชนิด ครบทั้งหมด, จะได้รับเอฟเฟกต์ด้านล่างเพิ่มเติม\nAll State + 7, MaxHP + 3%, MaxSP + 3%.\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Ninja Class^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "Flaming Petals": [
+        "20",
+        "1---5"
+      ],
+      "Freezing Spear": [
+        "20",
+        "1---5"
+      ],
+      "Wind Blade": [
+        "20",
+        "1---5"
+      ],
+      "m_my_element_fire": [
+        "EQUIP[Oboro Shadow Shoes]===5"
+      ],
+      "m_my_element_water": [
+        "EQUIP[Oboro Shadow Shoes]===5"
+      ],
+      "m_my_element_wind": [
+        "EQUIP[Oboro Shadow Shoes]===5"
+      ],
+      "allStatus": [
+        "EQUIP[Ninja Shadow Shield&&Ninja Shadow Weapon&&Oboro Shadow Shoes]===7"
+      ],
+      "hpPercent": [
+        "EQUIP[Ninja Shadow Shield&&Ninja Shadow Weapon&&Oboro Shadow Shoes]===3"
+      ],
+      "spPercent": [
+        "EQUIP[Ninja Shadow Shield&&Ninja Shadow Weapon&&Oboro Shadow Shoes]===3"
+      ]
+    }
+  },
   "24405": {
     "id": 24405,
     "aegisName": "S_Rebellion_Shoes",
@@ -27264,6 +27962,28 @@
         "1---5"
       ]
     }
+  },
+  "24407": {
+    "id": 24407,
+    "aegisName": "S_Oboro_Shoes",
+    "name": "Oboro Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nลดคูลไทม์สกิล Illusion Shadow 2 วินาที\nทุกการอัพเกรด 2 ขั้น ลดคูลไทม์สกิล Illusion Shadow เพิ่มอีกทีละ 1 วินาที\nประเภท : ^777777Shadow^000000 \nตำแหน่ง : ^777777Shoes ^000000น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^777777100^000000 \nอาชีพที่ใส่ได้ : ^777777Ninja Class^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {}
   },
   "24408": {
     "id": 24408,
@@ -32181,6 +32901,218 @@
       ]
     }
   },
+  "24628": {
+    "id": 24628,
+    "aegisName": "S_Kamaenraku_Weapon",
+    "name": "First Exploding Draft Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우",
+    "description": "ถุงมือที่สวมใส่กับมือที่ถืออาวุธ เพื่อดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft 5%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft ขึ้นอีก 5%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft ขึ้นอีก 5%\nเมื่อสวมใส่ First Exploding Draft Shadow Weapon/Shield/Armor ร่วมกัน,\nเพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft % เท่ากับค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Oboro Shadow Shoes,\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางเวทมนตร์เพิ่มอีกตามค่าอัพเกรดรวมกันของ First Exploding Draft Shadow Weapon และ Oboro Shadow Shoes\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Weapon^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777닌자계열^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "First Wind": [
+        "5",
+        "7===5",
+        "9===5",
+        "EQUIP[First Exploding Draft Shadow Shield&&First Exploding Draft Shadow Armor]REFINE[shadowWeapon,shadowShield,shadowArmor==1]---1"
+      ],
+      "Exploding Dragon": [
+        "5",
+        "7===5",
+        "9===5",
+        "EQUIP[First Exploding Draft Shadow Shield&&First Exploding Draft Shadow Armor]REFINE[shadowWeapon,shadowShield,shadowArmor==1]---1"
+      ],
+      "Snow Flake Draft": [
+        "5",
+        "7===5",
+        "9===5",
+        "EQUIP[First Exploding Draft Shadow Shield&&First Exploding Draft Shadow Armor]REFINE[shadowWeapon,shadowShield,shadowArmor==1]---1"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Oboro Shadow Shoes]40",
+        "EQUIP[Oboro Shadow Shoes]REFINE[shadowWeapon,shadowBoot==1]---1"
+      ],
+      "atk": [
+        "1---1"
+      ],
+      "matk": [
+        "1---1"
+      ]
+    }
+  },
+  "24629": {
+    "id": 24629,
+    "aegisName": "S_Kamaenraku_Shield",
+    "name": "First Exploding Draft Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우",
+    "description": "โล่เล็กที่สามารถสวมใส่ที่แขนได้ สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์การป้องกันของมันจะลดน้อยลง\nเพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage สกิล First Wind, Exploding Dragon, Snow Flake Draft ขึ้นอีก 2%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shield^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "First Wind": [
+        "5",
+        "2---2"
+      ],
+      "Exploding Dragon": [
+        "5",
+        "2---2"
+      ],
+      "Snow Flake Draft": [
+        "5",
+        "2---2"
+      ]
+    }
+  },
+  "24630": {
+    "id": 24630,
+    "aegisName": "S_Kamaenraku_Armor",
+    "name": "First Exploding Draft Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우",
+    "description": "ชุดเกราะที่เพิ่มพลังป้องกันเมื่อสวมใส่เพิ่มบนเกราะอีกที สามารถใส่แบบชิ้นเดียวได้ แต่ความสามารถในการป้องกันจะลดลงไปอีก\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุขึ้นอีก 1%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Armor^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "m_element_all": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
+  "24631": {
+    "id": 24631,
+    "aegisName": "S_Huusouka_Earing",
+    "name": "Wind Spear Petal Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우",
+    "description": "ต่างหูมงคลที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา\nเพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade 3%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade ขึ้นอีก 3%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade ขึ้นอีก 4%\nเมื่อสวมใส่ Wind Spear Petal Shadow Earring/Pendant/Shoes ร่วมกัน,\nเพิ่ม Damage สกิล Flaming Petals, Freezing Spear, Wind Blade % เท่ากับครึ่งหนึ่งของค่าอัพเกรดรวมกัน\nเมื่อสวมใส่ร่วมกับ Oboro Shadow Armor,\nเพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของทุกเผ่ายกเว้น Player 40% และเพิกเฉยต่อพลังป้องกันทางเวทมนตร์เพิ่มอีกตามค่าอัพเกรดรวมกันของ Wind Spear Petal Shadow Earring และ Oboro Shadow Armor\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Earring^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "Flaming Petals": [
+        "3",
+        "7===3",
+        "9===4",
+        "EQUIP[Wind Spear Petal Shadow Shoes&&Wind Spear Petal Shadow Pendant]REFINE[shadowEarring,shadowBoot,shadowPendant==2]---1"
+      ],
+      "Freezing Spear": [
+        "3",
+        "7===3",
+        "9===4",
+        "EQUIP[Wind Spear Petal Shadow Shoes&&Wind Spear Petal Shadow Pendant]REFINE[shadowEarring,shadowBoot,shadowPendant==2]---1"
+      ],
+      "Wind Blade": [
+        "3",
+        "7===3",
+        "9===4",
+        "EQUIP[Wind Spear Petal Shadow Shoes&&Wind Spear Petal Shadow Pendant]REFINE[shadowEarring,shadowBoot,shadowPendant==2]---1"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Oboro Shadow Armor]40",
+        "EQUIP[Oboro Shadow Armor]REFINE[shadowEarring,shadowArmor==1]---1"
+      ]
+    }
+  },
+  "24632": {
+    "id": 24632,
+    "aegisName": "S_Huusouka_Pendant",
+    "name": "Wind Spear Petal Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우",
+    "description": "สร้อยคอศักดิ์สิทธิ์ที่กล่าวกันว่าปกป้องผู้สวมใส่ ดึงศักยภาพของผู้สวมใส่ออกมา \nMSP +2%\nทุก ๆ การอัพเกรด 2 ขึ้น MSP +1% เพิ่มเติม\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Pendant^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "spPercent": [
+        "2",
+        "1"
+      ]
+    }
+  },
+  "24633": {
+    "id": 24633,
+    "aegisName": "S_Huusouka_Shoes",
+    "name": "Wind Spear Petal Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우",
+    "description": "รองเท้าที่สวมใส่เพิ่มเติม สามารถใช้งานแบบชิ้นเดียวได้แต่เอฟเฟกต์ของมันจะลดน้อยลง\nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 5%\nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาดขึ้นอีก 1%\nประเภท : ^777777Shadow^000000\nตำแหน่ง : ^777777Shoes^000000 น้ำหนัก : ^7777770^000000\nเลเวลที่ต้องการ : ^77777799^000000\nอาชีพที่ใส่ได้ : ^777777Ninja^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "Ninja"
+    ],
+    "script": {
+      "m_size_all": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
   "24634": {
     "id": 24634,
     "aegisName": "S_Pickyrush_Weapon",
@@ -33825,7 +34757,7 @@
     "name": "Royal Cleric Staff [2]",
     "unidName": "Rod",
     "resName": "R_Cleric_Staff",
-    "description": "ไม้คทาสำหรับตกแต่งที่ซิสเตอร์และบาทหลวงแห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nไม่สามารถทำลายได้, MATK +170, MATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น MATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Adoramus 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nMATK +30, เมื่อโจมตีทางเวทมนตร์ มีโอกาสที่จะเพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Cleric Staff^000000 รวมกันตั้งแต่ 30 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
+    "description": "ไม้คทาสำหรับตกแต่งที่ซิสเตอร์และบาทหลวงแห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nไม่สามารถทำลายได้, MATK +170, MATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น MATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Adoramus 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nMATK +30, เมื่อโจมตีทางเวทมนตร์ มีโอกาสที่จะเพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Cleric Staff^000000 รวมกันตั้งแต่ 30 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Arch Bishop^000000",
     "slots": 2,
     "itemTypeId": 1,
     "itemSubTypeId": 265,
@@ -33862,6 +34794,9 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__m_my_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -33911,6 +34846,12 @@
       ],
       "m_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__m_my_element_fire": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ],
+      "chance__m_my_element_dark": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -34179,7 +35120,7 @@
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
       ],
       "chance__m_my_element_neutral": [
-        "10"
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -37323,7 +38264,9 @@
         "level:150===5",
         "level:160===5",
         "level:170===5",
-        "level:180===5"
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
       ]
     }
   },
@@ -37592,6 +38535,9 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -37672,7 +38618,9 @@
         "level:150===5",
         "level:160===5",
         "level:170===5",
-        "level:180===5"
+        "level:180===5",
+        "level:190===5",
+        "level:200===5"
       ]
     }
   },
@@ -37816,6 +38764,62 @@
       ]
     }
   },
+  "28141": {
+    "id": 28141,
+    "aegisName": "G_Knight_BattleAxe",
+    "name": "Guardian Knight Battle Axe [2]",
+    "unidName": "Two-Handed Axe",
+    "resName": "G_Knight_BattleAxe",
+    "description": "ขวานสองมือขนาดใหญ่ที่หน่วยทหารม้ารักษาพระองค์แห่ง Glast Heim ใช้\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\nไม่สามารถทำลายได้, ATK +5%, ลด Damage ทางกายภาพ/เวทมนตร์ที่ได้รับจากศัตรูขนาดกลาง, ใหญ่ 10%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Axe Tornado, Lava Flow 20%, ลด Cooldown สกิล Axe Tornado 1 วินาที\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Battle Axe^000000 รวมกันตั้งแต่ 30 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Two-Handed Axe^000000 พลังโจมตี : ^777777270^000000\nน้ำหนัก : ^777777500^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 262,
+    "itemLevel": 4,
+    "attack": 270,
+    "defense": null,
+    "weight": 500,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "1---1"
+      ],
+      "Axe Tornado": [
+        "9===20"
+      ],
+      "Lava Flow": [
+        "9===20"
+      ],
+      "cd__Axe Tornado": [
+        "9===1"
+      ],
+      "atk": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ]
+    }
+  },
   "28225": {
     "id": 28225,
     "aegisName": "Burning_Rose",
@@ -37877,6 +38881,40 @@
       ],
       "cd__Howling Mine": [
         "9===1"
+      ]
+    }
+  },
+  "28240": {
+    "id": 28240,
+    "aegisName": "Calf_Kingcobra",
+    "name": "Calf Kingcobra [2]",
+    "unidName": "Rifle",
+    "resName": "Calf_Kingcobra",
+    "description": "ปืนไรเฟิลที่กลุ่ม Buffalo Bandit มักจะใช้กัน \nดูเหมือนว่ามันจะมีน้ำหนักเบามากเมื่อเทียบกับอาวุธและปืนชนิดอื่นที่กลุ่ม Buffalo Bandit ใช้\nเพิ่ม ASPD 10% \nทุก ๆ การอัพเกรด 2 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 5%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม ASPD 5%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Critical Damage 15% \nเมื่ออัพเกรดถึงขั้น 12 เพิ่ม Damage ทางกายภาพระยะไกลขึ้นอีก 5%\n^ffffff_^000000\nประเภท : ^777777Rifle^000000 พลังโจมตี : ^777777230^000000\nน้ำหนัก : ^77777790^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Rebellion^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 274,
+    "itemLevel": 4,
+    "attack": 230,
+    "defense": null,
+    "weight": 90,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rebellion"
+    ],
+    "script": {
+      "aspd": [
+        "10",
+        "7===5"
+      ],
+      "range": [
+        "2---5",
+        "12===5"
+      ],
+      "criDmg": [
+        "9===15"
       ]
     }
   },
@@ -39042,6 +40080,12 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__m_my_element_water": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ],
+      "chance__m_my_element_wind": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -39444,6 +40488,54 @@
       ]
     }
   },
+  "28768": {
+    "id": 28768,
+    "aegisName": "Platinum_Dagger",
+    "name": "Platinum Dagger [2]",
+    "unidName": "Knife",
+    "resName": "Platinum_Dagger",
+    "description": "มีดสั้นที่ทำจากทองคำขาว\n^ffffff_^000000 \nMATK + 170, MATK + 5%\nทุก ๆ การอัพเกรด 1 ขั้น MATK + 4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage เวทมนตร์ธาตุ Fire, Water, Wind, Earth 15%\nเมื่ออัพเกรดถึงขั้น 11 เมื่อทำการโจมตีทางกายภาพ มีโอกาสที่ MATK + 100 เป็นระยะเวลา 10 วินาทีและเพิ่ม Damage เวทมนตร์ที่ทำต่อศัตรูทุกขนาด 30% \nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777150^000000\nน้ำหนัก : ^777777150^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 150,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "matk": [
+        "170",
+        "1---4"
+      ],
+      "matkPercent": [
+        "5"
+      ],
+      "m_my_element_fire": [
+        "9===15"
+      ],
+      "m_my_element_water": [
+        "9===15"
+      ],
+      "m_my_element_wind": [
+        "9===15"
+      ],
+      "m_my_element_earth": [
+        "9===15"
+      ],
+      "chance__matk": [
+        "11===100"
+      ],
+      "chance__m_size_all": [
+        "11===30"
+      ]
+    }
+  },
   "28771": {
     "id": 28771,
     "aegisName": "Ein_1HDAGGER",
@@ -39530,6 +40622,134 @@
       ],
       "acd": [
         "11===20"
+      ]
+    }
+  },
+  "28774": {
+    "id": 28774,
+    "aegisName": "R_Gladius_R",
+    "name": "Royal Gladius (R) [2]",
+    "unidName": "Dagger",
+    "resName": "R_Gladius_R",
+    "description": "มีดสั้นสำหรับป้องกันตัวของเหล่าชนชั้นสูงแห่ง Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nATK +5%\nเมื่อสวมใส่ร่วมกับ Royal Gladius (L) ทุก ๆ การอัพเกรด 2 ขั้นของค่าอัพเกรดรวม ATK +7\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 18 ขึ้นไป เพิ่ม Damage สกิล Cross Impact, Counter Slash 20%\nเมื่อค่าอัพเกรดรวมกันตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 30%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่ ATK +10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Gladius (R), Royal Gladius (L)^000000 รวมกันตั้งแต่ 40 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 200,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Guillotine Cross"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "atk": [
+        "EQUIP[Royal Gladius (L)]REFINE[weapon,leftWeapon==2]---7",
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "Cross Impact": [
+        "EQUIP[Royal Gladius (L)]REFINE[weapon,leftWeapon==18]===20"
+      ],
+      "Counter Slash": [
+        "EQUIP[Royal Gladius (L)]REFINE[weapon,leftWeapon==18]===20"
+      ],
+      "p_race_undead": [
+        "EQUIP[Royal Gladius (L)]REFINE[weapon,leftWeapon==22]===30"
+      ],
+      "p_race_angel": [
+        "EQUIP[Royal Gladius (L)]REFINE[weapon,leftWeapon==22]===30"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,leftWeapon,armor,garment==40]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,leftWeapon,armor,garment==40]===20"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ]
+    }
+  },
+  "28775": {
+    "id": 28775,
+    "aegisName": "R_Gladius_L",
+    "name": "Royal Gladius (L) [3]",
+    "unidName": "Dagger",
+    "resName": "R_Gladius_L",
+    "description": "มีดสั้นสำหรับป้องกันตัวของเหล่าชนชั้นสูงแห่ง Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\nไม่มีความสามารถที่เป็นพื้นฐาน แต่ถ้าได้สวมใส่ร่วมกับ Royal Gladius (R) แล้วจะได้รับพลังที่แข็งแกร่งมา\n^ffffff_^000000 \nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Guillotine Cross^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 100,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Guillotine Cross"
+    ],
+    "script": {}
+  },
+  "28776": {
+    "id": 28776,
+    "aegisName": "R_Magician_Dagger",
+    "name": "Royal Magician Dagger [2]",
+    "unidName": "Dagger",
+    "resName": "R_Magician_Dagger",
+    "description": "มีดสั้นสำหรับป้องกันตัวของนักเวทย์แห่ง Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nMATK +170, MATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น MATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Neutral 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nMATK +30, เมื่อโจมตีทางเวทมนตร์ มีโอกาสที่จะเพิ่ม Damage ทางเวทมนตร์ธาตุ Fire, Neutral 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Magician Dagger^000000 รวมกันตั้งแต่ 30 ขึ้นไป, เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Shadow Chaser^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 200,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "matk": [
+        "170",
+        "1---4",
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "matkPercent": [
+        "5"
+      ],
+      "m_my_element_fire": [
+        "9===15"
+      ],
+      "m_my_element_neutral": [
+        "9===15"
+      ],
+      "m_race_undead": [
+        "11===20"
+      ],
+      "m_race_angel": [
+        "11===20"
+      ],
+      "m_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "m_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__m_my_element_fire": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ],
+      "chance__m_my_element_neutral": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -40390,6 +41610,88 @@
       "criDmg": [
         "12===8",
         "13===6"
+      ]
+    }
+  },
+  "29009": {
+    "id": 29009,
+    "aegisName": "Neev_VIT_1",
+    "name": "Rune of Vitality Lv 1",
+    "unidName": "Rune of Vitality Lv 1",
+    "resName": "체력의니브",
+    "description": "VIT + 5 เมื่อ Refine ระดับ 7\nMHP + 5% เมื่อ Refine ระดับ10",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vit": [
+        "7===5"
+      ],
+      "hpPercent": [
+        "10===5"
+      ]
+    }
+  },
+  "29010": {
+    "id": 29010,
+    "aegisName": "Neev_VIT_2",
+    "name": "Rune of Vitality Lv 2",
+    "unidName": "Rune of Vitality Lv 2",
+    "resName": "체력의니브",
+    "description": "VIT + 6 เมื่อ Refine ระดับ 7 \nเพิ่ม VIT + 1, MHP + 7% เมื่อ Refine ระดับ 11",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vit": [
+        "7===6",
+        "11===1"
+      ],
+      "hpPercent": [
+        "11===7"
+      ]
+    }
+  },
+  "29011": {
+    "id": 29011,
+    "aegisName": "Neev_VIT_3",
+    "name": "Rune of Vitality Lv 3",
+    "unidName": "Rune of Vitality Lv 3",
+    "resName": "체력의니브",
+    "description": "VIT + 7 เมื่อ Refine ระดับ 7 \nเพิ่ม VIT + 1, MHP + 8% เมื่อ Refine ระดับ 12\nเพิ่ม VIT + 1, MHP + 2% เมื่อ Refine ระดับ 13",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vit": [
+        "7===7",
+        "12===1",
+        "13===1"
+      ],
+      "hpPercent": [
+        "12===8",
+        "13===2"
       ]
     }
   },
@@ -43352,7 +44654,7 @@
     "compositionPos": null,
     "script": {
       "matk": [
-        "20"
+        "LEARN_SKILL[Mystical Amplification==1]---2"
       ]
     }
   },
@@ -43425,7 +44727,7 @@
         "EQUIP[High Wizard Stone (Upper)]===15"
       ],
       "fct": [
-        "EQUIP[High Wizard Stone (Middle)]===0.5"
+        "EQUIP[High Wizard Stone (Middle)]LEARN_SKILL[Soul Drain==2]---0.1"
       ],
       "m_my_element_fire": [
         "EQUIP[High Wizard Stone (Lower)]===5"
@@ -44024,6 +45326,34 @@
       ],
       "Cross Ripper Slasher": [
         "EQUIP[Assassin Cross Stone (Middle)]15"
+      ]
+    }
+  },
+  "29531": {
+    "id": 29531,
+    "aegisName": "Improve_Orb_Health",
+    "name": "Modification Orb (Health)",
+    "unidName": "Modification Orb (Health)",
+    "resName": "마력석_빨강",
+    "description": "MHP + 5%\nเมื่ออัปเกรดถึงขั้น 7 เพิ่ม MHP เพิ่มเติม 500\nเมื่ออัปเกรดถึงขั้น 9 เพิ่ม MHP เพิ่มเติม 750",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "cardPrefix": "<B-MaxHP>",
+    "script": {
+      "hpPercent": [
+        "5"
+      ],
+      "hp": [
+        "7===500",
+        "9===750"
       ]
     }
   },
@@ -46597,6 +47927,162 @@
       ]
     }
   },
+  "29707": {
+    "id": 29707,
+    "aegisName": "Tenacity2",
+    "name": "Tenacity Lv. 2",
+    "unidName": "Tenacity Lv. 2",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 8%, Perfect Hit + 2",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "8"
+      ],
+      "perfectHit": [
+        "2"
+      ]
+    }
+  },
+  "29708": {
+    "id": 29708,
+    "aegisName": "Tenacity3",
+    "name": "Tenacity Lv. 3",
+    "unidName": "Tenacity Lv. 3",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 12%, Perfect Hit + 3",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "12"
+      ],
+      "perfectHit": [
+        "3"
+      ]
+    }
+  },
+  "29709": {
+    "id": 29709,
+    "aegisName": "Tenacity4",
+    "name": "Tenacity Lv. 4",
+    "unidName": "Tenacity Lv. 4",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 16%, Perfect Hit + 4",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "16"
+      ],
+      "perfectHit": [
+        "4"
+      ]
+    }
+  },
+  "29710": {
+    "id": 29710,
+    "aegisName": "Tenacity5",
+    "name": "Tenacity Lv. 5",
+    "unidName": "Tenacity Lv. 5",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 20%, Perfect Hit + 5",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "20"
+      ],
+      "perfectHit": [
+        "5"
+      ]
+    }
+  },
+  "29711": {
+    "id": 29711,
+    "aegisName": "Tenacity6",
+    "name": "Tenacity Lv. 6",
+    "unidName": "Tenacity Lv. 6",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 24%, Perfect Hit + 6",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "24"
+      ],
+      "perfectHit": [
+        "6"
+      ]
+    }
+  },
+  "29712": {
+    "id": 29712,
+    "aegisName": "Tenacity7",
+    "name": "Tenacity Lv. 7",
+    "unidName": "Tenacity Lv. 7",
+    "resName": "Crystal_Piece_BL",
+    "description": "Increase physical melee damage by 28%, Perfect Hit + 7",
+    "slots": 0,
+    "itemTypeId": 11,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 0,
+    "weight": 0,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "melee": [
+        "28"
+      ],
+      "perfectHit": [
+        "7"
+      ]
+    }
+  },
   "29726": {
     "id": 29726,
     "aegisName": "Improve_Orb_L_Varmundt",
@@ -46868,6 +48354,53 @@
       ],
       "acd": [
         "11===20"
+      ]
+    }
+  },
+  "32027": {
+    "id": 32027,
+    "aegisName": "G_Knight_Spear",
+    "name": "Guardian Knight Spear [2]",
+    "unidName": "Spear",
+    "resName": "G_Knight_Spear",
+    "description": "อาวุธหอกมือเดียวที่มีน้ำหนัก เป็นอาวุธของกองทัพทหารม้าขาว\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Banishing Point 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Spear^000000 รวมกันตั้งแต่ 30 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777One-Handed Spear^000000 พลังโจมตี : ^777777205^000000\nน้ำหนัก : ^777777400^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 4,
+    "attack": 205,
+    "defense": null,
+    "weight": 400,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "range": [
+        "1---1"
+      ],
+      "Banishing Point": [
+        "9===20"
+      ],
+      "atk": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -47840,6 +49373,9 @@
       ],
       "p_element_undead": [
         "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -47875,6 +49411,39 @@
         "1---1"
       ],
       "Genesis Ray": [
+        "9===30",
+        "11===20"
+      ]
+    }
+  },
+  "32351": {
+    "id": 32351,
+    "aegisName": "Estal",
+    "name": "Estal [2]",
+    "unidName": "Sword",
+    "resName": "Estal",
+    "description": "ดาบที่ทนได้แม้แต่การระเบิดที่รุนแรง\n^ffffff_^000000 \nลด Cooldown สกิล Spore Explosion 1 วินาที\nทุก ๆ การอัพเกรด 1 ขั้น ATK + 4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Spore Explosion 30%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage สกิล Spore Explosion ขึ้นอีก 20%\nประเภท : ^777777Sword^000000 พลังโจมตี : ^777777195^000000\nน้ำหนัก : ^77777770^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 4,
+    "attack": 195,
+    "defense": null,
+    "weight": 70,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "cd__Spore Explosion": [
+        "1"
+      ],
+      "atk": [
+        "1---4"
+      ],
+      "Spore Explosion": [
         "9===30",
         "11===20"
       ]
@@ -47919,6 +49488,228 @@
       ],
       "acd": [
         "11===20"
+      ]
+    }
+  },
+  "32353": {
+    "id": 32353,
+    "aegisName": "G_Knight_JewelSword",
+    "name": "Guardian Knight Jewel Sword [2]",
+    "unidName": "One-Handed Sword",
+    "resName": "G_Knight_JewelSword",
+    "description": "ดาบที่ใช้ประกอบพิธีระลึกถึงบรรพบุรุษโดยกองทัพทหารแห่ง Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nMATK +180\nทุก ๆ การอัพเกรด 1 ขั้น MHP +1%, เพิ่ม Damage สกิล Grand Cross 2%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Shield Press 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nเมื่อโจมตีทางกายภาพ/เวทมนตร์ มีโอกาสที่ ATK +7%, MATK +7% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Guardian Knight Jewel Sword^000000 รวมกันตั้งแต่ 30 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777One-Handed Sword^000000 พลังโจมตี : ^777777130^000000\nน้ำหนัก : ^777777400^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 4,
+    "attack": 130,
+    "defense": null,
+    "weight": 400,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "matk": [
+        "180"
+      ],
+      "hpPercent": [
+        "1---1"
+      ],
+      "Grand Cross": [
+        "1---2"
+      ],
+      "Shield Press": [
+        "9===20"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "m_race_undead": [
+        "11===20"
+      ],
+      "m_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "m_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "m_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===7"
+      ],
+      "chance__matkPercent": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===7"
+      ]
+    }
+  },
+  "32401": {
+    "id": 32401,
+    "aegisName": "R_Pillar",
+    "name": "Royal Pillar [2]",
+    "unidName": "Club",
+    "resName": "R_Pillar",
+    "description": "ไม้ตะบองเหล็กขนาดใหญ่และหนา ถูกใช้เป็นของตกแต่งภายใน Glast Heim\nแม้จะเป็นอาวุธธรรมดา แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\n^ffffff_^000000 \nไม่สามารถทำลายได้, ATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Arm Cannon, Knuckle Boost 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Pillar^000000 รวมกันตั้งแต่ 30 ขึ้นไป,\nเพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777220^000000\nน้ำหนัก : ^777777500^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Mechanic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 220,
+    "defense": null,
+    "weight": 500,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "1---1"
+      ],
+      "Arm Cannon": [
+        "9===20"
+      ],
+      "Knuckle Boost": [
+        "9===20"
+      ],
+      "atk": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ]
+    }
+  },
+  "32402": {
+    "id": 32402,
+    "aegisName": "R_Syringe",
+    "name": "Royal Syringe [2]",
+    "unidName": "Club",
+    "resName": "R_Syringe",
+    "description": "เข็มฉีดยาสำหรับทดลองที่เอาไว้ใช้ในห้องวิจัยของ Glast Heim\nแม้จะทำขึ้นมาเพื่อรักษาผู้คน แต่ก็มีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\nไม่สามารถทำลายได้, ATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น เพิ่ม Damage ทางกายภาพระยะไกล 1%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Cart Cannon, Spore Explosion 20%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Syringe^000000 รวมกันตั้งแต่ 30 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 210,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "range": [
+        "1---1"
+      ],
+      "Cart Cannon": [
+        "9===20"
+      ],
+      "Spore Explosion": [
+        "9===20"
+      ],
+      "atk": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
+      ]
+    }
+  },
+  "32403": {
+    "id": 32403,
+    "aegisName": "G_Alchemist_Staff",
+    "name": "Royal Alchemy Staff [2]",
+    "unidName": "Club",
+    "resName": "G_Alchemist_Staff",
+    "description": "ไม้เท้าประดิษฐ์ที่นักวิจัยแห่ง Glast Heim ใช้\nรูปทรงที่สวยงาม กลับมีพลังที่แข็งแกร่งซ่อนอยู่เนื่องจากได้รับผลกระทบจาก Himmelmez\nไม่สามารถทำลายได้, ATK +5%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +4\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Crazy Weed 30%, ลด Cooldown สกิล Crazy Weed 1 วินาที\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อมอนสเตอร์เผ่า Undead, Angel 20%\n^ffffff_^000000 \nเมื่อสวมใส่ร่วมกับ ^32CD32King Schmidt's Suit และ King Schmidt's Manteau^000000, \nATK +30, เมื่อโจมตีทางกายภาพ มีโอกาสที่จะเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 10 วินาที\nเมื่อค่าอัพเกรด ^32CD32King Schmidt's Suit, King Schmidt's Manteau, Royal Alchemy Staff^000000 รวมกันตั้งแต่ 30 ขึ้นไป, เพิ่ม Damage ทางกายภาพต่อศัตรูธาตุ Holy, Undead 20%\n^ffffff_^000000 \nประเภท : ^777777Mace^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777150^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่ใส่ได้ : ^777777Genetic^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 263,
+    "itemLevel": 4,
+    "attack": 200,
+    "defense": null,
+    "weight": 150,
+    "requiredLevel": 170,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "atkPercent": [
+        "5"
+      ],
+      "atk": [
+        "1---4",
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===30"
+      ],
+      "Crazy Weed": [
+        "9===30"
+      ],
+      "cd__Crazy Weed": [
+        "9===1"
+      ],
+      "p_race_undead": [
+        "11===20"
+      ],
+      "p_race_angel": [
+        "11===20"
+      ],
+      "p_element_holy": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "p_element_undead": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]REFINE[weapon,armor,garment==30]===20"
+      ],
+      "chance__range": [
+        "EQUIP[King Schmidt's Suit&&King Schmidt's Manteau]===10"
       ]
     }
   },
@@ -50315,6 +52106,246 @@
       ]
     }
   },
+  "400078": {
+    "id": 400078,
+    "aegisName": "BioWeapon_Helm_RK",
+    "name": "Goral Crown [1]",
+    "unidName": "Headgear",
+    "resName": "백양궁왕관",
+    "description": "A crown made of red genstones with shaped curved horns and a white mane.\nAtk + 20 per 2 refine rate.\nIf upgrade level is +7 or higher, ASPD +10%.\nIf upgrade level is +9 or higher, increase long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with Volar,\nincreases critical damage by 10%, increases Ignition Break damage by 12% per refine rate of weapon.\nWhen equipped with Vernan,\nreduces delay after skill by 10%, increases Sonic Wave damage by 10% per refine rate of weapon.\nWhen equipped with Argen Blanco,\nreduces cooldown of Hundred Spear by 0.5 seconds, increases Hundred Spear damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Lv: ^777777170^000000\nJobs: ^777777Rune Knight^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "range": [
+        "9===15"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "criDmg": [
+        "EQUIP[Volar]===10"
+      ],
+      "Ignition Break": [
+        "EQUIP[Volar]REFINE[weapon==1]---12"
+      ],
+      "acd": [
+        "EQUIP[Vernan]===10"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Vernan]REFINE[weapon==1]---10"
+      ],
+      "cd__Hundred Spears": [
+        "EQUIP[Argen Blanco]===0.5"
+      ],
+      "Hundred Spears": [
+        "EQUIP[Argen Blanco]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400079": {
+    "id": 400079,
+    "aegisName": "BioWeapon_Helm_LG",
+    "name": "Trial Diadem [1]",
+    "unidName": "Headgear",
+    "resName": "천칭궁보관",
+    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, Atk + 15%, increase holy property magical damage by 15%.\nIf refine rate is 11 or higher, increases physical and magical damage against all size enemies by 10%, reduces fixed casting time by 0.2 seconds.\n\nWhen equipped with Farthezan, reduces variable casting time by 10%,\nincreases Gloria Domini and Genesis Ray damage by 10% per refine rate of weapon.\n\nWhen equipped with Harve, reduces skill cooldown of Shield Press by 1 second,\nincreases Shield Press damage by 10% per refine rate of weapon.\n\nWhen equipped with Fortridge, reduces skill cooldown of Cannon Spear by 0.5 seconds,\nincreases Cannon Spear damage by 12% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Royal Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "matk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "atkPercent": [
+        "9===15"
+      ],
+      "m_my_element_holy": [
+        "9===15"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "m_size_all": [
+        "11===10"
+      ],
+      "fct": [
+        "11===0.2"
+      ],
+      "vct": [
+        "EQUIP[Farthezan]===10"
+      ],
+      "Gloria Domini": [
+        "EQUIP[Farthezan]REFINE[weapon==1]---10"
+      ],
+      "Genesis Ray": [
+        "EQUIP[Farthezan]REFINE[weapon==1]---10"
+      ],
+      "cd__Shield Press": [
+        "EQUIP[Harve]===1"
+      ],
+      "Shield Press": [
+        "EQUIP[Harve]REFINE[weapon==1]---10"
+      ],
+      "cd__Cannon Spear": [
+        "EQUIP[Fortridge]===0.5"
+      ],
+      "Cannon Spear": [
+        "EQUIP[Fortridge]REFINE[weapon==1]---12"
+      ]
+    }
+  },
+  "400094": {
+    "id": 400094,
+    "aegisName": "BioWeapon_Helm_WL",
+    "name": "Jade Crown [1]",
+    "unidName": "Headgear",
+    "resName": "보병궁왕관",
+    "description": "Matk + 2% and increases SP recovery rate by 6% per 2 refine rate.\nIf refine rate is 7 or higher, all stat + 3.\nIf refine rate is 9 or higher, Matk + 4%.\nIf refine rate is 11 or higher, increases neutral, fire and ghost property magical damage by 20%.\n\nWhen equipped with Crimson Rose Stick, reduces skill cooldown of Crimson Rock by 1 second,\nincreases Crimson Rock damage by 3% per refine rate of weapon.\n\nWhen equipped with Staff of Miracle, increases ghost property magical damage by 3%,\nincreases Soul Expansion damage by 3% per refine rate of weapon.\n\nWhen equipped with Gravitation Staff, increases neutral property magical damage by 3%,\nincreases Gravitational Field and Comet damage by 3% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Warlock^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Warlock"
+    ],
+    "script": {
+      "matkPercent": [
+        "2---2",
+        "9===4"
+      ],
+      "allStatus": [
+        "7===3"
+      ],
+      "m_my_element_neutral": [
+        "11===20",
+        "EQUIP[Gravitation Staff]===3"
+      ],
+      "m_my_element_fire": [
+        "11===20"
+      ],
+      "m_my_element_ghost": [
+        "11===20",
+        "EQUIP[Staff of Miracle]===3"
+      ],
+      "cd__Crimson Rock": [
+        "EQUIP[Crimson Rose Stick]===1"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Crimson Rose Stick]REFINE[weapon==1]---3"
+      ],
+      "Soul Expansion": [
+        "EQUIP[Staff of Miracle]REFINE[weapon==1]---3"
+      ],
+      "Gravitational Field": [
+        "EQUIP[Gravitation Staff]REFINE[weapon==1]---3"
+      ],
+      "Comet": [
+        "EQUIP[Gravitation Staff]REFINE[weapon==1]---3"
+      ]
+    }
+  },
+  "400095": {
+    "id": 400095,
+    "aegisName": "BioWeapon_Helm_SO",
+    "name": "Spinel Diadem [1]",
+    "unidName": "Headgear",
+    "resName": "보병궁보관",
+    "description": "Matk + 2% and increases SP recovery rate by 6% per 2 refine rate.\r\nIf refine rate is 7 or higher, all stat + 3.\r\nIf refine rate is 9 or higher, reduces variable casting time by 10%.\r\nIf refine rate is 11 or higher, increases neutral, earth and water property magical damage by 20%.\r\n\r\nWhen equipped with Boltigin, Matk + 2%,\r\nincreases Fire Bolt, Cold Bolt and Lightning Bolt damage by 3% per refine rate of weapon.\r\n\r\nWhen equipped with Psychic Spear Rod, increases neutral and wind property magical damage by 3%,\r\nincreases Varetyr Spear damage by 3% per refine rate of weapon.\r\n\r\nWhen equipped with Dust Grave, increases water and earth property magical damage by 3%,\r\nincreases Diamond Dust damage by 3% per refine rate of weapon.\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\r\nRequired Level: ^777777170^000000\r\nJobs: ^777777Sorcerer^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Sorcerer"
+    ],
+    "script": {
+      "matkPercent": [
+        "2---2",
+        "EQUIP[Boltigin]===2"
+      ],
+      "allStatus": [
+        "7===3"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "m_my_element_neutral": [
+        "11===20",
+        "EQUIP[Psychic Spear Rod]===3"
+      ],
+      "m_my_element_earth": [
+        "11===20",
+        "EQUIP[Dust Grave]===3"
+      ],
+      "m_my_element_water": [
+        "11===20",
+        "EQUIP[Dust Grave]===3"
+      ],
+      "Fire Bolt": [
+        "EQUIP[Boltigin]REFINE[weapon==1]---3"
+      ],
+      "Cold Bolt": [
+        "EQUIP[Boltigin]REFINE[weapon==1]---3"
+      ],
+      "Lightning Bolt": [
+        "EQUIP[Boltigin]REFINE[weapon==1]---3"
+      ],
+      "m_my_element_wind": [
+        "EQUIP[Psychic Spear Rod]===3"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Psychic Spear Rod]REFINE[weapon==1]---3"
+      ],
+      "Diamond Dust": [
+        "EQUIP[Dust Grave]REFINE[weapon==1]---3"
+      ]
+    }
+  },
   "400097": {
     "id": 400097,
     "aegisName": "Egirnion_Helm",
@@ -50367,6 +52398,429 @@
       ],
       "m_race_demihuman": [
         "EQUIP[Aegirnian Armor&&Aegirnian Manteau&&Aegirnian Shoes]50"
+      ]
+    }
+  },
+  "400098": {
+    "id": 400098,
+    "aegisName": "BioWeapon_Helm_NC",
+    "name": "Bull Crown [1]",
+    "unidName": "Headgear",
+    "resName": "금우궁왕관",
+    "description": "Atk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increase long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with Golden Wrench, increases physical damage against all size enemies by 10%,\nincreases Power Swing damage by 10% per refine rate of weapon.\n\nWhen equipped with Engine Pilebunker, increase long ranged physical damage by 10%,\nincreases Arm Cannon damage by 10% per refine rate of weapon.\n\nWhen equipped with Maxi Spanner, increases physical damage against all size enemies by 10%,\nincreases Axe Tornado damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Mechanic^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "range": [
+        "9===15",
+        "EQUIP[Engine Pilebunker]===10"
+      ],
+      "p_size_all": [
+        "11===10",
+        "EQUIP[Golden Wrench]===10",
+        "EQUIP[Maxi Spanner]===10"
+      ],
+      "Power Swing": [
+        "EQUIP[Golden Wrench]REFINE[weapon==1]---10"
+      ],
+      "Arm Cannon": [
+        "EQUIP[Engine Pilebunker]REFINE[weapon==1]---10"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Maxi Spanner]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400099": {
+    "id": 400099,
+    "aegisName": "BioWeapon_Helm_GN",
+    "name": "Taurus Diadem [1]",
+    "unidName": "Headgear",
+    "resName": "금우궁보관",
+    "description": "Atk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increase long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with Coolant Injection, increase long ranged physical damage by 10%,\nincreases Cart Cannon damage by 10% per refine rate of weapon.\n\nWhen equipped with Gene Rod, increases physical damage against all size enemies by 10%,\nincreases Crazy Vines damage by 10% per refine rate of weapon.\n\nWhen equipped with Estal, increases physical damage against all size enemies by 10%,\nincreases Spore Explosion damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Genetic^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": 1,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Genetic"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "range": [
+        "9===15",
+        "EQUIP[Coolant Injection]===10"
+      ],
+      "p_size_all": [
+        "11===10",
+        "EQUIP[Gene Rod]===10",
+        "EQUIP[Estal]===10"
+      ],
+      "Cart Tornado": [
+        "EQUIP[Coolant Injection]REFINE[weapon==1]---10"
+      ],
+      "Crazy Weed": [
+        "EQUIP[Gene Rod]REFINE[weapon==1]---10"
+      ],
+      "Spore Explosion": [
+        "EQUIP[Estal]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400116": {
+    "id": 400116,
+    "aegisName": "BioWeapon_Helm_RA",
+    "name": "Celestial Jewel Crown [1]",
+    "unidName": "Headgear",
+    "resName": "쌍녀궁보관",
+    "description": "Atk + 20 per 2 refine rate.\r\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\r\nIf refine rate is 9 or higher, increases long ranged physical damage by 15%.\r\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\r\n\r\nWhen equipped with ^32cd32Sharp Star^000000, increases critical damage by 20%,\r\nincreases Focused Arrow Strike damage by 10% per refine rate of weapon.\r\n\r\nWhen equipped with ^32cd32Aiming Bow^000000, increases long ranged physical damage by 10%,\r\nincreases Aimed Bolt damage by 10% per refine rate of weapon.\r\n\r\nWhen equipped with ^32cd32Falken Shooter^000000, reduces skill cooldown of Arrow Storm by 1.8 seconds,\r\nincreases Arrow Storm damage by 10% per refine rate of weapon.\r\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\r\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\r\nRequired Level: ^777777170^000000\r\nJobs: ^777777Ranger^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Ranger"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "range": [
+        "9===15",
+        "EQUIP[Aiming Bow]===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "criDmg": [
+        "EQUIP[Sharp Star]===20"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Sharp Star]REFINE[weapon==1]---10"
+      ],
+      "Aimed Bolt": [
+        "EQUIP[Aiming Bow]REFINE[weapon==1]---10"
+      ],
+      "cd__Arrow Storm": [
+        "EQUIP[Falken Shooter]===1.8"
+      ],
+      "Arrow Storm": [
+        "EQUIP[Falken Shooter]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400117": {
+    "id": 400117,
+    "aegisName": "BioWeapon_Helm_WM",
+    "name": "Libra Crown [1]",
+    "unidName": "Headgear",
+    "resName": "천칭궁왕관",
+    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%), reduces variable casting time by 10%.\nIf refine rate is 9 or higher, increases long ranged physical damage by 15%, increases neutral property magical damage by 10%.\nIf refine rate is 11 or higher, increases all property magical damage by 10%, increases physical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Black Circle or Heart Whip^000000, increase neutral property magical damage by 10%,\nincreases Metallic Sound damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Antique Cello or Scarlet Ribbon^000000, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 10% per refine rate of weapon.\n\nWhen equipped with ^32cd32Wind Gale^000000, increases long ranged physical damage by 10%,\nincreases Severe Rainstorm damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Minstrel, Wanderer^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Minstrel",
+      "Wanderer"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "matk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "range": [
+        "9===15",
+        "EQUIP[Antique Cello||Scarlet Ribbon]===10",
+        "EQUIP[Wind Gale]===10"
+      ],
+      "m_my_element_neutral": [
+        "9===15",
+        "EQUIP[Black Circle||Heart Whip]===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "m_my_element_all": [
+        "11===10"
+      ],
+      "Metalic Sound": [
+        "EQUIP[Black Circle||Heart Whip]REFINE[weapon==1]---5"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Antique Cello||Scarlet Ribbon]REFINE[weapon==1]---10",
+        "EQUIP[Wind Gale]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400118": {
+    "id": 400118,
+    "aegisName": "BioWeapon_Helm_AB",
+    "name": "Saint Crown [1]",
+    "unidName": "Headgear",
+    "resName": "거해궁보관",
+    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%), reduces variable casting time by 10%.\nIf refine rate is 9 or higher, Atk + 15%, Matk + 15%.\nIf refine rate is 11 or higher, increases all property magical damage by 10%, increases physical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Adorare Staff^000000, increase holy property magical damage by 10%,\nincreases Adoramus damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Penitentia^000000, increase holy property magical damage by 10%,\nincreases Judex damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Lucis Flail^000000, increases physical damage against all size enemies by 10%,\nincreases Duple Light damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Archbishop^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "matk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "atkPercent": [
+        "9===15"
+      ],
+      "matkPercent": [
+        "9===15"
+      ],
+      "p_size_all": [
+        "11===10",
+        "EQUIP[Lucis Flail]===10"
+      ],
+      "m_my_element_all": [
+        "11===10"
+      ],
+      "m_my_element_holy": [
+        "EQUIP[Adorare Staff]===10",
+        "EQUIP[Penitentia]===10"
+      ],
+      "Adoramus": [
+        "EQUIP[Adorare Staff]REFINE[weapon==1]---5"
+      ],
+      "Judex": [
+        "EQUIP[Penitentia]REFINE[weapon==1]---5"
+      ],
+      "Duple Light": [
+        "EQUIP[Lucis Flail]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400119": {
+    "id": 400119,
+    "aegisName": "BioWeapon_Helm_SR",
+    "name": "Lion Crown [1]",
+    "unidName": "Headgear",
+    "resName": "사자궁왕관",
+    "description": "Atk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increases MaxHP by 10%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Raging Dragon Fist^000000, increases physical damage against all size enemies by 10%,\nincreases Chain Crush Combo damage by 10% per refine rate of weapon.\n\nWhen equipped with ^32cd32Fighting God's Bandage^000000, increase long ranged physical damage by 10%,\nincreases Knuckle Arrow damage by 10% per refine rate of weapon.\n\nWhen equipped with ^32cd32Bright Pendulum^000000, increase long ranged physical damage by 10%,\nincreases Throw Spirit Sphere damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Sura^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Sura"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "hpPercent": [
+        "9===10"
+      ],
+      "p_size_all": [
+        "11===10",
+        "EQUIP[Raging Dragon Fist]===10"
+      ],
+      "Chain Crush Combo": [
+        "EQUIP[Raging Dragon Fist]REFINE[weapon==1]---10"
+      ],
+      "range": [
+        "EQUIP[Fighting God's Bandage]===10",
+        "EQUIP[Bright Pendulum]===10"
+      ],
+      "Knuckle Arrow": [
+        "EQUIP[Fighting God's Bandage]REFINE[weapon==1]---10"
+      ],
+      "Finger Offensive": [
+        "EQUIP[Bright Pendulum]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400120": {
+    "id": 400120,
+    "aegisName": "BioWeapon_Helm_SC",
+    "name": "Goat Crown [1]",
+    "unidName": "Headgear",
+    "resName": "마갈궁왕관",
+    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, Atk + 15%, Matk + 15%.\nIf refine rate is 11 or higher, increases physical and magical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Jack the Knife^000000, reduces global cooldown by 10%,\nincreases Fatal Menace damage by 10% per refine rate of weapon.\n\nWhen equipped with ^32cd32Platinum Dagger^000000, increase all property magical damage by 10%,\nincreases all property magical damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Rapid Fire^000000, increase long ranged physical damage by 10%,\nincreases Triangle Shot damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Shadow Chaser^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Shadow Chaser"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "matk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "atkPercent": [
+        "9===15"
+      ],
+      "matkPercent": [
+        "9===15"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "m_size_all": [
+        "11===10"
+      ],
+      "acd": [
+        "EQUIP[Jack the Knife]===10"
+      ],
+      "Fatal Manace": [
+        "EQUIP[Jack the Knife]REFINE[weapon==1]---10"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Platinum Dagger]===10",
+        "EQUIP[Platinum Dagger]REFINE[weapon==1]---5"
+      ],
+      "range": [
+        "EQUIP[Rapid Fire]===10"
+      ],
+      "Triangle Shot": [
+        "EQUIP[Rapid Fire]REFINE[weapon==1]---10"
+      ]
+    }
+  },
+  "400121": {
+    "id": 400121,
+    "aegisName": "BioWeapon_Helm_GC",
+    "name": "Twin Crown [1]",
+    "unidName": "Headgear",
+    "resName": "쌍자궁왕관",
+    "description": "Atk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increases long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with ^32cd32Judgment Slasher and Repent Slasher^000000, increases critical damage by 20%,\nincreases melee and long ranged physical damage by 5% per 2 of the sum of refine rate of both weapons.\n\nWhen equipped with ^32cd32Agudo Filo^000000, increases Cross Impact damage by 20%,\nincreases melee physical damage by 5% per refine rate of weapon.\n\nWhen equipped with ^32cd32Ripper Cross^000000, increase long ranged physical damage by 10%,\nincreases Cross Ripper Slasher damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Guillotine Cross^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": 0,
+    "defense": 10,
+    "weight": 10,
+    "requiredLevel": 170,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "Guillotine Cross"
+    ],
+    "script": {
+      "atk": [
+        "2---20"
+      ],
+      "aspdPercent": [
+        "7===10"
+      ],
+      "range": [
+        "9===15",
+        "EQUIP[Judgment Slasher&&Repent Slasher]REFINE[weapon,leftWeapon==2]---5",
+        "EQUIP[Ripper Cross]===10"
+      ],
+      "p_size_all": [
+        "11===10"
+      ],
+      "criDmg": [
+        "EQUIP[Judgment Slasher&&Repent Slasher]===20"
+      ],
+      "melee": [
+        "EQUIP[Judgment Slasher&&Repent Slasher]REFINE[weapon,leftWeapon==2]---5",
+        "EQUIP[Agudo Filo]REFINE[weapon==1]---5"
+      ],
+      "Cross Impact": [
+        "EQUIP[Agudo Filo]===20"
+      ],
+      "Cross Ripper Slasher": [
+        "EQUIP[Ripper Cross]REFINE[weapon==1]---10"
       ]
     }
   },
@@ -52083,6 +54537,9 @@
       ],
       "atk": [
         "EQUIP[Emerald Earrings]LEARN_SKILL[Lesson==1]---20"
+      ],
+      "chance__dex": [
+        "11===200"
       ]
     }
   },
@@ -52472,6 +54929,42 @@
       ]
     }
   },
+  "480120": {
+    "id": 480120,
+    "aegisName": "Guardian_Soul_TH",
+    "name": "Guardian Soul",
+    "unidName": "Garment",
+    "resName": "Guardian_Soul",
+    "description": "เสื้อคลุมที่เคยเป็นของนักปราชญ์ผู้รับใช้พระราชาผู้ยิ่งใหญ่  \nแฝงไปด้วยพลังป้องกันที่ไม่สามารถหยั่งถึงได้\nไอเท็มชิ้นนี้ไม่สามารถทำลายได้\nสามารถใช้สกิล Heaven Drive Lv1 ได้  \nเพิ่มความทนทานต่อ Damage ที่ได้รับจาก Player 5% \nเมื่ออัพเกรดขั้น 7 ขึ้นไป,\nทุกๆ ผลรวมของ LUK และ STR เท่ากับ 18\nลด Delay หลังใช้สกิล 1%\nเพิ่มความทนทานต่อธาตุ Holy และธาตุ Shadow 3%\nทุกๆ ผลรวมของ AGI และ VIT เท่ากับ 18\nเพิ่ม ASPD 1%\nMHP +1%\nเพิ่มความทนทานต่อธาตุ Fire และธาตุ Water 3%\nทุกๆ ผลรวมของ INT และ DEX เท่ากับ 18\nเพิ่มความทนทานต่อธาตุ Wind และธาตุ Earth 3%\nลด Variable Cast Time 1%\nเมื่ออัพเกรดขั้น 12 ขึ้นไป,\nทุกๆ ผลรวมของ LUK และ STR เท่ากับ 18\nเพิ่มความทนทานต่อธาตุ Holy และธาตุ Shadow 2%\nทุกๆ ผลรวมของ AGI และ VIT เท่ากับ 18\nMHP +1%\nเพิ่มความทนทานต่อธาตุ Fire และธาตุ Water 2%\nทุกๆ ผลรวมของ INT และ DEX เท่ากับ 18\nเพิ่มความทนทานต่อธาตุ Wind และธาตุ Earth 2%\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777725^000000\nน้ำหนัก : ^777777100^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 25,
+    "weight": 100,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "acd": [
+        "REFINE[7]SUM[luk,str==18]---1"
+      ],
+      "aspdPercent": [
+        "REFINE[7]SUM[agi,vit==18]---1"
+      ],
+      "hpPercent": [
+        "REFINE[7]SUM[agi,vit==18]---1",
+        "REFINE[12]SUM[agi,vit==18]---1"
+      ],
+      "vct": [
+        "REFINE[7]SUM[int,dex==18]---1"
+      ]
+    }
+  },
   "480124": {
     "id": 480124,
     "aegisName": "Cvt_Physical_Wing",
@@ -52608,7 +55101,7 @@
         "EQUIP[Old Midas Whisper]2---2",
         "EQUIP[Old Casket of Protection]2---2"
       ],
-      "Arrow Strom": [
+      "Arrow Storm": [
         "EQUIP[Old Camouflage Bunny Hood]2---5"
       ],
       "cd__Arrow Storm": [
@@ -54582,7 +57075,7 @@
       "melee": [
         "8"
       ],
-      "p_class_all": [
+      "m_class_all": [
         "8"
       ],
       "aspdPercent": [
@@ -56114,6 +58607,92 @@
       ]
     }
   },
+  "510070": {
+    "id": 510070,
+    "aegisName": "Blessed_Knife",
+    "name": "Blessed Knife [2]",
+    "unidName": "Dagger",
+    "resName": "매지컬블레이드",
+    "description": "มีดสั้นที่วีรชนผู้กล้าในอดีตเคยใช้มันสู้รบ\nกล่าวขานกันว่า ภายในเปี่ยมไปด้วยพรของเหล่าเทวทูต จึงทำให้ผู้ที่ได้รับการคุ้มครองจากทูตสวรรค์เท่านั้นที่ใช้มีดนี้ได้\nดูกลมกลืนเข้ากับ Ancient Hero Boots\nทุก ๆ การอัพเกรด 2 ขั้น ATK +10\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Back Stab 20%\nเมื่ออัพเกรดถึงขั้น 9, ASPD +10%\nเมื่ออัพเกรดถึงขั้น 11 สามารถใช้สกิล Fatal Manace Lv. 7 ได้\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots เมื่อโจมตีทางกายภาพ มีโอกาสที่ STR +20, ATK +15% เป็นเวลา 7 วินาที\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777200^000000\nน้ำหนัก : ^777777120^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 200,
+    "defense": null,
+    "weight": 120,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "atk": [
+        "2---10"
+      ],
+      "Back Stab": [
+        "3---20"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "chance__str": [
+        "EQUIP[Ancient Hero Boots]===20"
+      ],
+      "chance__atkPercent": [
+        "EQUIP[Ancient Hero Boots]===15"
+      ]
+    }
+  },
+  "510071": {
+    "id": 510071,
+    "aegisName": "Up_Blessed_Knife",
+    "name": "Patent Blessed Knife [2]",
+    "unidName": "Knife",
+    "resName": "Up_Blessed_Knife",
+    "description": "มีดสั้นที่วีรชนผู้กล้าในอดีตเคยใช้มันสู้รบ\nกล่าวขานกันว่า ภายในเปี่ยมไปด้วยพรของเหล่าเทวทูต จึงทำให้ผู้ที่ได้รับการคุ้มครองจากทูตสวรรค์เท่านั้นที่ใช้มีดนี้ได้\nเริ่มเผยพลังอันแท้จริงออกมา ด้วยพลังโบราณอันกล้าแกร่ง\nดูกลมกลืนเข้ากับ Great Hero Boots\n \nทุก ๆ การอัพเกรด 2 ขั้น ATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Back Stab 25%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกธาตุ 15%, สามารถใช้สกิล Fatal Manace Lv. 10\nเมื่ออัพเกรดถึงขั้น 9, ASPD +10%, เพิ่ม Damage สกิล Fatal Manace 10%\nเมื่ออัพเกรดถึงขั้น 11, ลด Delay หลังใช้สกิล 5%, เพิ่ม Damage ทางกายภาพระยะใกล้ 15%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, STR +10, เพิ่ม Damage ทางกายภาพระยะใกล้ 5%\n\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^777777210^000000\nน้ำหนัก : ^777777120^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 4,
+    "attack": 210,
+    "defense": null,
+    "weight": 120,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "atk": [
+        "2---15"
+      ],
+      "Back Stab": [
+        "3---25"
+      ],
+      "p_element_all": [
+        "7===15"
+      ],
+      "aspdPercent": [
+        "9===10"
+      ],
+      "Fatal Manace": [
+        "9===10"
+      ],
+      "acd": [
+        "11===5"
+      ],
+      "melee": [
+        "11===15",
+        "EQUIP[Great Hero Boots]===5"
+      ],
+      "str": [
+        "EQUIP[Great Hero Boots]===10"
+      ]
+    }
+  },
   "520000": {
     "id": 520000,
     "aegisName": "Boost_Axe",
@@ -56823,6 +59402,97 @@
       ],
       "Eswhoo": [
         "9===25"
+      ],
+      "int": [
+        "EQUIP[Great Hero Boots]===10"
+      ],
+      "matkPercent": [
+        "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "550080": {
+    "id": 550080,
+    "aegisName": "Freedom_Stick",
+    "name": "Freedom Stick [2]",
+    "unidName": "Rod",
+    "resName": "신축만능팔",
+    "description": "คทาเวทย์ที่ไม่ผูกมัดกับวิถีใดใด วีรบุรษผู้หนึ่งเคยใช้ในอดีต\nดูกลมกลืนเข้ากับ Ancient Hero Boots\nไม่สามารถทำลายได้\nMATK +160\nทุก ๆ การอัพเกรด 2 ขั้น MATK +10\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Heaven's Drive 20%\nเมื่ออัพเกรดถึงขั้น 9 ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11 สามารถใช้สกิล Psychic Wave Lv. 3\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots เมื่อโจมตีทางเวทมนตร์ มีโอกาสที่ INT +20, MATK +15% เป็นเวลา 7 วินาที\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^77777770^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 70,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "matk": [
+        "160",
+        "2---10"
+      ],
+      "Heaven's Drive": [
+        "3---20"
+      ],
+      "vct": [
+        "9===10"
+      ],
+      "chance__int": [
+        "EQUIP[Ancient Hero Boots]===20"
+      ],
+      "chance__matkPercent": [
+        "EQUIP[Ancient Hero Boots]===15"
+      ]
+    }
+  },
+  "550081": {
+    "id": 550081,
+    "aegisName": "Up_Freedom_Stick",
+    "name": "Patent Freedom Stick [2]",
+    "unidName": "Rod",
+    "resName": "Up_Freedom_Stick",
+    "description": "คทาเวทย์ที่ไม่ผูกมัดกับวิถีใดใด วีรบุรษผู้หนึ่งเคยใช้ในอดีต\nเริ่มเผยพลังอันแท้จริงออกมา ด้วยพลังโบราณอันกล้าแกร่ง\nดูกลมกลืนเข้ากับ Great Hero Boots\n \nไม่สามารถทำลายได้\nMATK +200\nทุก ๆ การอัพเกรด 2 ขั้น MATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Heaven's Drive 30%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 15%, สามารถใช้สกิล Psychic Wave Lv. 5\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Psychic Wave 10%, ลดระยะเวลาร่ายแบบแปรผัน 10%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ธาตุ Earth, Neutral 10%, ลดระยะเวลาร่ายแบบแปรผันลงอีก 5%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, INT +10, MATK +7%\n\nประเภท : ^777777One-Handed Staff^000000 พลังโจมตี : ^77777790^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Novice^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 90,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice"
+    ],
+    "script": {
+      "matk": [
+        "200",
+        "2---15"
+      ],
+      "Heaven's Drive": [
+        "3---30"
+      ],
+      "m_element_all": [
+        "7===15"
+      ],
+      "Psychic Wave": [
+        "9===10"
+      ],
+      "vct": [
+        "9===10",
+        "11===5"
+      ],
+      "m_my_element_earth": [
+        "11===10"
+      ],
+      "m_my_element_neutral": [
+        "11===10"
       ],
       "int": [
         "EQUIP[Great Hero Boots]===10"
@@ -57588,6 +60258,50 @@
       ]
     }
   },
+  "600004": {
+    "id": 600004,
+    "aegisName": "Dragonic_Slayer",
+    "name": "Dragonic Slayer [2]",
+    "unidName": "Two-Handed Sword",
+    "resName": "헤타이로이의검",
+    "description": "ดาบขนาดใหญ่ที่เล่าขานกันว่าผู้ปราบมังกรในอดีตเคยใช้\nดูกลมกลืนเข้ากับ Ancient Hero Boots\nทุก ๆ การอัพเกรด 2 ขั้น MHP/MSP +3%\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Dragon Breath และ Dragon Breath - WATER 5%\nเมื่ออัพเกรดถึงขั้น 9 ลด Delay หลังใช้สกิล 10%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพระยะไกล 10%\nเมื่อสวมใส่ร่วมกับ Ancient Hero Boots เมื่อโจมตีทางกายภาพ มีโอกาสที่ VIT +20 และเพิ่ม Damage ทางกายภาพระยะไกล 10% เป็นเวลา 7 วินาที\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 180,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "hpPercent": [
+        "2---3"
+      ],
+      "spPercent": [
+        "2---3"
+      ],
+      "Dragon Breath": [
+        "3---5"
+      ],
+      "Dragon Breath - WATER": [
+        "3---5"
+      ],
+      "acd": [
+        "9===10"
+      ],
+      "range": [
+        "11===10"
+      ],
+      "chance__range": [
+        "EQUIP[Ancient Hero Boots]===10"
+      ]
+    }
+  },
   "600009": {
     "id": 600009,
     "aegisName": "Up_Oriental_Sword",
@@ -57991,7 +60705,7 @@
     "description": "ไม้เท้าที่ทำขึ้นจากโลหะลึกลับของโลกอื่น\nเมื่อเห็นพลังเวทย์อันบิดเบี้ยว ก็ได้เริ่มเผยพลังอันแท้จริงออกมา\nดูกลมกลืนเข้ากับ Great Hero Boots\n\nไม่สามารถทำลายได้\nMATK +235\nทุก ๆ การอัพเกรด 2 ขั้น MATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Earth Strain 12%\nเมื่ออัพเกรดถึงขั้น 7 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Earth, Fire 15%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Earth Strain 1 วินาที, ลดระยะเวลาร่ายแบบแปรผันลงอีก 5%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage สกิล Crimson Rock 15%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, INT +10, MATK +7%\n\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
     "slots": 2,
     "itemTypeId": 1,
-    "itemSubTypeId": 265,
+    "itemSubTypeId": 266,
     "itemLevel": 4,
     "attack": 100,
     "defense": null,
@@ -58027,6 +60741,63 @@
         "11===15"
       ],
       "Crimson Rock": [
+        "11===15"
+      ],
+      "int": [
+        "EQUIP[Great Hero Boots]===10"
+      ],
+      "matkPercent": [
+        "EQUIP[Great Hero Boots]===7"
+      ]
+    }
+  },
+  "640012": {
+    "id": 640012,
+    "aegisName": "Up_Blue_Crystal_Staff",
+    "name": "Patent Blue Crystal Staff [2]",
+    "unidName": "Rod",
+    "resName": "Up_Blue_Crystal_Staff",
+    "description": "ไม้คทาที่เปี่ยมไปด้วยพลังแห่งเยือกแข็ง ถูกใช้โดยจอมเวทย์ในอดีตกาล\nเพียงเห็นพลังเวทย์อันเย็นยะเยือก ก็ได้เริ่มเผยพลังอันแท้จริงออกมา\nดูกลมกลืนเข้ากับ Great Hero Boots\n\nไม่สามารถทำลายได้\nMATK +235\nทุก ๆ การอัพเกรด 2 ขั้น MATK +15\nทุก ๆ การอัพเกรด 3 ขั้น เพิ่ม Damage สกิล Jack Frost 12%\nเมื่ออัพเกรดถึงขั้น 7 ลดระยะเวลาร่ายแบบแปรผัน 10%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Water, Wind 15%\nเมื่ออัพเกรดถึงขั้น 9 ลด Cooldown สกิล Jack Frost 1 วินาที, ลด Delay หลังใช้สกิล 5%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกขนาด 15%, เพิ่ม Damage สกิล Chain Lightning 15%\nเมื่อสวมใส่ร่วมกับ Great Hero Boots, INT +10, MATK +7%\n\nประเภท : ^777777Two-Handed Staff^000000 พลังโจมตี : ^777777100^000000\nน้ำหนัก : ^777777100^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777150^000000\nอาชีพที่ใส่ได้ : ^777777Warlock^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 266,
+    "itemLevel": 4,
+    "attack": 100,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 150,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Warlock"
+    ],
+    "script": {
+      "matk": [
+        "235",
+        "2---15"
+      ],
+      "Jack Frost": [
+        "3---12"
+      ],
+      "m_my_element_water": [
+        "7===15"
+      ],
+      "m_my_element_wind": [
+        "7===15"
+      ],
+      "vct": [
+        "7===10"
+      ],
+      "cd__Jack Frost": [
+        "9===1"
+      ],
+      "acd": [
+        "9===5"
+      ],
+      "m_size_all": [
+        "11===15"
+      ],
+      "Chain Lightning": [
         "11===15"
       ],
       "int": [
