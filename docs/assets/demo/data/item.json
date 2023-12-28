@@ -237,6 +237,64 @@
       ]
     }
   },
+  "1326": {
+    "id": 1326,
+    "aegisName": "War_Axe_IL",
+    "name": "Illusion War Axe [2]",
+    "unidName": "Axe",
+    "resName": "War_Axe_IL",
+    "description": "ขวานที่ดูกระหายเลือดจนน่าสะพรึง เนื่องจากมันอาบไปด้วยเลือดเพราะผ่านสนามรบมาอย่างโชกโชน ว่ากันว่าเมื่อหันคมขวานไปทางศัตรู ก็จะทำให้มันทุกข์ทรมานได้จากความกลัวตาย\nไม่สามารถทำลายได้\nSTR + 2, DEX + 2, LUK + 2\nเพิ่ม Damage สกิล Axe Tornado, Axe Boomerang 100%\nเพิ่ม Damage สกิล Cart Tornado Attack 75%\nเมื่ออัพเกรดถึงขั้น 7 เพิ่ม Damage สกิล Axe Tornado, Axe Boomerang, Cart Tornado Attack ขึ้นอีก 20%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage สกิล Axe Tornado, Axe Boomerang, Cart Tornado Attack ขึ้นอีก 20%\n^ffffff_^000000\nเมื่อสวมใส่ร่วมกับ Illusion Shoes ATK + 40\nเมื่อขั้นอัพเกรดของ Illusion War Axe และ Illusion Shoes ตั้งแต่ 7 ขึ้นไป เพิ่ม Damage สกิล Axe Boomerang 15%\nเมื่อผลรวมขั้นอัพเกรดตั้งแต่ 18 ขึ้นไป ATK + 10%.\nเมื่อผลรวมขั้นอัพเกรดตั้งแต่ 22 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะไกล 10%\n^ffffff_^000000\nประเภท : ^777777One-handed Axe^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^777777420^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777120^000000\nอาชีพที่ใส่ได้ : ^777777Blacksmith,Alchemist^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 261,
+    "itemLevel": 4,
+    "attack": 180,
+    "defense": null,
+    "weight": 420,
+    "requiredLevel": 120,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Mechanic",
+      "Genetic"
+    ],
+    "script": {
+      "str": [
+        "2"
+      ],
+      "dex": [
+        "2"
+      ],
+      "luk": [
+        "2"
+      ],
+      "Cart Tornado": [
+        "75",
+        "7===20",
+        "9===20"
+      ],
+      "Axe Tornado": [
+        "100",
+        "7===20",
+        "9===20"
+      ],
+      "Axe Boomerang": [
+        "100",
+        "7===20",
+        "9===20",
+        "EQUIP[Illusion Shoes]REFINE[boot==7]7===15"
+      ],
+      "atk": [
+        "EQUIP[Illusion Shoes]===40"
+      ],
+      "atkPercent": [
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==18]===10"
+      ],
+      "range": [
+        "EQUIP[Illusion Shoes]REFINE[weapon,boot==22]===10"
+      ]
+    }
+  },
   "1333": {
     "id": 1333,
     "aegisName": "Golden_Wrench",
@@ -5208,6 +5266,34 @@
       ]
     }
   },
+  "4575": {
+    "id": 4575,
+    "aegisName": "Soheon_Card",
+    "name": "Armed Guard Soheon Card",
+    "unidName": "Armed Guard Soheon Card",
+    "resName": "이름없는카드",
+    "description": "ATK + 10.\nเมื่อสวมใส่อาวุธประเภท Dagger เมื่ออัพเกรดตั้งแต่ขั้น 10 ขึ้นไป ASPD + 1\nเมื่ออัพเกรดตั้งแต่ขั้น 14 ขึ้นไป เพิ่ม ASPD อีก +1\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Short Cut",
+    "script": {
+      "atk": [
+        "10"
+      ],
+      "aspd": [
+        "WEAPON_TYPE[dagger]10===1",
+        "WEAPON_TYPE[dagger]14===1"
+      ]
+    }
+  },
   "4576": {
     "id": 4576,
     "aegisName": "Gioia_Card",
@@ -5388,6 +5474,30 @@
     "script": {
       "criDmg": [
         "luk:10---2"
+      ]
+    }
+  },
+  "4596": {
+    "id": 4596,
+    "aegisName": "AntiqueBook_Card",
+    "name": "Antique Book Card",
+    "unidName": "Antique Book Card",
+    "resName": "이름없는카드",
+    "description": "ทุกๆ Base INT 10 จะเพิ่ม MATK ทีละ 5\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Garment^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Intellectual",
+    "script": {
+      "matk": [
+        "SUM[int==10]---5"
       ]
     }
   },
@@ -11076,6 +11186,29 @@
       ]
     }
   },
+  "12321": {
+    "id": 12321,
+    "aegisName": "Spicy_Sandwich",
+    "name": "Arunafeltz Desert Sandwich",
+    "unidName": "Arunafeltz Desert Sandwich",
+    "resName": "덱요리04",
+    "description": "ขนมที่ส่งมาจาก Arunafeltz แซนด์วิชนี้จะช่วยให้คุณอึดขึ้นเพราะรสเผ็ด\n^000088Critical +7 เป็นเวลา 10 นาที^000000\n^ffffff_^000000\nน้ำหนัก : ^77777730^000000",
+    "slots": 0,
+    "itemTypeId": 3,
+    "itemSubTypeId": 768,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 30,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "cri": [
+        "7"
+      ]
+    }
+  },
   "12414": {
     "id": 12414,
     "aegisName": "Guarana_Candy",
@@ -12641,6 +12774,29 @@
       ],
       "Fireball": [
         "9===30"
+      ]
+    }
+  },
+  "14536": {
+    "id": 14536,
+    "aegisName": "Abrasive",
+    "name": "Abrasive",
+    "unidName": "Abrasive",
+    "resName": "그린에일",
+    "description": "น้ำยาเพิ่มความคมให้กับอาวุธ\nเพิ่ม Critical Rate 30 เป็นเวลา 5 นาที\nเมื่อผู้ใช้อยู่ในสถานะที่ไม่สามารถต่อสู้ได้ ผลของ item นี้จะหมดลง\n^ffffff_^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 3,
+    "itemSubTypeId": 768,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": null,
+    "script": {
+      "cri": [
+        "30"
       ]
     }
   },
@@ -18265,6 +18421,40 @@
       ],
       "m_my_element_wind": [
         "EQUIP[Survivor's Rod]20"
+      ]
+    }
+  },
+  "19024": {
+    "id": 19024,
+    "aegisName": "Protect_Feathers",
+    "name": "Protect Feathers",
+    "unidName": "Headband",
+    "resName": "프로텍트페더",
+    "description": "เครื่องประดับศีรษะที่ตกแต่งด้วยวัสดุแข็งทำหน้าที่ราวกับเกราะคอยปกป้องศีรษะเอาไว้\nนอกจากความแข็งแกร่งแล้ว ปีกที่สยายออกนั้นก็สวยงามมากเสียจนเกินห้ามใจ\nลดความเสียหายจาก Player +2%, เพิ่ม ASPD 5%, MDEF +2\nเมื่อ Base VIT ตั้งแต่ 108 ขึ้นไป ขึ้นไปลดความเสียหายจาก Player +5% \nเมื่อ Base VIT ตั้งแต่ 120 ขึ้นไป MaxHP + 3% MDEF + 3 \n\nเมื่อสวมใส่พร้อมกับ Feather Beret \nในกรณีที่ Feather Beret อัพเกรดถึงขั้น 9 ขึ้นไป MaxHP +5%\nประเภท : ^777777Helm^000000 พลังป้องกัน :^7777770^000000\nตำแหน่ง : ^777777Middle^000000 น้ำหนัก :^777777100^000000\nเลเวลที่ต้องการ :^77777770^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 100,
+    "requiredLevel": 70,
+    "location": "Middle",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "aspdPercent": [
+        "5"
+      ],
+      "mdef": [
+        "2",
+        "SUM[vit==120]===3"
+      ],
+      "hpPercent": [
+        "SUM[vit==120]===3",
+        "EQUIP[Feather Beret]REFINE[headUpper==9]===5"
       ]
     }
   },
@@ -36952,6 +37142,296 @@
       ]
     }
   },
+  "24675": {
+    "id": 24675,
+    "aegisName": "S_TrueGem_Armor",
+    "name": "True Gemstone Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우3",
+    "description": "Matk + 3%.\nIncreases all property magical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, reduces variable casting time by 3%.\nWhen equipped with True Gemstone Shadow Shoes, Matk + 2%,\nif the sum of refine rate of set is 18 or higher, negates gemstone consumption of skills, increases SP consumption of skills by 40%,\nif the sum of refine rate of set is 20 or higher, increases magical damage against all size enemies by 12%.\nClass: ^777777Shadow Equipment^000000 \nLocation: ^777777Armor^000000\nWeight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3",
+        "EQUIP[True Gemstone Shadow Shoes]===2"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "vct": [
+        "10===3"
+      ],
+      "spPercentCost": [
+        "EQUIP[True Gemstone Shadow Shoes]REFINE[shadowArmor,shadowBoot==18]===40"
+      ],
+      "m_size_all": [
+        "EQUIP[True Gemstone Shadow Shoes]REFINE[shadowArmor,shadowBoot==20]===12"
+      ]
+    }
+  },
+  "24676": {
+    "id": 24676,
+    "aegisName": "S_TrueGem_Shoes",
+    "name": "True Gemstone Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우3",
+    "description": "Matk + 3%.\nIncreases all property magical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, reduces variable casting time by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "vct": [
+        "10===3"
+      ]
+    }
+  },
+  "24677": {
+    "id": 24677,
+    "aegisName": "S_TrueGem_Earring",
+    "name": "True Gemstone Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우3",
+    "description": "Matk + 3%.\nIncreases all property magical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, reduces variable casting time by 3%.\nWhen equipped with True Gemstone Shadow Pendant, Matk + 2%,\nif the sum of refine rate of set is 18 or higher, negates gemstone consumption of skills, increases SP consumption of skills by 40%,\nif the sum of refine rate of set is 20 or higher, increases magical damage against all size enemies by 12%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3",
+        "EQUIP[True Gemstone Shadow Pendant]===2"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "vct": [
+        "10===3"
+      ],
+      "spPercentCost": [
+        "EQUIP[True Gemstone Shadow Pendant]REFINE[shadowEarring,shadowPendant==18]===40"
+      ],
+      "m_size_all": [
+        "EQUIP[True Gemstone Shadow Pendant]REFINE[shadowEarring,shadowPendant==20]===12"
+      ]
+    }
+  },
+  "24678": {
+    "id": 24678,
+    "aegisName": "S_TrueGem_Pendant",
+    "name": "True Gemstone Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우3",
+    "description": "Matk + 3%.\nIncreases all property magical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, reduces variable casting time by 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matkPercent": [
+        "3"
+      ],
+      "m_my_element_all": [
+        "2---1"
+      ],
+      "vct": [
+        "10===3"
+      ]
+    }
+  },
+  "24679": {
+    "id": 24679,
+    "aegisName": "S_M_Mammoth_Armor",
+    "name": "Maximum Mammoth Shadow Armor",
+    "unidName": "Shadow Armor",
+    "resName": "아머쉐도우3",
+    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nWhen equipped with Maximum Mammoth Shadow Shoes, Atk + 2%,\nif the sum of refine rate of set is 18 or higher, grants immunity to knock-back.\nif the sum of refine rate of set is 20 or higher, increases physical damage against all property enemies by 12%.\nClass: ^777777Shadow Equipment^000000 \nLocation: ^777777Padded Armor^000000\nWeight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 526,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Armor",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "EQUIP[Maximum Mammoth Shadow Shoes]===2"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "10===3"
+      ],
+      "p_element_all": [
+        "EQUIP[Maximum Mammoth Shadow Shoes]REFINE[shadowArmor,shadowBoot==20]===12"
+      ]
+    }
+  },
+  "24680": {
+    "id": 24680,
+    "aegisName": "S_M_Mammoth_Shoes",
+    "name": "Maximum Mammoth Shadow Shoes",
+    "unidName": "Shadow Shoes",
+    "resName": "슈즈쉐도우3",
+    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shoes^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 528,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shoes",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "10===3"
+      ]
+    }
+  },
+  "24681": {
+    "id": 24681,
+    "aegisName": "S_M_Mammoth_Earring",
+    "name": "Maximum Mammoth Shadow Earring",
+    "unidName": "Shadow Earring",
+    "resName": "이어링쉐도우3",
+    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nWhen equipped with Maximum Mammoth Shadow Pendant, Atk + 2%,\nif the sum of refine rate of set is 18 or higher, grants immunity to knock-back.\nif the sum of refine rate of set is 20 or higher, increases physical damage against all property enemies by 12%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Earring^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 529,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryRight",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3",
+        "EQUIP[Maximum Mammoth Shadow Pendant]===2"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "10===3"
+      ],
+      "p_element_all": [
+        "EQUIP[Maximum Mammoth Shadow Pendant]REFINE[shadowEarring,shadowPendant==20]===12"
+      ]
+    }
+  },
+  "24682": {
+    "id": 24682,
+    "aegisName": "S_M_Mammoth_Pendant",
+    "name": "Maximum Mammoth Shadow Pendant",
+    "unidName": "Shadow Pendant",
+    "resName": "펜던트쉐도우3",
+    "description": "Atk + 3%.\nIncreases melee and long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 10 or higher, MaxHP + 3%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Pendant^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All Jobs^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 530,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "AccessoryLeft",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atkPercent": [
+        "3"
+      ],
+      "melee": [
+        "2---1"
+      ],
+      "range": [
+        "2---1"
+      ],
+      "hpPercent": [
+        "10===3"
+      ]
+    }
+  },
   "24685": {
     "id": 24685,
     "aegisName": "S_Absorb_Shield",
@@ -37019,6 +37499,190 @@
       ],
       "vct": [
         "7===3"
+      ]
+    }
+  },
+  "24733": {
+    "id": 24733,
+    "aegisName": "S_Infinity_Shield",
+    "name": "Infinity Shadow Shield",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우3",
+    "description": "Increases physical and magical damage against all size monsters by 1% per 3 refine rate.\nReduces physical and magical damage taken from all size monsters by 1% per 3 refine rate.\nIf refine rate is 10, negates size penalty.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "p_size_all": [
+        "3---1"
+      ],
+      "m_size_all": [
+        "3---1"
+      ],
+      "ignore_size_penalty": [
+        "10===1"
+      ]
+    }
+  },
+  "24734": {
+    "id": 24734,
+    "aegisName": "S_Durable_Weapon",
+    "name": "Durable Weapon Shadow",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우3",
+    "description": "Increases melee and long ranged physical damage by 2%.\nAtk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, ASPD + 1.\nIf refine rate is 10 or higher, increases melee and long ranged physical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "1---1"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "melee": [
+        "2",
+        "10===7"
+      ],
+      "range": [
+        "2",
+        "10===7"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "aspd": [
+        "9===1"
+      ]
+    }
+  },
+  "24736": {
+    "id": 24736,
+    "aegisName": "S_Clever_Weapon",
+    "name": "Clever Weapon Shadow",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우3",
+    "description": "Increases all property magical damage by 2%.\nMatk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, reduces variable casting time by 5%.\nIf refine rate is 10 or higher, increases all property magical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "1---1"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "m_my_element_all": [
+        "2",
+        "10===7"
+      ],
+      "matkPercent": [
+        "2---1"
+      ],
+      "vct": [
+        "9===5"
+      ]
+    }
+  },
+  "24737": {
+    "id": 24737,
+    "aegisName": "S_Clever_Shield",
+    "name": "Clever Shield Shadow",
+    "unidName": "Shadow Shield",
+    "resName": "쉴드쉐도우3",
+    "description": "Increases all property magical damage by 2%.\nMatk + 1% per 2 refine rate.\nIf refine rate is 9 or higher, reduces variable casting time by 5%.\nIf refine rate is 10 or higher, increases all property magical damage by 7%.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Shield^000000 Weight: ^7777770^000000\nRequired Level: ^77777799^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 527,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 99,
+    "location": "Shield",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "m_my_element_all": [
+        "2",
+        "10===7"
+      ],
+      "matkPercent": [
+        "2---1"
+      ],
+      "vct": [
+        "9===5"
+      ]
+    }
+  },
+  "24738": {
+    "id": 24738,
+    "aegisName": "S_CriticalHit_Weapon",
+    "name": "Critical Hit Weapon Shadow",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우3",
+    "description": "Atk + 15, Cri + 7.\nIncreases critical damage 1% per 2 refine rate.\nIf refine rate is 7 or higher, additional Cri + 7.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "1---1",
+        "15"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "cri": [
+        "7",
+        "7===7"
+      ],
+      "criDmg": [
+        "2---1"
       ]
     }
   },
@@ -37281,6 +37945,43 @@
     "usableClass": [
       "Soul Reaper"
     ]
+  },
+  "24745": {
+    "id": 24745,
+    "aegisName": "S_KingbirdAnc_Weapon",
+    "name": "Kingbird Ancient Shadow Weapon",
+    "unidName": "Shadow Weapon",
+    "resName": "웨폰쉐도우3",
+    "description": "Atk + 15, Hit + 15.\nIncreases long ranged physical damage by 1% per 2 refine rate.\nIf refine rate is 7 or higher, additional Hit + 15.\nClass: ^777777Shadow Equipment^000000\nLocation: ^777777Weapon^000000 Weight: ^7777770^000000\nRequired Level: ^7777771^000000\nJobs: ^777777All^000000",
+    "slots": 0,
+    "itemTypeId": 10,
+    "itemSubTypeId": 280,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 1,
+    "location": "Weapon",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "atk": [
+        "1---1",
+        "15"
+      ],
+      "matk": [
+        "1---1"
+      ],
+      "hit": [
+        "15",
+        "7===15"
+      ],
+      "range": [
+        "2---1"
+      ]
+    }
   },
   "26118": {
     "id": 26118,
@@ -38689,6 +39390,35 @@
       ]
     }
   },
+  "27121": {
+    "id": 27121,
+    "aegisName": "Piranha_Card",
+    "name": "Piranha Card",
+    "unidName": "Piranha Card",
+    "resName": "이름없는카드",
+    "description": "Damage ทางกายภาพและทางเวทย์ที่สร้างต่อมอนสเตอร์เผ่า Fish เพิ่มขึ้น 10%\nเมื่อสวมใส่กับรองเท้าที่มีขั้นอัพเกรด 9 จะเพิ่ม Damage ทางเวทย์และทางกายภาพที่สร้างต่อมอนสเตอร์เผ่า Fish อีก 5%\nประเภท :^777777Card^000000\nติดตั้ง :^777777Shoes^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Serrasalmus",
+    "script": {
+      "p_race_fish": [
+        "10",
+        "9===5"
+      ],
+      "m_race_fish": [
+        "10",
+        "9===5"
+      ]
+    }
+  },
   "27125": {
     "id": 27125,
     "aegisName": "Headless_Mule_Card",
@@ -39944,6 +40674,26 @@
       ]
     }
   },
+  "27308": {
+    "id": 27308,
+    "aegisName": "Sanare_Card",
+    "name": "Sanare Card",
+    "unidName": "Sanare Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่มผลของ Heal + 2%\nเมื่ออาวุธอัปเกรดถึงขั้น 9, เพิ่มผลของ Heal 3% \nเมื่ออาวุธอัปเกรดถึงขั้น 11, เพิ่มผลของ Heal 5% เพิ่มเติม\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Sacred",
+    "script": {}
+  },
   "27309": {
     "id": 27309,
     "aegisName": "High_Sanare_Card",
@@ -40109,6 +40859,32 @@
     "script": {
       "criDmg": [
         "20"
+      ]
+    }
+  },
+  "27320": {
+    "id": 27320,
+    "aegisName": "E_EA1L_Card",
+    "name": "E-EA1L Card",
+    "unidName": "E-EA1L Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางเวทธาตุ Fire 3%\nเมื่ออัปเกรดอาวุธถึงขั้น 9, เพิ่ม Damage ทางเวทธาตุ Fire 2% เพิ่มเติม \nเมื่ออัปเกรดอาวุธถึงขั้น 11, เพิ่ม Damage ทางเวทธาตุ Fire 5% เพิ่มเติม\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Enhance Fire",
+    "script": {
+      "m_my_element_fire": [
+        "3",
+        "9===2",
+        "11===5"
       ]
     }
   },
@@ -54692,6 +55468,143 @@
       ]
     }
   },
+  "300076": {
+    "id": 300076,
+    "aegisName": "Beta_Guards_Ng_Card",
+    "name": "Broken Guard Beta Card",
+    "unidName": "Broken Guard Beta Card",
+    "resName": "이름없는카드",
+    "description": "Vit + 3.\r\nMaxHP + 10%, increases Vanishing Point and Cannon Spear damage by 10%.\r\nWhen equipped with Verporta Card and Senior Research Assistant Bot Card, increases Vanishing Point and Cannon Spear damage by 20%, increases Vanishing Point damage by additional 5% per 2 refine rate of shoes and increases Cannon Spear damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Royal Guard",
+    "script": {
+      "vit": [
+        "3"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Vanishing Point": [
+        "10",
+        "EQUIP[Verporta Card&&Senior Research Assistant Bot Card]===20",
+        "EQUIP[Verporta Card&&Senior Research Assistant Bot Card]REFINE[boot==2]---5"
+      ],
+      "Cannon Spear": [
+        "10",
+        "EQUIP[Verporta Card&&Senior Research Assistant Bot Card]===20",
+        "EQUIP[Verporta Card&&Senior Research Assistant Bot Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300077": {
+    "id": 300077,
+    "aegisName": "O_Cleaner_Ng_Card",
+    "name": "Broken Cleaning Robot Omega Card",
+    "unidName": "Broken Cleaning Robot Omega Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2, Vit + 1.\r\nMaxHP + 10%, increases Axe Boomerang and Vulcan Arm damage by 10%.\r\nWhen equipped with Kick and Kick Card and Senior Papila Card, increases Axe Boomerang and Vulcan Arm damage by 20%, increases Vulcan Arm damage by additional 5% per 2 refine rate of shoes and increases Axe Boomerang damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Mechanic",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "vit": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Axe Boomerang": [
+        "10",
+        "EQUIP[Kick and Kick Card&&Senior Papila Card]===20",
+        "EQUIP[Kick and Kick Card&&Senior Papila Card]REFINE[weapon==2]---5"
+      ],
+      "Vulcan Arm": [
+        "10",
+        "EQUIP[Kick and Kick Card&&Senior Papila Card]===20",
+        "EQUIP[Kick and Kick Card&&Senior Papila Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300078": {
+    "id": 300078,
+    "aegisName": "Sweety_Card",
+    "name": "Sweety Card",
+    "unidName": "Sweety Card",
+    "resName": "이름없는카드",
+    "description": "Increases Fire Dance damage by 60%.\r\nIncreases SP consumption of Fire Dance by 25%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Mad Dance",
+    "script": {
+      "Fire Dance": [
+        "60"
+      ],
+      "spPercent__Fire Dance": [
+        "25"
+      ]
+    }
+  },
+  "300079": {
+    "id": 300079,
+    "aegisName": "Redpepper_Card",
+    "name": "Red Pepper Card",
+    "unidName": "Red Pepper Card",
+    "resName": "이름없는카드",
+    "description": "Increases magical damage against formless and fish race enemies by 30%.\nIncreases magical damage against holy and water property enemies by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Armor^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 16,
+    "cardPrefix": "Middle Dry",
+    "script": {
+      "m_race_formless": [
+        "30"
+      ],
+      "m_race_fish": [
+        "30"
+      ],
+      "m_element_holy": [
+        "30"
+      ],
+      "m_element_water": [
+        "30"
+      ]
+    }
+  },
   "300080": {
     "id": 300080,
     "aegisName": "Redpepper_H_Card",
@@ -54722,6 +55635,1525 @@
       ],
       "m_element_water": [
         "50"
+      ]
+    }
+  },
+  "300081": {
+    "id": 300081,
+    "aegisName": "Assistant_Card",
+    "name": "Research Assistant Bot Card",
+    "unidName": "Research Assistant Bot Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Fire Ball damage by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Magician",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Fire Ball": [
+        "25"
+      ]
+    }
+  },
+  "300082": {
+    "id": 300082,
+    "aegisName": "Assistant_H_Card",
+    "name": "Senior Research Assistant Bot Card",
+    "unidName": "Senior Research Assistant Bot Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Spear or Two-handed Spear, increases long ranged physical damage by 10%.\r\nIncreases long ranged physical damage by additional 2% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Piercing",
+    "script": {
+      "range": [
+        "WEAPON_TYPE[spear]===10",
+        "WEAPON_TYPE[twohandSpear]===10",
+        "2---2"
+      ]
+    }
+  },
+  "300083": {
+    "id": 300083,
+    "aegisName": "Dry_Rafflesia_Card",
+    "name": "Dried Rafflesia Card",
+    "unidName": "Dried Rafflesia Card",
+    "resName": "이름없는카드",
+    "description": "Agi + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Freezing Spear and Throw Kunai damage by 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Ninja",
+    "script": {
+      "agi": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Freezing Spear": [
+        "15"
+      ],
+      "Throw Kunai": [
+        "15"
+      ]
+    }
+  },
+  "300084": {
+    "id": 300084,
+    "aegisName": "Dry_Rafflesia_H_Card",
+    "name": "Senior Dried Rafflesia Card",
+    "unidName": "Senior Dried Rafflesia Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from holy property by 30%.\r\nFlee + 5.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Holy",
+    "script": {
+      "flee": [
+        "5"
+      ]
+    }
+  },
+  "300085": {
+    "id": 300085,
+    "aegisName": "Alnoldi_Ex_Card",
+    "name": "Special Alnoldi Card",
+    "unidName": "Special Alnoldi Card",
+    "resName": "이름없는카드",
+    "description": "Str + 2.\nMaxHP + 10%, MaxSP + 10%.\nAtk + 7 per each level of Kihop user learned.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Taekwon",
+    "script": {
+      "str": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "atk": [
+        "LEARN_SKILL[Power==1]---7"
+      ]
+    }
+  },
+  "300086": {
+    "id": 300086,
+    "aegisName": "Alnoldi_Ex_H_Card",
+    "name": "Senior Special Alnoldi Card",
+    "unidName": "Senior Special Alnoldi Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Two-handed Sword, increases melee physical damage by 10%.\r\nIncreases melee physical damage by additional 1% per refine rate of weapon.\r\nIf refine rate is 11 or higher, the weapon can't be destroyed.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Vanguard's",
+    "script": {
+      "melee": [
+        "WEAPON_TYPE[twohandSword]===10",
+        "1---1"
+      ]
+    }
+  },
+  "300087": {
+    "id": 300087,
+    "aegisName": "Beta_Scissore_Ng_Card",
+    "name": "Broken Gardener Beta Card",
+    "unidName": "Broken Gardener Beta Card",
+    "resName": "이름없는카드",
+    "description": "Luk + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Silvervine Stem Spear and Scar of Tarou damage by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Shadow Cat",
+    "script": {
+      "luk": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Silvervine Stem Spear": [
+        "10"
+      ],
+      "Scar of Tarou": [
+        "10"
+      ]
+    }
+  },
+  "300088": {
+    "id": 300088,
+    "aegisName": "B_Scissore_Ng_H_Card",
+    "name": "Senior Broken Gardener Beta Card",
+    "unidName": "Senior Broken Gardener Beta Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Book, Hit + 20, Atk + 5%.\r\nIncreases melee physical damage by additional 1% per refine rate of weapon.\r\nIf refine rate is 10 or higher, increase Full Moon Kick and Falling Star damage by 15%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fallen Star",
+    "script": {
+      "hit": [
+        "WEAPON_TYPE[book]===20"
+      ],
+      "atkPercent": [
+        "WEAPON_TYPE[book]===5"
+      ],
+      "melee": [
+        "1---1"
+      ],
+      "Full Moon Kick": [
+        "10===15"
+      ],
+      "Falling Stars": [
+        "10===15"
+      ]
+    }
+  },
+  "300089": {
+    "id": 300089,
+    "aegisName": "Verporta_Card",
+    "name": "Verporta Card",
+    "unidName": "Verporta Card",
+    "resName": "이름없는카드",
+    "description": "Str + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Magnum Break damage by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Assault",
+    "script": {
+      "str": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Magnum Break": [
+        "25"
+      ]
+    }
+  },
+  "300090": {
+    "id": 300090,
+    "aegisName": "Verporte_H_Card",
+    "name": "Verporte Card",
+    "unidName": "Verporte Card",
+    "resName": "이름없는카드",
+    "description": "Increases earth property magical damage by 10%.\nIncreases SP consumption by 5%.\nIf refine rate is 9 or higher, increases earth property magical damage by additional 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Land Power",
+    "script": {
+      "m_my_element_earth": [
+        "10",
+        "9===10"
+      ],
+      "spPercentCost": [
+        "5"
+      ]
+    }
+  },
+  "300091": {
+    "id": 300091,
+    "aegisName": "Papila_Card",
+    "name": "Papila Card",
+    "unidName": "Papila Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Desperado, Full Blast and Spread Attack damage by 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Gunman",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Desperado": [
+        "10"
+      ],
+      "Full Blast": [
+        "10"
+      ],
+      "Spread Shot": [
+        "10"
+      ]
+    }
+  },
+  "300092": {
+    "id": 300092,
+    "aegisName": "Papila_H_Card",
+    "name": "Senior Papila Card",
+    "unidName": "Senior Papila Card",
+    "resName": "이름없는카드",
+    "description": "Luk + 2.\r\nMaxHP + 10%, MaxSP + 10%.\r\nIncreases Cart Revolution damage by 50%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Shoes^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Merchant",
+    "script": {
+      "luk": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Cart Revolution": [
+        "50"
+      ]
+    }
+  },
+  "300093": {
+    "id": 300093,
+    "aegisName": "Papila_Ruba_Card",
+    "name": "Papila Ruba Card",
+    "unidName": "Papila Ruba Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Holy Light damage by 50%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Acolyte",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Holy Light": [
+        "50"
+      ]
+    }
+  },
+  "300094": {
+    "id": 300094,
+    "aegisName": "Papila_Ruba_H_Card",
+    "name": "Senior Papila Ruba Card",
+    "unidName": "Senior Papila Ruba Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Two-handed Sword, increases critical damage by 20%.\r\nIncreases critical damage by additional 2% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Mad Lethal",
+    "script": {
+      "criDmg": [
+        "WEAPON_TYPE[twohandSword]===20",
+        "2---2"
+      ]
+    }
+  },
+  "300095": {
+    "id": 300095,
+    "aegisName": "Papila_Cae_Card",
+    "name": "Papila Cae Card",
+    "unidName": "Papila Cae Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Arrow Shower damage by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Keen",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Arrow Shower": [
+        "25"
+      ]
+    }
+  },
+  "300096": {
+    "id": 300096,
+    "aegisName": "Papila_Cae_H_Card",
+    "name": "Senior Papila Cae Card",
+    "unidName": "Senior Papila Cae Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Musical Instrument or Whip, Matk + 20.\r\nIf refine rate is 10 or higher, Matk + 20, reduces variable casting time by 10%.\r\nIf refine rate is 13 or higher, Matk + 20.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Harmony",
+    "script": {
+      "matk": [
+        "WEAPON_TYPE[instrument]===20",
+        "WEAPON_TYPE[whip]===20",
+        "10===20",
+        "13===20"
+      ],
+      "vct": [
+        "10===10"
+      ]
+    }
+  },
+  "300097": {
+    "id": 300097,
+    "aegisName": "Aries_Card",
+    "name": "Aries Card",
+    "unidName": "Aries Card",
+    "resName": "이름없는카드",
+    "description": "Agi + 2.\nMaxHP + 10%, MaxSP + 10%.\nIncreases Envenom damage by 25%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "of Thief",
+    "script": {
+      "agi": [
+        "2"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "spPercent": [
+        "10"
+      ],
+      "Envenom": [
+        "25"
+      ]
+    }
+  },
+  "300098": {
+    "id": 300098,
+    "aegisName": "Aries_H_Card",
+    "name": "Senior Aries Card",
+    "unidName": "Senior Aries Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 5.\r\nIncreases Wind Blade, Freezing Spear and Flaming Petals damage by 10%.\r\nIf refine rate is 7 or higher, reduces variable casting time by 5%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Ninja's",
+    "script": {
+      "matk": [
+        "5"
+      ],
+      "Wind Blade": [
+        "10"
+      ],
+      "Freezing Spear": [
+        "10"
+      ],
+      "Flaming Petals": [
+        "10"
+      ],
+      "vct": [
+        "7===5"
+      ]
+    }
+  },
+  "300099": {
+    "id": 300099,
+    "aegisName": "Silva_Papilia_Card",
+    "name": "Silva Papilia Card",
+    "unidName": "Silva Papilia Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from normal enemies by 20%.\nIncreases incoming heal effectiveness by 15%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "of Minor Guard",
+    "script": {}
+  },
+  "300100": {
+    "id": 300100,
+    "aegisName": "Gran_Papilia_Card",
+    "name": "Gran Papilia Card",
+    "unidName": "Gran Papilia Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from boss enemies by 25%.\nIncreases incoming heal effectiveness by 30%.\nClass: ^777777Card^000000\nCompound on: ^777777Shield^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 32,
+    "cardPrefix": "of Major Guard",
+    "script": {}
+  },
+  "300101": {
+    "id": 300101,
+    "aegisName": "Beta_Cleaner_Card",
+    "name": "Broken Cleaner Card",
+    "unidName": "Broken Cleaner Card",
+    "resName": "이름없는카드",
+    "description": "Str + 3.\r\nMaxHP + 10%, increases Dragon Breath and Dragon Breath - Water damage by 10%.\r\nWhen equipped with Verporta Card and Senior Papila Ruba Card, increases Dragon Breath and Dragon Breath - Water damage by 20%, increases Dragon Breath damage by additional 5% per 2 refine rate of shoes and increases Dragon Breath - Water damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Rune Knight",
+    "script": {
+      "str": [
+        "3"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Dragon Breath": [
+        "10",
+        "EQUIP[Verporta Card&&Senior Papila Ruba Card]===20",
+        "EQUIP[Verporta Card&&Senior Papila Ruba Card]REFINE[boot==2]---5"
+      ],
+      "Dragon Breath - WATER": [
+        "10",
+        "EQUIP[Verporta Card&&Senior Papila Ruba Card]===20",
+        "EQUIP[Verporta Card&&Senior Papila Ruba Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300102": {
+    "id": 300102,
+    "aegisName": "Beta_Baths_A_Card",
+    "name": "Bath Administrator Card",
+    "unidName": "Bath Administrator Card",
+    "resName": "이름없는카드",
+    "description": "Int + 3.\r\nMaxHP + 10%, increases Cart Cannon and Spore Explosion damage by 10%.\r\nWhen equipped with Powerful Archer Skeleton Card and Senior Papila Card, increases Cart Cannon and Spore Explosion damage by 20%, increases Cart Cannon damage by additional 5% per 2 refine rate of shoes and increases Spore Explosion damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Genetic",
+    "script": {
+      "int": [
+        "3"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Cart Cannon": [
+        "10",
+        "EQUIP[Enchanted Archer Skeleton Card&&Senior Papila Card]===20",
+        "EQUIP[Enchanted Archer Skeleton Card&&Senior Papila Card]REFINE[boot==2]---5"
+      ],
+      "Spore Explosion": [
+        "10",
+        "EQUIP[Enchanted Archer Skeleton Card&&Senior Papila Card]===20",
+        "EQUIP[Enchanted Archer Skeleton Card&&Senior Papila Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300103": {
+    "id": 300103,
+    "aegisName": "Bath_Mermaid_Card",
+    "name": "Azure Princess Card",
+    "unidName": "Azure Princess Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 15.\nIf refine rate is 9 or higher, increases magical damage against fish and demihuman enemies by 10%.\nIf refine rate is 11 or higher, reduces global cooldown by 3%.\nClass: ^777777Card^000000\nCompound on: ^777777Shoes^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Mermaid",
+    "script": {
+      "matk": [
+        "15"
+      ],
+      "m_race_fish": [
+        "9===10"
+      ],
+      "m_race_demihuman": [
+        "9===10"
+      ],
+      "acd": [
+        "11===3"
+      ]
+    }
+  },
+  "300104": {
+    "id": 300104,
+    "aegisName": "Bookworm_Card",
+    "name": "Bookworm Card",
+    "unidName": "Bookworm Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2, Vit + 1.\nMaxHP + 10%, increases Psychic Wave and Diamond Dust damage by 10%.\nWhen equipped with Blue Pitaya Card and Research Assistant Bot Card, increases Psychic Wave and Diamond Dust damage by 20%, increases Psychic Wave damage by additional 5% per 2 refine rate of shoes and increases Diamond Dust damage by additional 5% per 2 refine rate of weapon.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Sorcerer",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "vit": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Psychic Wave": [
+        "10",
+        "EQUIP[Blue Pitaya Card&&Research Assistant Bot Card]===20",
+        "EQUIP[Blue Pitaya Card&&Research Assistant Bot Card]REFINE[boot==2]---5"
+      ],
+      "Diamond Dust": [
+        "10",
+        "EQUIP[Blue Pitaya Card&&Research Assistant Bot Card]===20",
+        "EQUIP[Blue Pitaya Card&&Research Assistant Bot Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300105": {
+    "id": 300105,
+    "aegisName": "Roaming_Splbook_Card",
+    "name": "Roaming Spellbook Card",
+    "unidName": "Roaming Spellbook Card",
+    "resName": "이름없는카드",
+    "description": "Int + 3.\nMaxHP + 5%, MaxSP + 5%, increases Crimson Rock and Comet damage by 10%.\nWhen equipped with Red Pitaya Card and Research Assistant Bot Card, increases Crimson Rock and Comet damage by 20%, increases Comet damage by additional 5% per 2 refine rate of shoes and increases Crimson Rock damage by additional 5% per 2 refine rate of weapon.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Warlock",
+    "script": {
+      "int": [
+        "3"
+      ],
+      "hpPercent": [
+        "5"
+      ],
+      "spPercent": [
+        "5"
+      ],
+      "Crimson Rock": [
+        "10",
+        "EQUIP[Red Pitaya Card&&Research Assistant Bot Card]===20",
+        "EQUIP[Red Pitaya Card&&Research Assistant Bot Card]REFINE[weapon==2]---5"
+      ],
+      "Comet": [
+        "10",
+        "EQUIP[Red Pitaya Card&&Research Assistant Bot Card]===20",
+        "EQUIP[Red Pitaya Card&&Research Assistant Bot Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300106": {
+    "id": 300106,
+    "aegisName": "Pitaya_R_Card",
+    "name": "Red Pitaya Card",
+    "unidName": "Red Pitaya Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Staff or Two-handed Staff, increases fire property magical damage by 10%.\nIf refine rate of weapon is 10 or higher, increases fire property magical damage by additional 10%.\nIf refine rate of weapon is 14 or higher, increases fire property magical damage by additional 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Fire Magical",
+    "script": {
+      "m_my_element_fire": [
+        "WEAPON_TYPE[rod]===10",
+        "WEAPON_TYPE[twohandRod]===10",
+        "10===10",
+        "14===10"
+      ]
+    }
+  },
+  "300107": {
+    "id": 300107,
+    "aegisName": "Pitaya_Boss_Card",
+    "name": "Meow Card",
+    "unidName": "Meow Card",
+    "resName": "이름없는카드",
+    "description": "Increases recovery rate of Apple and Banana by 500%.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Fruit",
+    "script": {}
+  },
+  "300108": {
+    "id": 300108,
+    "aegisName": "Venenum3_Card",
+    "name": "Sewage Venenum Card",
+    "unidName": "Sewage Venenum Card",
+    "resName": "이름없는카드",
+    "description": "Agi + 2, Dex + 1.\nMaxHP + 10%, increases Fatal Menace and Triangle Shot damage by 10%.\nWhen equipped with Scimitar Buffalo Bandit Card and Aries Card, increases Fatal Menace and Triangle Shot damage by 20%, increases Fatal Menace damage by additional 5% per 2 refine rate of shoes and increases Triangle Shot damage by additional 5% per 2 refine rate of weapon.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Shadow Chaser",
+    "script": {
+      "agi": [
+        "2"
+      ],
+      "dex": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Fatal Manace": [
+        "10",
+        "EQUIP[Scimitar Buffalo Bandit Card&&Aries Card]===20",
+        "EQUIP[Scimitar Buffalo Bandit Card&&Aries Card]REFINE[boot==2]---5"
+      ],
+      "Triangle Shot": [
+        "10",
+        "EQUIP[Scimitar Buffalo Bandit Card&&Aries Card]===20",
+        "EQUIP[Scimitar Buffalo Bandit Card&&Aries Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300109": {
+    "id": 300109,
+    "aegisName": "EP17_2_Cramp_Card",
+    "name": "Sewage Cramp Card",
+    "unidName": "Sewage Cramp Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2, Str + 1.\nMaxHP + 10%, increases Rolling Cutter and Counter Slash damage by 10%.\nWhen equipped with Mutant Dolor Card and Aries Card, increases Rolling Cutter and Counter Slash damage by 20%, increases Rolling Cutter and Counter Slash damage by additional 5% per 3 refine rate of shoes.\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Guillotine Cross",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "str": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Rolling Cutter": [
+        "10",
+        "EQUIP[Mutant Dolor Card&&Aries Card]===20",
+        "EQUIP[Mutant Dolor Card&&Aries Card]REFINE[boot==3]---5"
+      ],
+      "Counter Slash": [
+        "10",
+        "EQUIP[Mutant Dolor Card&&Aries Card]===20",
+        "EQUIP[Mutant Dolor Card&&Aries Card]REFINE[boot==3]---5"
+      ]
+    }
+  },
+  "300110": {
+    "id": 300110,
+    "aegisName": "Waterfall_Card",
+    "name": "Sewage Waterfall Card",
+    "unidName": "Sewage Waterfall Card",
+    "resName": "이름없는카드",
+    "description": "Agi + 2, Int + 1.\nMaxHP + 10%, increases Kunai Explosion and Cross Slash damage by 10%.\nWhen equipped with Armed Guard Soheon Card and Dried Rafflesia Card, increases Kunai Explosion and Cross Slash damage by 20%, increases Kunai Explosion and Cross Slash damage by additional 5% per 3 refine rate of shoes.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Kagerou",
+    "script": {
+      "agi": [
+        "2"
+      ],
+      "int": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Kunai Explosion": [
+        "10",
+        "EQUIP[Armed Guard Soheon Card&&Dried Rafflesia Card]===20",
+        "EQUIP[Armed Guard Soheon Card&&Dried Rafflesia Card]REFINE[boot==3]---5"
+      ],
+      "Cross Slash": [
+        "10",
+        "EQUIP[Armed Guard Soheon Card&&Dried Rafflesia Card]===20",
+        "EQUIP[Armed Guard Soheon Card&&Dried Rafflesia Card]REFINE[boot==3]---5"
+      ]
+    }
+  },
+  "300111": {
+    "id": 300111,
+    "aegisName": "Bellare3_Card",
+    "name": "Elite Bellare Card",
+    "unidName": "Elite Bellare Card",
+    "resName": "이름없는카드",
+    "description": "Agi + 2, Int + 1.\nMaxHP + 10%, increases Flaming Petals, Freezing Spear and Wind Blade damage by 10%.\nWhen equipped with E-EA1L Card and Dried Rafflesia Card, increases Flaming Petals, Freezing Spear and Wind Blade damage by 20%, increases Flaming Petals, Freezing Spear and Wind Blade damage by additional 5% per 3 refine rate of shoes.\nClass: ^777777Card^000000\nCompound on: ^777777Accessory^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Oboro",
+    "script": {
+      "agi": [
+        "2"
+      ],
+      "int": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Flaming Petals": [
+        "10",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]===20",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]REFINE[boot==3]---5"
+      ],
+      "Freezing Spear": [
+        "10",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]===20",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]REFINE[boot==3]---5"
+      ],
+      "Wind Blade": [
+        "10",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]===20",
+        "EQUIP[E-EA1L Card&&Dried Rafflesia Card]REFINE[boot==3]---5"
+      ]
+    }
+  },
+  "300112": {
+    "id": 300112,
+    "aegisName": "Dolor3_Card",
+    "name": "Spell Addicted Dolor Card",
+    "unidName": "Spell Addicted Dolor Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2, Vit + 1.\r\nMaxHP + 10%, increases Eswhoo and Curse Explosion damage by 10%.\r\nWhen equipped with Magic-poisoned Plaga Card and Special Alnoldi Card, increases Eswhoo and Curse Explosion damage by 20%, increases Curse Explosion damage by additional 5% per 2 refine rate of shoes and increases Eswhoo damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Soul Reaper",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "vit": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Eswhoo": [
+        "10",
+        "EQUIP[Spell Addicted Plaga Card&&Special Alnoldi Card]===20",
+        "EQUIP[Spell Addicted Plaga Card&&Special Alnoldi Card]REFINE[weapon==2]---5"
+      ],
+      "Curse Explosion": [
+        "10",
+        "EQUIP[Spell Addicted Plaga Card&&Special Alnoldi Card]===20",
+        "EQUIP[Spell Addicted Plaga Card&&Special Alnoldi Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300113": {
+    "id": 300113,
+    "aegisName": "Plasma_Y_Card",
+    "name": "Released Spell Card",
+    "unidName": "Released Spell Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2, Vit + 1.\r\nMaxHP + 10%, increases Reverberation and Severe Rainstorm damage by 10%.\r\nWhen equipped with Greater Papila Cae Card and Papila Cae Card, increases Reverberation and Severe Rainstorm damage by 20%, increases Reverberation damage by additional 5% per 2 refine rate of shoes and increases Severe Rainstorm damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Talent",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "vit": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Reverberation": [
+        "10",
+        "EQUIP[Senior Papila Cae Card&&Papila Cae Card]===20",
+        "EQUIP[Senior Papila Cae Card&&Papila Cae Card]REFINE[boot==2]---5"
+      ],
+      "Severe Rainstorm": [
+        "10",
+        "EQUIP[Senior Papila Cae Card&&Papila Cae Card]===20",
+        "EQUIP[Senior Papila Cae Card&&Papila Cae Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300114": {
+    "id": 300114,
+    "aegisName": "Plaga3_Card",
+    "name": "Spell Addicted Plaga Card",
+    "unidName": "Spell Addicted Plaga Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Staff or Two-handed Staff, increases neutral property magical damage by 10%.\r\nIf refine rate of weapon is 10 or higher, increases neutral property magical damage by additional 10%.\r\nIf refine rate of weapon is 14 or higher, increases neutral property magical damage by additional 10%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Weapon^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Immortal Magical",
+    "script": {
+      "m_my_element_neutral": [
+        "WEAPON_TYPE[rod]===10",
+        "WEAPON_TYPE[twohandRod]===10",
+        "10===10",
+        "14===10"
+      ]
+    }
+  },
+  "300115": {
+    "id": 300115,
+    "aegisName": "Sanare3_Card",
+    "name": "Spell Addicted Sanare Card",
+    "unidName": "Spell Addicted Sanare Card",
+    "resName": "이름없는카드",
+    "description": "Int + 2, Dex + 1.\r\nMaxHP + 10%, increases Adoramus and Judex damage by 10%.\r\nWhen equipped with Sanare Card and Papila Ruba Card, increases Adoramus and Judex damage by 20%, increases Adoramus damage by additional 5% per 2 refine rate of shoes and increases Judex damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Archbishop",
+    "script": {
+      "int": [
+        "2"
+      ],
+      "dex": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Adoramus": [
+        "10",
+        "EQUIP[Sanare Card&&Papila Ruba Card]===20",
+        "EQUIP[Sanare Card&&Papila Ruba Card]REFINE[boot==2]---5"
+      ],
+      "Judex": [
+        "10",
+        "EQUIP[Sanare Card&&Papila Ruba Card]===20",
+        "EQUIP[Sanare Card&&Papila Ruba Card]REFINE[weapon==2]---5"
+      ]
+    }
+  },
+  "300116": {
+    "id": 300116,
+    "aegisName": "Plasma_R_Card",
+    "name": "Powerful Spell Card",
+    "unidName": "Powerful Spell Card",
+    "resName": "이름없는카드",
+    "description": "Str + 2, Int + 1.\r\nMaxHP + 10%, increases Rampage Blast and Tiger Cannon damage by 10%.\r\nWhen equipped with Mutant Plaga Card and Papila Ruba Card, increases Rampage Blast and Tiger Cannon damage by 20%, increases Tiger Cannon damage by additional 5% per 2 refine rate of shoes and increases Rampage Blast damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Sura",
+    "script": {
+      "str": [
+        "2"
+      ],
+      "int": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Rampage Blast": [
+        "10",
+        "EQUIP[Mutant Plaga Card&&Papila Ruba Card]===20",
+        "EQUIP[Mutant Plaga Card&&Papila Ruba Card]REFINE[weapon==2]---5"
+      ],
+      "Tiger Cannon": [
+        "10",
+        "EQUIP[Mutant Plaga Card&&Papila Ruba Card]===20",
+        "EQUIP[Mutant Plaga Card&&Papila Ruba Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300117": {
+    "id": 300117,
+    "aegisName": "Plasma_R2_Card",
+    "name": "Sharp Spell Card",
+    "unidName": "Sharp Spell Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2, Agi + 1.\r\nMaxHP + 10%, increases Arrow Storm and Bomb Cluster damage by 10%.\r\nWhen equipped with Powerful Archer Skeleton Card and Papila Cae Card, increases Arrow Storm and Bomb Cluster damage by 20%, increases Bomb Cluster damage by additional 5% per 2 refine rate of shoes and increases Arrow Storm damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Ranger",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "agi": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Arrow Storm": [
+        "10",
+        "EQUIP[Enchanted Archer Skeleton Card&&Papila Cae Card]===20",
+        "EQUIP[Enchanted Archer Skeleton Card&&Papila Cae Card]REFINE[weapon==2]---5"
+      ],
+      "Bomb Cluster": [
+        "10",
+        "EQUIP[Enchanted Archer Skeleton Card&&Papila Cae Card]===20",
+        "EQUIP[Enchanted Archer Skeleton Card&&Papila Cae Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300118": {
+    "id": 300118,
+    "aegisName": "EP17_2_Phen_Card",
+    "name": "Boiling Water Phen Card",
+    "unidName": "Boiling Water Phen Card",
+    "resName": "이름없는카드",
+    "description": "Str + 2, Vit + 1.\r\nMaxHP + 10%, increases Full Moon Kick and Falling Star damage by 10%.\r\nWhen equipped with Senior Broken Gardener Beta Card and Special Alnoldi Card, increases Full Moon Kick and Falling Star damage by 20%, increases Falling Star damage by additional 5% per 2 refine rate of shoes and increases Full Moon Kick damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Star Master",
+    "script": {
+      "str": [
+        "2"
+      ],
+      "vit": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Full Moon Kick": [
+        "10",
+        "EQUIP[Senior Broken Gardener Beta Card&&Special Alnoldi Card]===20",
+        "EQUIP[Senior Broken Gardener Beta Card&&Special Alnoldi Card]REFINE[weapon==2]---5"
+      ],
+      "Falling Stars": [
+        "10",
+        "EQUIP[Senior Broken Gardener Beta Card&&Special Alnoldi Card]===20",
+        "EQUIP[Senior Broken Gardener Beta Card&&Special Alnoldi Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300119": {
+    "id": 300119,
+    "aegisName": "EP17_2_Sword_Fish_Card",
+    "name": "Boiling Water Swordfish Card",
+    "unidName": "Boiling Water Swordfish Card",
+    "resName": "이름없는카드",
+    "description": "Dex + 2, Agi + 1.\r\nMaxHP + 10%, increases Round Trip and Hammer of God damage by 10%.\r\nWhen equipped with Greater Bellare Card and Papila Card, increases Round Trip and Hammer of God damage by 20%, increases Hammer of God damage by additional 5% per 2 refine rate of shoes and increases Round Trip damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Rebellion",
+    "script": {
+      "dex": [
+        "2"
+      ],
+      "agi": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Round Trip": [
+        "10",
+        "EQUIP[Greater Bellare Card&&Papila Card]===20",
+        "EQUIP[Greater Bellare Card&&Papila Card]REFINE[weapon==2]---5"
+      ],
+      "God's Hammer": [
+        "10",
+        "EQUIP[Greater Bellare Card&&Papila Card]===20",
+        "EQUIP[Greater Bellare Card&&Papila Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300120": {
+    "id": 300120,
+    "aegisName": "EP17_2_Piranha_Card",
+    "name": "Boiling Water Piranha Card",
+    "unidName": "Boiling Water Piranha Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 2%.\r\nWhen equipped with Piranha Card, Matk + 10, increases magical damage against water property enemies by 15%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Shoal's",
+    "script": {
+      "matkPercent": [
+        "2"
+      ],
+      "matk": [
+        "EQUIP[Piranha Card]10"
+      ],
+      "m_element_water": [
+        "EQUIP[Piranha Card]15"
+      ]
+    }
+  },
+  "300121": {
+    "id": 300121,
+    "aegisName": "EP17_2_Marc_Card",
+    "name": "Boiling Water Marc Card",
+    "unidName": "Boiling Water Marc Card",
+    "resName": "이름없는카드",
+    "description": "Increases holy and water property magical damage by 5%.\r\nIncreases holy and water property magical damage by additional 1% per 2 refine rate of shoes.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Shoes^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 64,
+    "cardPrefix": "Purified Water's",
+    "script": {
+      "m_my_element_holy": [
+        "5",
+        "2---1"
+      ],
+      "m_my_element_water": [
+        "5",
+        "2---1"
+      ]
+    }
+  },
+  "300122": {
+    "id": 300122,
+    "aegisName": "Pitaya_Y_Card",
+    "name": "Yellow Pitaya Card",
+    "unidName": "Yellow Pitaya Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from neutral property by 15%.\r\nIncreases holy property magical damage by 3% per refine rate.\r\nWhen equipped with Boiling Water Marc Card, reduces damage taken from neutral property by additional 5%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Saint",
+    "script": {
+      "m_my_element_holy": [
+        "1---3"
+      ]
+    }
+  },
+  "300123": {
+    "id": 300123,
+    "aegisName": "Pitaya_V_Card",
+    "name": "Purple Pitaya Card",
+    "unidName": "Purple Pitaya Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from neutral property by 15%.\r\nIncreases neutral property magical damage by 3% per refine rate.\r\nWhen equipped with Boiling Water Marc Card, reduces damage taken from neutral property by additional 5%.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "Formless's",
+    "script": {
+      "m_my_element_neutral": [
+        "1---3"
+      ]
+    }
+  },
+  "300124": {
+    "id": 300124,
+    "aegisName": "Pitaya_B_Card",
+    "name": "Blue Pitaya Card",
+    "unidName": "Blue Pitaya Card",
+    "resName": "이름없는카드",
+    "description": "When compounded on Staff or Two-handed Staff, increases water property magical damage by 10%.\nIf refine rate of weapon is 10 or higher, increases water property magical damage by additional 10%.\nIf refine rate of weapon is 14 or higher, increases water property magical damage by additional 10%.\nClass: ^777777Card^000000\nCompound on: ^777777Weapon^000000\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Water Magical",
+    "script": {
+      "m_my_element_water": [
+        "WEAPON_TYPE[rod]===10",
+        "WEAPON_TYPE[twohandRod]===10",
+        "10===10",
+        "14===10"
+      ]
+    }
+  },
+  "300125": {
+    "id": 300125,
+    "aegisName": "Pitaya_G_Card",
+    "name": "Green Pitaya Card",
+    "unidName": "Green Pitaya Card",
+    "resName": "이름없는카드",
+    "description": "Luk + 2, Int + 1.\r\nMaxHP + 10%, increases Picky Peck and Catnip Meteor damage by 10%.\r\nWhen equipped with Spell Addicted Plaga Card and Broken Gardener Beta Card, increases Picky Peck and Catnip Meteor damage by 20%, increases Catnip Meteor damage by additional 5% per 2 refine rate of shoes and increases Picky Peck damage by additional 5% per 2 refine rate of weapon.\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Summoner",
+    "script": {
+      "luk": [
+        "2"
+      ],
+      "int": [
+        "1"
+      ],
+      "hpPercent": [
+        "10"
+      ],
+      "Picky Peck": [
+        "10",
+        "EQUIP[Spell Addicted Plaga Card&&Broken Gardener Beta Card]===20",
+        "EQUIP[Spell Addicted Plaga Card&&Broken Gardener Beta Card]REFINE[weapon==2]---5"
+      ],
+      "Catnip Meteor": [
+        "10",
+        "EQUIP[Spell Addicted Plaga Card&&Broken Gardener Beta Card]===20",
+        "EQUIP[Spell Addicted Plaga Card&&Broken Gardener Beta Card]REFINE[boot==2]---5"
+      ]
+    }
+  },
+  "300141": {
+    "id": 300141,
+    "aegisName": "ILL_Obeaune_Card",
+    "name": "Abysmal Obeaune Card",
+    "unidName": "Abysmal Obeaune Card",
+    "resName": "이름없는카드",
+    "description": "Matk + 30.\r\nWhen equipped with Boiling Water Piranha Card, increases magical damage against water property enemies by 15%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Accessory^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Mermaid's",
+    "script": {
+      "matk": [
+        "30"
+      ],
+      "m_element_water": [
+        "EQUIP[Boiling Water Piranha Card]15"
       ]
     }
   },
@@ -58585,6 +61017,1549 @@
       ]
     }
   },
+  "310881": {
+    "id": 310881,
+    "aegisName": "Runeknight_Top3",
+    "name": "Rune Knight Stone (Upper)",
+    "unidName": "Rune Knight Stone (Upper)",
+    "resName": "Lord_Knight_Figure",
+    "description": "Increases critical damage by 2% per each level of Dragon Training user learned.\nWhen equipped with Rune Knight Stone (Garment), reduces variable casting time by 10%.\nWhen equipped with Rune Knight Stone II (Garment), increases Hundred Spears damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "criDmg": [
+        "LEARN_SKILL[Dragon Training==1]---2"
+      ],
+      "vct": [
+        "EQUIP[Rune Knight Stone (Garment)]===10"
+      ],
+      "Hundred Spears": [
+        "EQUIP[Rune Knight Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310882": {
+    "id": 310882,
+    "aegisName": "Runeknight_Middle3",
+    "name": "Rune Knight Stone (Middle)",
+    "unidName": "Rune Knight Stone (Middle)",
+    "resName": "Lord_Knight_Figure",
+    "description": "Increases melee and long ranged physical damage by 1% per 2 levels of Rune Mastery user learned.\nWhen equipped with Rune Knight Stone (Garment), increases Dragon Breath and Dragon Breath - Water damage by 15%.\nWhen equipped with Rune Knight Stone II (Garment), increases Sonic Wave damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Rune Mastery==2]---1"
+      ],
+      "range": [
+        "LEARN_SKILL[Rune Mastery==2]---1"
+      ],
+      "Dragon Breath": [
+        "EQUIP[Rune Knight Stone (Garment)]===15"
+      ],
+      "Dragon Breath - WATER": [
+        "EQUIP[Rune Knight Stone (Garment)]===15"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Rune Knight Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310883": {
+    "id": 310883,
+    "aegisName": "Runeknight_Bottom3",
+    "name": "Rune Knight Stone (Lower)",
+    "unidName": "Rune Knight Stone (Lower)",
+    "resName": "Lord_Knight_Figure",
+    "description": "Increases Wind Cutter damage by 5% per each level of Enchant Blade user learned.\nWhen equipped with Rune Knight Stone (Garment), MaxHP/MaxSP + 10%.\nWhen equipped with Rune Knight Stone II (Garment), increases Ignition Break damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Wind Cutter": [
+        "LEARN_SKILL[Enchant Blade==1]---5"
+      ],
+      "hpPercent": [
+        "EQUIP[Rune Knight Stone (Garment)]===10"
+      ],
+      "spPercent": [
+        "EQUIP[Rune Knight Stone (Garment)]===10"
+      ],
+      "Ignition Break": [
+        "EQUIP[Rune Knight Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310884": {
+    "id": 310884,
+    "aegisName": "Warlock_Top3",
+    "name": "Warlock Stone (Upper)",
+    "unidName": "Warlock Stone (Upper)",
+    "resName": "High_Wizard_Figure",
+    "description": "Increases all property magical damage by 2% per each level of Soul Expansion user learned.\nWhen equipped with Warlock Stone (Garment), increases Soul Expansion damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Jack Frost damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "LEARN_SKILL[Soul Expansion==1]---2"
+      ],
+      "Soul Expansion": [
+        "EQUIP[Warlock Stone (Garment)]===15"
+      ],
+      "Jack Frost": [
+        "EQUIP[Warlock Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310885": {
+    "id": 310885,
+    "aegisName": "Warlock_Middle3",
+    "name": "Warlock Stone (Middle)",
+    "unidName": "Warlock Stone (Middle)",
+    "resName": "High_Wizard_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Comet user learned.\nWhen equipped with Warlock Stone (Garment), increases Crimson Rock damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Jack Frost damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Comet==1]---0.1"
+      ],
+      "Crimson Rock": [
+        "EQUIP[Warlock Stone (Garment)]===15"
+      ],
+      "Jack Frost": [
+        "EQUIP[Warlock Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310886": {
+    "id": 310886,
+    "aegisName": "Warlock_Bottom3",
+    "name": "Warlock Stone (Lower)",
+    "unidName": "Warlock Stone (Lower)",
+    "resName": "High_Wizard_Figure",
+    "description": "Reduces global cooldown by 1% per each level of Chain Lightning user learned.\nWhen equipped with Warlock Stone (Garment), increases Chain Lightning damage by 15%.\nWhen equipped with Warlock Stone II (Garment), increases Comet damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[Chain Lightning==1]---1"
+      ],
+      "Chain Lightning": [
+        "EQUIP[Warlock Stone (Garment)]===15"
+      ],
+      "Comet": [
+        "EQUIP[Warlock Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310887": {
+    "id": 310887,
+    "aegisName": "Royalguard_Top3",
+    "name": "Royal Guard Stone (Upper)",
+    "unidName": "Royal Guard Stone (Upper)",
+    "resName": "Paladin_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Inspiration user learned.\r\nWhen equipped with Royal Guard Stone (Garment), increases Cannon Spear damage by 15%.\r\nWhen equipped with Royal Guard Stone II (Garment), increases Genesis Ray damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Inspiration==1]---0.1"
+      ],
+      "Cannon Spear": [
+        "EQUIP[Royal Guard Stone (Garment)]===15"
+      ],
+      "Genesis Ray": [
+        "EQUIP[Royal Guard Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310888": {
+    "id": 310888,
+    "aegisName": "Royalguard_Middle3",
+    "name": "Royal Guard Stone (Middle)",
+    "unidName": "Royal Guard Stone (Middle)",
+    "resName": "Paladin_Figure",
+    "description": "Increases long ranged physical damage and all property magical damage by 2% per each level of Piety user learned.\nWhen equipped with Royal Guard Stone (Garment), increases Vanishing Point damage by 15%.\nWhen equipped with Royal Guard Stone II (Garment), reduces SP consumption of Genesis Ray by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Piety==1]---2"
+      ],
+      "m_my_element_all": [
+        "LEARN_SKILL[Piety==1]---2"
+      ],
+      "Vanishing Point": [
+        "EQUIP[Royal Guard Stone (Garment)]===15"
+      ],
+      "spPercent__Genesis Ray": [
+        "EQUIP[Royal Guard Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "310889": {
+    "id": 310889,
+    "aegisName": "Royalguard_Bottom3",
+    "name": "Royal Guard Stone (Lower)",
+    "unidName": "Royal Guard Stone (Lower)",
+    "resName": "Paladin_Figure",
+    "description": "Increases Overbrand damage by 5% per each level of Moonslasher user learned.\nWhen equipped with Royal Guard Stone (Garment), increases Cannon Spear damage by 15%.\nWhen equipped with Royal Guard Stone II (Garment), increases magical damage against all size enemies by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Over Brand": [
+        "LEARN_SKILL[Moon Slasher==1]---5"
+      ],
+      "Cannon Spear": [
+        "EQUIP[Royal Guard Stone (Garment)]===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Royal Guard Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311005": {
+    "id": 311005,
+    "aegisName": "WanderMins_Top3",
+    "name": "Wander Mins Stone (Upper)",
+    "unidName": "Wander Mins Stone (Upper)",
+    "resName": "ClownGypsy_Figure",
+    "description": "Reduces variable casting time by 1% per each level of Voice Lessons user learned.\nWhen equipped with Wander Mins Stone (Garment), has a 2% chance to restore 1% of damage as SP when dealing physical damage.\nWhen equipped with Wander Mins Stone II (Garment), increases Metallic Sound damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Lesson==1]---1"
+      ],
+      "Metalic Sound": [
+        "EQUIP[Wanderer Minstrel Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311006": {
+    "id": 311006,
+    "aegisName": "WanderMins_Middle3",
+    "name": "Wander Mins Stone (Middle)",
+    "unidName": "Wander Mins Stone (Middle)",
+    "resName": "ClownGypsy_Figure",
+    "description": "Reduces skill cooldown of Severe Rainstorm and Metallic Sound by 0.1 seconds per each level of Circle of Nature user learned.\nWhen equipped with Wander Mins Stone (Garment), increases physical damage against all size enemies by 15%.\nWhen equipped with Wander Mins Stone II (Garment), increases all property magical damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cd__Severe Rainstorm": [
+        "LEARN_SKILL[Circling Nature==1]---0.1"
+      ],
+      "cd__Metalic Sound": [
+        "LEARN_SKILL[Circling Nature==1]---0.1"
+      ],
+      "p_size_all": [
+        "EQUIP[Wanderer Minstrel Stone (Garment)]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Wanderer Minstrel Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311007": {
+    "id": 311007,
+    "aegisName": "WanderMins_Bottom3",
+    "name": "Wander Mins Stone (Lower)",
+    "unidName": "Wander Mins Stone (Lower)",
+    "resName": "ClownGypsy_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Frigg's Song user learned.\nWhen equipped with Wander Mins Stone (Garment), increases Severe Rainstorm damage by 15%.\nWhen equipped with Wander Mins Stone II (Garment), increases Reverberation damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Frigg's Song==1]---0.1"
+      ],
+      "Severe Rainstorm": [
+        "EQUIP[Wanderer Minstrel Stone (Garment)]===15"
+      ],
+      "Reverberation": [
+        "EQUIP[Wanderer Minstrel Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311008": {
+    "id": 311008,
+    "aegisName": "Genetic_Top3",
+    "name": "Genetic Stone (Upper)",
+    "unidName": "Genetic Stone (Upper)",
+    "resName": "Creator_Figure",
+    "description": "Increases long ranged physical damage by 2% per each level of Cart Cannon user learned.\nWhen equipped with Genetic Stone (Garment), increases Acid Bomb damage by 15%.\nWhen equipped with Genetic Stone II (Garment), increases Spore Explosion damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Cart Cannon==1]---2"
+      ],
+      "Acid Bomb": [
+        "EQUIP[Genetic Stone (Garment)]===15"
+      ],
+      "Spore Explosion": [
+        "EQUIP[Genetic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311009": {
+    "id": 311009,
+    "aegisName": "Genetic_Middle3",
+    "name": "Genetic Stone (Middle)",
+    "unidName": "Genetic Stone (Middle)",
+    "resName": "Creator_Figure",
+    "description": "Reduces variable casting time by 2% per each level of Cart Remodeling user learned.\nWhen equipped with Genetic Stone (Garment), increases Cart Cannon damage by 15%.\nWhen equipped with Genetic Stone II (Garment), increases Cart Tornado damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Cart Remodeling==1]---2"
+      ],
+      "Cart Cannon": [
+        "EQUIP[Genetic Stone (Garment)]===15"
+      ],
+      "Cart Tornado": [
+        "EQUIP[Genetic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311010": {
+    "id": 311010,
+    "aegisName": "Genetic_Bottom3",
+    "name": "Genetic Stone (Lower)",
+    "unidName": "Genetic Stone (Lower)",
+    "resName": "Creator_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Sword Training user learned.\nWhen equipped with Genetic Stone (Garment), increases Acid Bomb damage by 15%.\nWhen equipped with Genetic Stone II (Garment), increases Cart Tornado damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Sword Mastery==1]---0.1"
+      ],
+      "Acid Bomb": [
+        "EQUIP[Genetic Stone (Garment)]===15"
+      ],
+      "Cart Tornado": [
+        "EQUIP[Genetic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311011": {
+    "id": 311011,
+    "aegisName": "Sorcerer_Top3",
+    "name": "Sorcerer Stone (Upper)",
+    "unidName": "Sorcerer Stone (Upper)",
+    "resName": "Professor_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Striking user learned.\nWhen equipped with Sorcerer Stone (Garment), reduces skill cooldown of Killing Cloud by 2 seconds.\nWhen equipped with Sorcerer Stone II (Garment), increases Earth Grave damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Striking==1]---0.1"
+      ],
+      "cd__Killing Cloud": [
+        "EQUIP[Sorcerer Stone (Garment)]===2"
+      ],
+      "Earth Grave": [
+        "EQUIP[Sorcerer Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311012": {
+    "id": 311012,
+    "aegisName": "Sorcerer_Middle3",
+    "name": "Sorcerer Stone (Middle)",
+    "unidName": "Sorcerer Stone (Middle)",
+    "resName": "Professor_Figure",
+    "description": "Reduces variable casting time by 2% per each level of Diamond Dust user learned.\nWhen equipped with Sorcerer Stone (Garment), increases Psychic Wave damage by 15%.\nWhen equipped with Sorcerer Stone II (Garment), increases Varetyr Spear damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Diamond Dust==1]---2"
+      ],
+      "Psychic Wave": [
+        "EQUIP[Sorcerer Stone (Garment)]===15"
+      ],
+      "Varetyr Spear": [
+        "EQUIP[Sorcerer Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311013": {
+    "id": 311013,
+    "aegisName": "Sorcerer_Bottom3",
+    "name": "Sorcerer Stone (Lower)",
+    "unidName": "Sorcerer Stone (Lower)",
+    "resName": "Professor_Figure",
+    "description": "Increases all property magical damage by 2% per each level of Earth Grave user learned.\nWhen equipped with Sorcerer Stone (Garment), increases Poison Burst damage by 15%.\nWhen equipped with Sorcerer Stone II (Garment), increases Diamond Dust damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "LEARN_SKILL[Earth Grave==1]---2"
+      ],
+      "Poison Burst": [
+        "EQUIP[Sorcerer Stone (Garment)]===15"
+      ],
+      "Diamond Dust": [
+        "EQUIP[Sorcerer Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311356": {
+    "id": 311356,
+    "aegisName": "Archbishop_Top3",
+    "name": "Archbishop Stone (Upper)",
+    "unidName": "Archbishop Stone (Upper)",
+    "resName": "High_Priest_Figure",
+    "description": "Reduces global cooldown by 3% per each level of Clementia user learned.\nWhen equipped with Archbishop Stone (Garment), increases all property magical damage by 15%.\nWhen equipped with Archbishop Stone II (Garment), increases magical damage against all size enemies by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[Clementia==1]---3"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Archbishop Stone (Garment)]===15"
+      ],
+      "m_size_all": [
+        "EQUIP[Archbishop Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311357": {
+    "id": 311357,
+    "aegisName": "Archbishop_Middle3",
+    "name": "Archbishop Stone (Middle)",
+    "unidName": "Archbishop Stone (Middle)",
+    "resName": "High_Priest_Figure",
+    "description": "Reduces variable casting time by 3% per each level of Lauda Agnus user learned.\nWhen equipped with Archbishop Stone (Garment), increases Adoramus damage by 15%.\nWhen equipped with Archbishop Stone II (Garment), increases Judex damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Laudaagnus==1]---3"
+      ],
+      "Adoramus": [
+        "EQUIP[Archbishop Stone (Garment)]===15"
+      ],
+      "Judex": [
+        "EQUIP[Archbishop Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311358": {
+    "id": 311358,
+    "aegisName": "Archbishop_Bottom3",
+    "name": "Archbishop Stone (Lower)",
+    "unidName": "Archbishop Stone (Lower)",
+    "resName": "High_Priest_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per each level of Expiatio user learned.\nWhen equipped with Archbishop Stone (Garment), increases magical damage against all race monsters (except players) by 15%.\nWhen equipped with Archbishop Stone II (Garment), increases all property magical damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Expiatio==1]---0.1"
+      ],
+      "m_race_all": [
+        "EQUIP[Archbishop Stone (Garment)]===15"
+      ],
+      "m_my_element_all": [
+        "EQUIP[Archbishop Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311359": {
+    "id": 311359,
+    "aegisName": "Ranger_Top3",
+    "name": "Ranger Stone (Upper)",
+    "unidName": "Ranger Stone (Upper)",
+    "resName": "Sniper_Figure",
+    "description": "Reduces global cooldown by 1% per 2 levels of Main Ranger user learned.\nWhen equipped with Ranger Stone (Garment), reduces skill cooldown of No Limits by 45 seconds.\nWhen equipped with Ranger Stone II (Garment), increases Focused Arrow Strike damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[Main Ranger==2]---1"
+      ],
+      "cd__No Limits": [
+        "EQUIP[Ranger Stone (Garment)]===45"
+      ],
+      "Focused Arrow Strike": [
+        "EQUIP[Ranger Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311360": {
+    "id": 311360,
+    "aegisName": "Ranger_Middle3",
+    "name": "Ranger Stone (Middle)",
+    "unidName": "Ranger Stone (Middle)",
+    "resName": "Sniper_Figure",
+    "description": "Reduces variable casting time by 1% per each level of Trap Research user learned.\nWhen equipped with Ranger Stone (Garment), increases Arrow Storm damage by 15%.\nWhen equipped with Ranger Stone II (Garment), increases Aimed Bolt damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Trap Research==1]---1"
+      ],
+      "Arrow Storm": [
+        "EQUIP[Ranger Stone (Garment)]===15"
+      ],
+      "Aimed Bolt": [
+        "EQUIP[Ranger Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311361": {
+    "id": 311361,
+    "aegisName": "Ranger_Bottom3",
+    "name": "Ranger Stone (Lower)",
+    "unidName": "Ranger Stone (Lower)",
+    "resName": "Sniper_Figure",
+    "description": "Increases long range physical damage by 2% per each level of Fear Breeze user learned.\nWhen equipped with Ranger Stone (Garment), has a 2% chance to restore 1% of damage as SP when dealing physical damage.\nWhen equipped with Ranger Stone II (Garment), increases physical damage against all size enemies by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Fear Breeze==1]---2"
+      ],
+      "p_size_all": [
+        "EQUIP[Ranger Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311362": {
+    "id": 311362,
+    "aegisName": "Shadowchaser_Top3",
+    "name": "Shadow Chaser Stone (Upper)",
+    "unidName": "Shadow Chaser Stone (Upper)",
+    "resName": "Stalker_Figure",
+    "description": "Increases attack speed (reduces delay after attack by 2%) each level of Urgent Escape user learned.\nWhen equipped with Shadow Chaser Stone (Garment), increases Feint Bomb damage by 15%.\nWhen equipped with Shadow Chaser Stone II (Garment), has a 1% chance to restore 1% of damage as SP when dealing physical damage.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "aspdPercent": [
+        "LEARN_SKILL[Urgent Escape==1]---2"
+      ],
+      "Feint Bomb": [
+        "EQUIP[Shadow Chaser Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311363": {
+    "id": 311363,
+    "aegisName": "Shadowchaser_Middle3",
+    "name": "Shadow Chaser Stone (Middle)",
+    "unidName": "Shadow Chaser Stone (Middle)",
+    "resName": "Stalker_Figure",
+    "description": "Reduces global cooldown by 1% each level of Shadow Formation user learned.\nWhen equipped with Shadow Chaser Stone (Garment), increases Triangle Shot damage by 15%.\nWhen equipped with Shadow Chaser Stone II (Garment), increases Fatal Menace damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[Shadow Formation==1]---1"
+      ],
+      "Triangle Shot": [
+        "EQUIP[Shadow Chaser Stone (Garment)]===15"
+      ],
+      "Fatal Manace": [
+        "EQUIP[Shadow Chaser Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311364": {
+    "id": 311364,
+    "aegisName": "Shadowchaser_Bottom3",
+    "name": "Shadow Chaser Stone (Lower)",
+    "unidName": "Shadow Chaser Stone (Lower)",
+    "resName": "Stalker_Figure",
+    "description": "Increases melee and long ranged physical damage by 1% each level of Reproduce user learned.\nWhen equipped with Shadow Chaser Stone (Garment), increases physical damage against all property enemies by 15%.\nWhen equipped with Shadow Chaser Stone II (Garment), increases physical damage against all size enemies by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Reproduce==1]---1"
+      ],
+      "range": [
+        "LEARN_SKILL[Reproduce==1]---1"
+      ],
+      "p_element_all": [
+        "EQUIP[Shadow Chaser Stone (Garment)]===15"
+      ],
+      "p_size_all": [
+        "EQUIP[Shadow Chaser Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311427": {
+    "id": 311427,
+    "aegisName": null,
+    "name": "Sura Stone (Upper)",
+    "unidName": "Sura Stone (Upper)",
+    "resName": "Champion_Figure",
+    "description": "Reduces fixed casting time by 0.1 seconds per 2 levels of Rising Dragon user learned.\nWhen equipped with Sura Stone (Garment), increases Lightning Ride damage by 20%.\nWhen equipped with Sura Stone II (Garment), increases Knuckle Arrow damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "fct": [
+        "LEARN_SKILL[Rising Dragon==2]---0.1"
+      ],
+      "Lightning Ride": [
+        "EQUIP[Sura Stone (Garment)]===20"
+      ],
+      "Knuckle Arrow": [
+        "EQUIP[Sura Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311428": {
+    "id": 311428,
+    "aegisName": null,
+    "name": "Sura Stone (Middle)",
+    "unidName": "Sura Stone (Middle)",
+    "resName": "Champion_Figure",
+    "description": "Increases melee physical damage by 2% per each level of Gentle Touch-Revitalize user learned.\nWhen equipped with Sura Stone (Garment), increases Lightning Ride damage by 20%.\nWhen equipped with Sura Stone II (Garment), increases Tiger Cannon damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Gentle Touch - Alive==1]---2"
+      ],
+      "Lightning Ride": [
+        "EQUIP[Sura Stone (Garment)]===20"
+      ],
+      "Tiger Cannon": [
+        "EQUIP[Sura Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311429": {
+    "id": 311429,
+    "aegisName": null,
+    "name": "Sura Stone (Lower)",
+    "unidName": "Sura Stone (Lower)",
+    "resName": "Champion_Figure",
+    "description": "Increases long ranged physical damage by 2% per each level of Gentle Touch-Convert user learned.\nWhen equipped with Sura Stone (Garment), increases Rampage Blast damage by 15%.\nWhen equipped with Sura Stone II (Garment), increases Knuckle Arrow damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Gentle Touch - Opposite==1]---2"
+      ],
+      "Rampage Blast": [
+        "EQUIP[Sura Stone (Garment)]===15"
+      ],
+      "Knuckle Arrow": [
+        "EQUIP[Sura Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311430": {
+    "id": 311430,
+    "aegisName": null,
+    "name": "Mechanic Stone (Upper)",
+    "unidName": "Mechanic Stone (Upper)",
+    "resName": "White_Smith_Figure",
+    "description": "Reduces variable casting time by 1% per each level of Fire Earth Research user learned.\nWhen equipped with Mechanic Stone (Garment), increases Axe Tornado damage by 15%.\nWhen equipped with Mechanic Stone II (Garment), increases Knuckle Boost damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Fire Earth Research==1]---1"
+      ],
+      "Axe Tornado": [
+        "EQUIP[Mechanic Stone (Garment)]===15"
+      ],
+      "Knuckle Boost": [
+        "EQUIP[Mechanic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311431": {
+    "id": 311431,
+    "aegisName": null,
+    "name": "Mechanic Stone (Middle)",
+    "unidName": "Mechanic Stone (Middle)",
+    "resName": "White_Smith_Figure",
+    "description": "Increases melee and long ranged physical damage by 1% per each level of Madogear License user learned.\nWhen equipped with Mechanic Stone (Garment), increases Axe Boomerang damage by 15%.\nWhen equipped with Mechanic Stone II (Garment), increases Arm Cannon damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Madogear License==1]---1"
+      ],
+      "range": [
+        "LEARN_SKILL[Madogear License==1]---1"
+      ],
+      "Axe Boomerang": [
+        "EQUIP[Mechanic Stone (Garment)]===15"
+      ],
+      "Arm Cannon": [
+        "EQUIP[Mechanic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311432": {
+    "id": 311432,
+    "aegisName": null,
+    "name": "Mechanic Stone (Lower)",
+    "unidName": "Mechanic Stone (Lower)",
+    "resName": "White_Smith_Figure",
+    "description": "Reduces global cooldown by 1% per each level of Axe Mastery user learned.\nWhen equipped with Mechanic Stone (Garment), increases Power Swing damage by 15%.\nWhen equipped with Mechanic Stone II (Garment), increases Vulcan Arm damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[Axe Mastery==1]---1"
+      ],
+      "Power Swing": [
+        "EQUIP[Mechanic Stone (Garment)]===15"
+      ],
+      "Vulcan Arm": [
+        "EQUIP[Mechanic Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311433": {
+    "id": 311433,
+    "aegisName": null,
+    "name": "Guillotine Cross Stone (Upper)",
+    "unidName": "Guillotine Cross Stone (Upper)",
+    "resName": "Assasin_Cross_Figure",
+    "description": "Reduces global cooldown by 1% per 2 levels of New Poison Research user learned.\nWhen equipped with Guillotine Cross Stone (Garment), increases Cross Ripper Slasher damage by 15%.\nWhen equipped with Guillotine Cross Stone II (Garment), increases Counter Slash damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "acd": [
+        "LEARN_SKILL[New Poison Research==2]---1"
+      ],
+      "Cross Ripper Slasher": [
+        "EQUIP[Guillotine Cross Stone (Garment)]===15"
+      ],
+      "Counter Slash": [
+        "EQUIP[Guillotine Cross Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311434": {
+    "id": 311434,
+    "aegisName": null,
+    "name": "Guillotine Cross Stone (Middle)",
+    "unidName": "Guillotine Cross Stone (Middle)",
+    "resName": "Assasin_Cross_Figure",
+    "description": "Increases melee physical damage by 2% per each level of Dark Illusion user learned.\nWhen equipped with Guillotine Cross Stone (Garment), increases Rolling Cutter Slasher damage by 15%.\nWhen equipped with Guillotine Cross Stone II (Garment), increases Cross Impact damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Dark Illusion==1]---2"
+      ],
+      "Rolling Cutter": [
+        "EQUIP[Guillotine Cross Stone (Garment)]===15"
+      ],
+      "Cross Impact": [
+        "EQUIP[Guillotine Cross Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311435": {
+    "id": 311435,
+    "aegisName": null,
+    "name": "Guillotine Cross Stone (Lower)",
+    "unidName": "Guillotine Cross Stone (Lower)",
+    "resName": "Assasin_Cross_Figure",
+    "description": "Increases long ranged physical damage by 2% per each level of Cross Ripper Slasher user learned.\nWhen equipped with Guillotine Cross Stone (Garment), increases Cross Ripper Slasher Slasher damage by 15%.\nWhen equipped with Guillotine Cross Stone II (Garment), increases physical damage against all race monsters (except players) by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Cross Ripper Slasher==1]---2"
+      ],
+      "Cross Ripper Slasher": [
+        "EQUIP[Guillotine Cross Stone (Garment)]===15"
+      ],
+      "p_race_all": [
+        "EQUIP[Guillotine Cross Stone II (Garment)]===15"
+      ]
+    }
+  },
+  "311460": {
+    "id": 311460,
+    "aegisName": "",
+    "name": "Star Emperor Stone (Upper)",
+    "unidName": "Star Emperor Stone (Upper)",
+    "resName": "푸른야광석",
+    "description": "Increases Full Moon Kick damage by 3% per each level of Blessing of Moon user learned.\r\nWhen equipped with Star Emperor Stone (Garment), increases New Moon Kick damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Full Moon Kick": [
+        "LEARN_SKILL[Blessing of Moon==1]---3"
+      ],
+      "New Moon Kick": [
+        "EQUIP[Star Emperor Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311461": {
+    "id": 311461,
+    "aegisName": "",
+    "name": "Star Emperor Stone (Middle)",
+    "unidName": "Star Emperor Stone (Middle)",
+    "resName": "푸른야광석",
+    "description": "Increases melee physical damage by 2% per each level of Blessing of Sun user learned.\r\nWhen equipped with Star Emperor Stone (Garment), increases Solar Burst damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "melee": [
+        "LEARN_SKILL[Blessing of Sun==1]---2"
+      ],
+      "Solar Explosion": [
+        "EQUIP[Star Emperor Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311462": {
+    "id": 311462,
+    "aegisName": "",
+    "name": "Star Emperor Stone (Lower)",
+    "unidName": "Star Emperor Stone (Lower)",
+    "resName": "푸른야광석",
+    "description": "Increases Falling Star damage by 4% per each level of Blessing of Star user learned.\r\nWhen equipped with Star Emperor Stone (Garment), has a 2% chance to restore 1% of damage as SP when dealing physical damage.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Falling Star": [
+        "LEARN_SKILL[Blessing of Star==1]---4"
+      ]
+    }
+  },
+  "311463": {
+    "id": 311463,
+    "aegisName": "",
+    "name": "Rebellion Stone (Upper)",
+    "unidName": "Rebellion Stone (Upper)",
+    "resName": "정화탄",
+    "description": "Increases physical damage against all size enemies by 2% and increases Dragon Tail damage by 4% per each level of Platinum Altar user learned.\r\nWhen equipped with Rebellion Stone (Garment), increases Vanishing Buster damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_size_all": [
+        "LEARN_SKILL[Platinum Altar==1]---2"
+      ],
+      "Dragon Tail": [
+        "LEARN_SKILL[Platinum Altar==1]---4"
+      ],
+      "Vanishing Buster": [
+        "EQUIP[Rebellion Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311464": {
+    "id": 311464,
+    "aegisName": "",
+    "name": "Rebellion Stone (Middle)",
+    "unidName": "Rebellion Stone (Middle)",
+    "resName": "정화탄",
+    "description": "Increases longed ranged physical damage by 2% per each level of Fire Rain user learned.\r\nWhen equipped with Rebellion Stone (Garment), increases Round Trip damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Fire Rain==1]---2"
+      ],
+      "Round Trip": [
+        "EQUIP[Rebellion Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311465": {
+    "id": 311465,
+    "aegisName": "",
+    "name": "Rebellion Stone (Lower)",
+    "unidName": "Rebellion Stone (Lower)",
+    "resName": "정화탄",
+    "description": "Increases Fire Dance and Hammer of God damage by 4% per each level of Heat Barrel user learned.\r\nWhen equipped with Rebellion Stone (Garment), reduces fixed casting time by 0.5 seconds.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Fire Dance": [
+        "LEARN_SKILL[Hot Barrel==1]---4"
+      ],
+      "God's Hammer": [
+        "LEARN_SKILL[Hot Barrel==1]---4"
+      ],
+      "fct": [
+        "EQUIP[Rebellion Stone (Garment)]===0.5"
+      ]
+    }
+  },
+  "311466": {
+    "id": 311466,
+    "aegisName": "",
+    "name": "Soul Reaper Stone (Upper)",
+    "unidName": "Soul Reaper Stone (Upper)",
+    "resName": "도깨비불",
+    "description": "Increases all property magical damage by 1% per each level of Espa user learned.\r\nWhen equipped with Soul Reaper Stone (Garment), reduces SP consumption of Espa by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_my_element_all": [
+        "LEARN_SKILL[Espa==1]---1"
+      ],
+      "spPercentCost__Espa": [
+        "EQUIP[Soul Reaper Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311467": {
+    "id": 311467,
+    "aegisName": "",
+    "name": "Soul Reaper Stone (Middle)",
+    "unidName": "Soul Reaper Stone (Middle)",
+    "resName": "도깨비불",
+    "description": "Increases magical damage against all size enemies by 1% per each level of Eswhoo user learned.\r\nWhen equipped with Soul Reaper Stone (Garment), increases Eswhoo damage by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_size_all": [
+        "LEARN_SKILL[Eswhoo==1]---1"
+      ],
+      "Eswhoo": [
+        "EQUIP[Soul Reaper Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311468": {
+    "id": 311468,
+    "aegisName": "",
+    "name": "Soul Reaper Stone (Lower)",
+    "unidName": "Soul Reaper Stone (Lower)",
+    "resName": "도깨비불",
+    "description": "Reduces skill cooldown of Curse Explosion by 0.1 seconds per each level of Evil Spirit's Curse user learned.\r\nWhen equipped with Soul Reaper Stone (Garment), reduces fixed casting time by 0.5 seconds.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "cd__Curse Explosion": [
+        "LEARN_SKILL[Evil Soul Curse==1]---0.1"
+      ],
+      "fct": [
+        "EQUIP[Soul Reaper Stone (Garment)]===0.5"
+      ]
+    }
+  },
+  "311912": {
+    "id": 311912,
+    "aegisName": null,
+    "name": "Kagerou Stone (Upper)",
+    "unidName": "Kagerou Stone (Upper)",
+    "resName": "불의부적",
+    "description": "Increases physical damage against all size enemies by 2% per each level of Kagerou & Oboro's Righthand Mastery user learned.\r\nWhen equipped with Kagerou Stone (Garment), increases Swirling Petal damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "p_size_all": [
+        "LEARN_SKILL[Righthand Mastery==1]---2"
+      ],
+      "Swirling Petal": [
+        "EQUIP[Kagerou Stone (Garment)]===25"
+      ]
+    }
+  },
+  "311913": {
+    "id": 311913,
+    "aegisName": null,
+    "name": "Kagerou Stone (Middle)",
+    "unidName": "Kagerou Stone (Middle)",
+    "resName": "불의부적",
+    "description": "Increases long ranged physical damage by 2% per each level of 16th Night user learned.\r\nWhen equipped with Kagerou Stone (Garment), increases Cross Slash damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[16th Night==1]---2"
+      ],
+      "Cross Slash": [
+        "EQUIP[Kagerou Stone (Garment)]===25"
+      ]
+    }
+  },
+  "311914": {
+    "id": 311914,
+    "aegisName": null,
+    "name": "Kagerou Stone (Lower)",
+    "unidName": "Kagerou Stone (Lower)",
+    "resName": "불의부적",
+    "description": "Increases Kunai Splash damage by 5% per each level of Pure Soul user learned.\r\nWhen equipped with Kagerou Stone (Garment), increases Kunai Splash damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Kunai Splash": [
+        "LEARN_SKILL[Pure Soul==1]---5",
+        "EQUIP[Kagerou Stone (Garment)]===25"
+      ]
+    }
+  },
+  "311915": {
+    "id": 311915,
+    "aegisName": null,
+    "name": "Oboro Stone (Upper)",
+    "unidName": "Oboro Stone (Upper)",
+    "resName": "불의부적",
+    "description": "Increases magical damage against all size enemies by 2% per each level of Kagerou & Oboro's Righthand Mastery user learned.\r\nWhen equipped with Oboro Stone (Garment), increases Freezing Spear and Wind Blade damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "m_size_all": [
+        "LEARN_SKILL[Righthand Mastery==1]---2"
+      ],
+      "Freezing Spear": [
+        "EQUIP[Oboro Stone (Garment)]===25"
+      ],
+      "Wind Blade": [
+        "EQUIP[Oboro Stone (Garment)]===25"
+      ]
+    }
+  },
+  "311916": {
+    "id": 311916,
+    "aegisName": null,
+    "name": "Oboro Stone (Middle)",
+    "unidName": "Oboro Stone (Middle)",
+    "resName": "불의부적",
+    "description": "Increases MaxSP by 3% per each level of Pure Soul user learned.\r\nWhen equipped with Oboro Stone (Garment), increases Exploding Dragon, Snow Flake Draft and First Wind damage by 30%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "spPercent": [
+        "LEARN_SKILL[Pure Soul==1]---3"
+      ],
+      "Exploding Dragon": [
+        "EQUIP[Oboro Stone (Garment)]===30"
+      ],
+      "Snow Flake Draft": [
+        "EQUIP[Oboro Stone (Garment)]===30"
+      ],
+      "First Wind": [
+        "EQUIP[Oboro Stone (Garment)]===30"
+      ]
+    }
+  },
+  "311917": {
+    "id": 311917,
+    "aegisName": null,
+    "name": "Oboro Stone (Lower)",
+    "unidName": "Oboro Stone (Lower)",
+    "resName": "불의부적",
+    "description": "Increases Flaming Petals, Freezing Spear and Wind Blade damage by 4% per each level of 16th Night user learned.\r\nWhen equipped with Oboro Stone (Garment), reduces variable casting time by 15%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Flaming Petals": [
+        "LEARN_SKILL[16th Night==1]---4"
+      ],
+      "Freezing Spear": [
+        "LEARN_SKILL[16th Night==1]---4"
+      ],
+      "Wind Blade": [
+        "LEARN_SKILL[16th Night==1]---4"
+      ],
+      "vct": [
+        "EQUIP[Oboro Stone (Garment)]===15"
+      ]
+    }
+  },
+  "311918": {
+    "id": 311918,
+    "aegisName": null,
+    "name": "Summoner Stone (Upper)",
+    "unidName": "Summoner Stone (Upper)",
+    "resName": "블랙캣",
+    "description": "Increases Lunatic Carrot Beat damage by 5% per each level of Picky Peck user learned.\r\nIncreases Catnip Meteor damage by 5% per each level of Silvervine Stem Spear user learned.\r\nWhen equipped with Doram Stone (Garment), reduces fixed casting time by 0.5 seconds.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 71,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "Lunatic Carrot Beat": [
+        "LEARN_SKILL[Picky Peck==1]---5"
+      ],
+      "Catnip Meteor": [
+        "LEARN_SKILL[Silvervine Stem Spear==1]---5"
+      ],
+      "fct": [
+        "EQUIP[Doram Stone (Garment)]===0.5"
+      ]
+    }
+  },
+  "311919": {
+    "id": 311919,
+    "aegisName": null,
+    "name": "Summoner Stone (Middle)",
+    "unidName": "Summoner Stone (Middle)",
+    "resName": "블랙캣",
+    "description": "Reduces variable casting time by 2% per each level of Fresh Shrimp user learned.\r\nWhen equipped with Doram Stone (Garment), increases Catnip Meteor damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 72,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "vct": [
+        "LEARN_SKILL[Frash Shrimp==1]---2"
+      ],
+      "Catnip Meteor": [
+        "EQUIP[Doram Stone (Garment)]===25"
+      ]
+    }
+  },
+  "311920": {
+    "id": 311920,
+    "aegisName": null,
+    "name": "Summoner Stone (Lower)",
+    "unidName": "Summoner Stone (Lower)",
+    "resName": "블랙캣",
+    "description": "Increases long ranged physical damage by 2% per each level of Arclouse Dash user learned.\r\nWhen equipped with Doram Stone (Garment), increases Lunatic Carrot Beat damage by 25%.",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 73,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": null,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 65535,
+    "script": {
+      "range": [
+        "LEARN_SKILL[Arclouse Dash==1]---2"
+      ],
+      "Lunatic Carrot Beat": [
+        "EQUIP[Doram Stone (Garment)]===25"
+      ]
+    }
+  },
   "400001": {
     "id": 400001,
     "aegisName": "Victory_Wing_Ear",
@@ -59157,9 +63132,9 @@
     "id": 400078,
     "aegisName": "BioWeapon_Helm_RK",
     "name": "Goral Crown [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "백양궁왕관",
-    "description": "Atk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, increase long ranged physical damage by 15%.\nIf refine rate is 11 or higher, increases physical damage against all size enemies by 10%.\n\nWhen equipped with Volar, increases critical damage by 10%,\nincreases Ignition Break damage by 12% per refine rate of weapon.\n\nWhen equipped with Vernan, reduces global cooldown by 10%,\nincreases Sonic Wave damage by 10% per refine rate of weapon.\n\nWhen equipped with Argen Blanco, reduces skill cooldown of Hundred Spear by 0.5 seconds,\nincreases Hundred Spear damage by 10% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Rune Knight^000000",
+    "description": "มงกุฎที่ทำขึ้นเพื่อร่างทดลองเฉพาะ ทำขึ้นเป็นรูปร่างเหมือนเขากับแผงคอของสัตว์ป่าที่ตกแต่งด้วยอัญมณีสีแดง\nทุก ๆ การอัพเกรด 2 ขั้น ATK +20\nเมื่ออัพเกรดถึงขั้น 7, ASPD +10%\nเมื่ออัพเกรดถึงขั้น 9 เพิ่ม Damage ทางกายภาพระยะไกล 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพต่อศัตรูทุกขนาด 10%\n\nเมื่อสวมใส่ร่วมกับ Volar,\nCritical Damage +10%, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Ignition Break 12%\nเมื่อสวมใส่ร่วมกับ Vernan,\nลด Delay หลังใช้สกิล 10%, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Sonic Wave 10%\nเมื่อสวมใส่ร่วมกับ Argen Blanco,\nลด Cooldown สกิล Hundred Spears 0.5 วินาที, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Hundred Spears 10%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่สวมใส่ : ^777777Rune Knight^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -59210,9 +63185,9 @@
     "id": 400079,
     "aegisName": "BioWeapon_Helm_LG",
     "name": "Trial Diadem [1]",
-    "unidName": "Headgear",
+    "unidName": "Helm",
     "resName": "천칭궁보관",
-    "description": "Atk + 20 and Matk + 20 per 2 refine rate.\nIf refine rate is 7 or higher, increases attack speed (reduces delay after attack by 10%).\nIf refine rate is 9 or higher, Atk + 15%, increase holy property magical damage by 15%.\nIf refine rate is 11 or higher, increases physical and magical damage against all size enemies by 10%, reduces fixed casting time by 0.2 seconds.\n\nWhen equipped with Farthezan, reduces variable casting time by 10%,\nincreases Gloria Domini and Genesis Ray damage by 10% per refine rate of weapon.\n\nWhen equipped with Harve, reduces skill cooldown of Shield Press by 1 second,\nincreases Shield Press damage by 10% per refine rate of weapon.\n\nWhen equipped with Fortridge, reduces skill cooldown of Cannon Spear by 0.5 seconds,\nincreases Cannon Spear damage by 12% per refine rate of weapon.\nClass: ^777777Headgear^000000 Defense: ^77777710^000000\nLocation: ^777777Upper ^000000 Weight: ^77777710^000000\nRequired Level: ^777777170^000000\nJobs: ^777777Royal Guard^000000",
+    "description": "มงกุฎที่ทำขึ้นเพื่อร่างทดลองเฉพาะ ทำขึ้นเป็นรูปร่างพิลึกพิลั่นอย่างมีเอกลักษณ์ และตกแต่งด้วยอัญมณีสีน้ำเงิน\nทุก ๆ การอัพเกรด 2 ขั้น ATK +20, MATK +20\nเมื่ออัพเกรดถึงขั้น 7, ASPD +10%\nเมื่ออัพเกรดถึงขั้น 9, ATK +15%, เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 15%\nเมื่ออัพเกรดถึงขั้น 11 เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกขนาด 10%, ลดระยะเวลาร่ายแบบคงที่ 0.2 วินาที\n\nเมื่อสวมใส่ร่วมกับ Farthezan,\nลดระยะเวลาร่ายแบบแปรผัน 15%, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Gloria Domini และ Genesis Ray 10%\nเมื่อสวมใส่ร่วมกับ Harve,\nลด Cooldown สกิล Shield Press 1 วินาที, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Shield Press 10%\nเมื่อสวมใส่ร่วมกับ Fortridge,\nลด Cooldown สกิล Cannon Spear 0.5 วินาที, ทุก ๆ การอัพเกรด Weapon 1 ขั้น เพิ่ม Damage สกิล Cannon Spear 12%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^77777710^000000\nตำแหน่ง : ^777777Upper ^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777170^000000\nอาชีพที่สวมใส่ : ^777777Royal Guard^000000",
     "slots": 1,
     "itemTypeId": 2,
     "itemSubTypeId": 512,
@@ -60450,6 +64425,58 @@
       ],
       "m_size_all": [
         "EQUIP[Temporal Int Manteau&&Robust Magical Armor]REFINE[armor,garment==22]===10"
+      ]
+    }
+  },
+  "420030": {
+    "id": 420030,
+    "aegisName": "Falconer_Flute_C",
+    "name": "Feather in Mouth",
+    "unidName": "Mask",
+    "resName": "매부리의피리",
+    "description": "ขนนกที่แสดงถึงความว่องไว\nเมือคาบเอาไว้ที่ปากและเป่ามันจะส่งเสียงออกมา\n\nเพิ่ม Damage ทางกายภาพระยะไกล 5%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777771^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 1,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "range": [
+        "5"
+      ]
+    }
+  },
+  "420031": {
+    "id": 420031,
+    "aegisName": "Mask_Of_Orochimaru_C",
+    "name": "Ninja's Blue Mask",
+    "unidName": "Mask",
+    "resName": "오로치마루의마스크",
+    "description": "หน้ากากสีน้ำเงินที่ให้ความรู้สึกราวกับนินจา\n\nเพิ่ม Damage ทางกายภาพระยะใกล้ 5%\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777770^000000\nตำแหน่ง : ^777777Lower^000000 น้ำหนัก : ^7777771^000000\nเลเวลที่ต้องการ : ^7777771^000000\nอาชีพที่สวมใส่ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 1,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "melee": [
+        "5"
       ]
     }
   },
@@ -61941,6 +65968,80 @@
       ]
     }
   },
+  "470255": {
+    "id": 470255,
+    "aegisName": null,
+    "name": "Zodiac Boots (Swordsman) [1]",
+    "unidName": "Zodiac Boots (Swordsman)",
+    "resName": "HalfBloodPrincess_Shoes",
+    "description": "รองเท้าคุณภาพดีที่ได้รับพลังจากกลุ่มดาว Aries และ Libra\n\nATK/MATK +50\nทุก ๆ การอัพเกรด 2 ขั้น ATK/MATK +10, ATK/MATK +1%\nทุก ๆ การอัพเกรด 4 ขั้น เพิ่ม Damage สกิล Sonic Wave และ Genesis Ray 15%\nเมื่ออัพเกรดตั้งแต่ 9 ขึ้นไป ลดระยะเวลาร่ายแบบคงที่ 0.5 วินาที\nเมื่ออัพเกรดตั้งแต่ 11 ขึ้นไป ลด Delay หลังใช้สกิล 10%\n\nเมื่อสวมใส่ร่วมกับ Seyren's Memory,\nลด Cooldown สกิล Sonic Wave 0.5 วินาที\nทุก ๆ การอัพเกรด Weapon 4 ขั้น Critical Damage +20%\n\nเมื่อสวมใส่ร่วมกับ Randel's Memory,\nลด Cooldown สกิล Genesis Ray 0.2 วินาที\nทุก ๆ การอัพเกรด Weapon 4 ขั้น เพิ่ม Damage สกิล Gloria Domini 40%\n\nเมื่อสวมใส่ร่วมกับ Seyren's Memory และ Goral Crown,\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 33 ขึ้นไป เพิ่ม Damage ทางกายภาพระยะไกล 30%\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 35 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางกายภาพของมอนสเตอร์ทุกเผ่า 40% (ยกเว้น Player)\n\nเมื่อสวมใส่ร่วมกับ Randel's Memory และ Trial Diadem,\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 33 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ธาตุ Holy 30%\nเมื่อค่าอัพเกรดรวมกันของ Headgear, Shoes, Weapon ตั้งแต่ 35 ขึ้นไป เพิกเฉยต่อพลังป้องกันทางเวทมนตร์ของมอนสเตอร์ทุกเผ่า 40% (ยกเว้น Player)\nประเภท : ^777777Shoes^000000  พลังป้องกัน : ^77777760^000000\nน้ำหนัก : ^77777790^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่สวมใส่ : ^777777Swordsman Class 3^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 516,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 60,
+    "weight": 90,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight",
+      "Royal Guard"
+    ],
+    "script": {
+      "atk": [
+        "50",
+        "2---10"
+      ],
+      "atkPercent": [
+        "2---1"
+      ],
+      "matk": [
+        "50",
+        "2---10"
+      ],
+      "matkPercent": [
+        "2---1"
+      ],
+      "Sonic Wave": [
+        "4---15"
+      ],
+      "Genesis Ray": [
+        "4---15"
+      ],
+      "fct": [
+        "9===0.5"
+      ],
+      "acd": [
+        "11===10"
+      ],
+      "cd__Sonic Wave": [
+        "EQUIP[Seyren's Memory]===0.5"
+      ],
+      "criDmg": [
+        "EQUIP[Seyren's Memory]REFINE[weapon==4]---20"
+      ],
+      "cd__Genesis Ray": [
+        "EQUIP[Randel's Memory]===0.2"
+      ],
+      "Gloria Domini": [
+        "EQUIP[Randel's Memory]REFINE[weapon==4]---40"
+      ],
+      "range": [
+        "EQUIP[Seyren's Memory&&Goral Crown]REFINE[headUpper,weapon,boot==33]===30"
+      ],
+      "p_pene_race_all": [
+        "EQUIP[Seyren's Memory&&Goral Crown]REFINE[headUpper,weapon,boot==35]===40"
+      ],
+      "m_my_element_holy": [
+        "EQUIP[Randel's Memory&&Trial Diadem]REFINE[headUpper,weapon,boot==33]===30"
+      ],
+      "m_pene_race_all": [
+        "EQUIP[Randel's Memory&&Trial Diadem]REFINE[headUpper,weapon,boot==35]===40"
+      ]
+    }
+  },
   "480000": {
     "id": 480000,
     "aegisName": "Atker_Manteau",
@@ -62174,6 +66275,45 @@
       ],
       "m_my_element_all": [
         "EQUIP[Automatic Leg B-type]===15"
+      ]
+    }
+  },
+  "480023": {
+    "id": 480023,
+    "aegisName": "Arabian_Manteau",
+    "name": "Arabian Manteau [1]",
+    "unidName": "Hood",
+    "resName": "Arabian_Manteau",
+    "description": "MaxHP +10%, Critical Damage +5%\n\nเมื่ออัพเกรดถึงขั้น 7, CRI +5, Critical Damage +5%\nเมื่ออัพเกรดถึงขั้น 9, CRI +10, Critical Damage +10%\nเมื่ออัพเกรดถึงขั้น 11, CRI +20, Critical Damage +20%\nเมื่ออัพเกรดถึงขั้น 13, CRI +30, Critical Damage +30%\n\nประเภท : ^777777Garment^000000  พลังป้องกัน : ^77777710^000000\nน้ำหนัก : ^77777730^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่สวมใส่ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 515,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 10,
+    "weight": 30,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hpPercent": [
+        "10"
+      ],
+      "criDmg": [
+        "5",
+        "7===5",
+        "9===10",
+        "11===20",
+        "13===30"
+      ],
+      "cri": [
+        "7===5",
+        "9===10",
+        "11===20",
+        "13===30"
       ]
     }
   },
@@ -65891,6 +70031,94 @@
       ],
       "Cross Slash": [
         "EQUIP[Patent Kiri no Tsuyu]REFINE[weapon==11]SUM[str,agi==12]---1"
+      ]
+    }
+  },
+  "490488": {
+    "id": 490488,
+    "aegisName": null,
+    "name": "Ring of Unknown Hero(Archbishop) [1]",
+    "unidName": "Ring of Unknown Hero(Archbishop)",
+    "resName": "Ullr_Bracelet",
+    "description": "แหวนของฮีโร่นิรนาม\n\nลด Delay หลังใช้สกิล 3%\nเพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูทุกประเภท 6%\n\nเมื่อสวมใส่ร่วมกับ Patent Saint Mace,\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 8%\nเมื่ออัพเกรด Patent Saint Mace ตั้งแต่ 11 ขึ้นไป,\nเมื่อ Base INT และ LUK รวมกันได้ทุก ๆ 12 หน่วย เพิ่ม Damage สกิล Adoramus 1%\n\nเมื่อสวมใส่ร่วมกับ Patent Exorcist's Bible,\nเพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ทุกเผ่า 8%\nเมื่ออัพเกรด Patent Exorcist's Bible ตั้งแต่ 11 ขึ้นไป,\nเมื่อ Base INT และ AGI รวมกันได้ทุก ๆ 12 หน่วย เพิ่ม Damage สกิล Judex 1%\nประเภท : ^777777Accessory (Right)^000000 พลังป้องกัน : ^7777777^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่สวมใส่ : ^777777Arch Bishop^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 510,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 7,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Arch Bishop"
+    ],
+    "script": {
+      "acd": [
+        "3"
+      ],
+      "p_class_all": [
+        "6"
+      ],
+      "m_class_all": [
+        "6"
+      ],
+      "m_race_all": [
+        "EQUIP[Patent Saint Mace]===8",
+        "EQUIP[Patent Exorcist's Bible]===8"
+      ],
+      "Adoramus": [
+        "EQUIP[Patent Saint Mace]REFINE[weapon==11]SUM[int,luk==12]---1"
+      ],
+      "Judex": [
+        "EQUIP[Patent Exorcist's Bible]REFINE[weapon==11]SUM[int,agi==12]---1"
+      ]
+    }
+  },
+  "490490": {
+    "id": 490490,
+    "aegisName": null,
+    "name": "Avaricia Encyclopedia [1]",
+    "unidName": "Avaricia Encyclopedia",
+    "resName": "뱀백과사전",
+    "description": "สัญลักษณ์ส่วนสุดท้ายของ Lady Justice ที่หลายคนมองข้าม ถูกแสดงออกมาในภาพลักษณ์ของงูที่สื่อถึงความอยุติธรรมซึ่ง Lady Justice นั้นได้เหยียบเอาไว้\n(Cave cave! dominus videt)\n\nMATK +10%\nลดระยะเวลาร่ายแบบแปรผัน 10%\nลด Delay หลังใช้สกิล 5%\nทุก ๆ Base Lv. 1 เพิ่ม Damage สกิล Gloria Domini 1%\n\nเมื่อสวมใส่ร่วมกับ Themis Balance หรือ [Not For Sale] Themis Balance,\nทุก ๆ การอัพเกรด Shield 3 ขั้น ลดระยะเวลาร่ายแบบแปรผัน 3%, ลด Delay หลังใช้สกิล 3%\n\nเมื่อสวมใส่ร่วมกับ Themis Balance หรือ [Not For Sale] Themis Balance และ Above B.E.2 475 หรือ [Not For Sale] Above B.E.2 475,\nทุก ๆ การอัพเกรด Shield 3 ขั้น เพิ่ม Damage ทางเวทมนตร์ต่อศัตรูทุกธาตุ 5%\n\nเมื่อสวมใส่ร่วมกับ Themis Balance หรือ [Not For Sale] Themis Balance และ Above B.E.2 475 หรือ [Not For Sale] Above B.E.2 475 และ Dark Blinkers หรือ Dark Blinkers [1],\nASPD +15%\nเมื่ออัพเกรด Shield ตั้งแต่ 9 ขึ้นไป เพิ่ม Damage ทางเวทมนตร์ต่อมอนสเตอร์ประเภท Boss 20%\nเมื่ออัพเกรด Shield ตั้งแต่ 11 ขึ้นไป เมื่อใช้สกิล Gloria Domini มีโอกาส 35% ที่จะร่าย Gloria Domini Lv. 5 ใส่เป้าหมาย\nประเภท : ^777777Accessory (Left)^000000 พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^77777760^000000\nอาชีพที่สวมใส่ : ^777777Royal Guard^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 511,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 60,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "matkPercent": [
+        "10"
+      ],
+      "vct": [
+        "10",
+        "EQUIP[Themis Balance]REFINE[shield==3]---3"
+      ],
+      "acd": [
+        "5",
+        "EQUIP[Themis Balance]REFINE[shield==3]---3"
+      ],
+      "Gloria Domini": [
+        "SUM[level==1]---1"
+      ],
+      "m_element_all": [
+        "EQUIP[Themis Balance&&Above B.E.2 475]REFINE[shield==3]---5"
+      ],
+      "aspdPercent": [
+        "EQUIP[Themis Balance&&Above B.E.2 475&&Dark Blinkers]===15"
+      ],
+      "m_class_boss": [
+        "EQUIP[Themis Balance&&Above B.E.2 475&&Dark Blinkers]REFINE[shield==9]===20"
       ]
     }
   },
