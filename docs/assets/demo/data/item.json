@@ -77,6 +77,31 @@
     ],
     "script": {}
   },
+  "1103": {
+    "id": 1103,
+    "aegisName": "Sword__",
+    "name": "Sword",
+    "unidName": "Sword",
+    "resName": "소드",
+    "description": "ดาบธรรมดาแบบถือมือเดียว\nประเภท : ^777777Sword^000000 พลังโจมตี : ^77777725^000000\nน้ำหนัก : ^77777750^000000\nLv ของอาวุธ : ^7777771^000000\nLv ที่ต้องการ : ^7777772^000000\nอาชีพ : ^777777Novice/Swordman Cls/Merchant Cls/Thief Cls^000000",
+    "slots": 0,
+    "itemTypeId": 1,
+    "itemSubTypeId": 257,
+    "itemLevel": 1,
+    "attack": 25,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 2,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Merchant",
+      "Thief"
+    ],
+    "script": {}
+  },
   "1186": {
     "id": 1186,
     "aegisName": "Death_Guidance",
@@ -108,6 +133,34 @@
         "20"
       ]
     }
+  },
+  "1201": {
+    "id": 1201,
+    "aegisName": "Knife",
+    "name": "Knife [3]",
+    "unidName": "Dagger",
+    "resName": "나이프",
+    "description": "มีดธรรมดา ไม่มีอะไรพิเศษ\nประเภท : ^777777Dagger^000000 พลังโจมตี : ^77777717^000000\nน้ำหนัก : ^77777740^000000\nLv ของอาวุธ : ^7777771^000000\nLv ที่ต้องการ : ^777777None^000000\nอาชีพ : ^777777Novice/Swordman Cls/Magician Cls/Archer Cls/Merchant Cls/Thief Cls/Ninja Cls^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 256,
+    "itemLevel": 1,
+    "attack": 17,
+    "defense": null,
+    "weight": 40,
+    "requiredLevel": 0,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Novice",
+      "Swordman",
+      "Magician",
+      "Archer",
+      "Merchant",
+      "Thief",
+      "Ninja"
+    ],
+    "script": {}
   },
   "1230": {
     "id": 1230,
@@ -422,6 +475,48 @@
       ],
       "matk": [
         "EQUIP[Imperial Guard]40"
+      ]
+    }
+  },
+  "1443": {
+    "id": 1443,
+    "aegisName": "Scarlet_Spear",
+    "name": "Spear of Crimson [2]",
+    "unidName": "Spear",
+    "resName": "진홍의스피어",
+    "description": "หอกมือเดียวที่เปล่งแสงสีแดงบนหอก\nเพิ่ม ATK เท่ากับ (ระดับ Refine*ระดับ Refine) (สามารถ Refine ได้ถึง 15)\nตัวละครเลเวล 70 ขึ้นไป : ทุกครั้งที่ BaseLv เพิ่มขึ้น 10 เลเวล จะเพิ่ม ATK ทีละ +5 \nประเภท : ^777777One-Handed Spear^000000 โจมตี : ^77777790^000000\nน้ำหนัก : ^77777790^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^77777770^000000\nอาชีพที่ใส่ได้ : ^777777 Swordman^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 3,
+    "attack": 90,
+    "defense": null,
+    "weight": 90,
+    "requiredLevel": 70,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Swordman"
+    ],
+    "script": {
+      "atk": [
+        "1===1",
+        "2===3",
+        "3===5",
+        "4===7",
+        "5===9",
+        "6===11",
+        "7===13",
+        "8===15",
+        "9===17",
+        "10===19",
+        "11===21",
+        "12===23",
+        "13===25",
+        "14===27",
+        "15===29",
+        "SUM[level==70]===-35",
+        "SUM[level==10]---5"
       ]
     }
   },
@@ -796,6 +891,291 @@
         "level:180===5",
         "level:190===5",
         "level:200===5"
+      ]
+    }
+  },
+  "1691": {
+    "id": 1691,
+    "aegisName": "Strange_Foxtail",
+    "name": "Wondrous Foxtail Staff [2]",
+    "unidName": "Staff",
+    "resName": "잠자리앉은강아지풀",
+    "description": "หญ้าที่ตอนนี้ได้รวม Foxtail และแมลงปอกันเป็นหนึ่งเดียวแล้ว\nMATK + 240 MSP + 100\nMATK + 2%, MSP + 1% เพิ่มขึ้นทุก ๆการอัพเกรด 3ขั้น \n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777100^000000\nน้ำหนัก : ^77777750^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 3,
+    "attack": 100,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "matk": [
+        "240",
+        "7===96",
+        "8===48",
+        "9===48",
+        "10===48"
+      ],
+      "sp": [
+        "100"
+      ],
+      "matkPercent": [
+        "3---2"
+      ],
+      "spPercent": [
+        "3---1"
+      ],
+      "atk": [
+        "7===40",
+        "8===20",
+        "9===20",
+        "10===20"
+      ]
+    }
+  },
+  "1692": {
+    "id": 1692,
+    "aegisName": "Magical_Foxtail",
+    "name": "Magic Foxtail Staff [2]",
+    "unidName": "Staff",
+    "resName": "잠자리앉은강아지풀",
+    "description": "หญ้าที่สัมผัสได้ถึงการทำงานร่วมกันของพลังเวทย์ลึกลับของแมลงปอและ Foxtail\nMATK + 260 MSP + 100\nMATK + 2%, MSP + 1% เพิ่มขึ้นทุก ๆ การอัพเกรด 2 ขั้น\n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป  เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777120^000000\nน้ำหนัก : ^77777760^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^777777140^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 3,
+    "attack": 120,
+    "defense": null,
+    "weight": 60,
+    "requiredLevel": 140,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "matk": [
+        "260",
+        "7===104",
+        "8===52",
+        "9===52",
+        "10===52"
+      ],
+      "sp": [
+        "100"
+      ],
+      "matkPercent": [
+        "2---2"
+      ],
+      "spPercent": [
+        "2---1"
+      ],
+      "atk": [
+        "7===48",
+        "8===24",
+        "9===24",
+        "10===24"
+      ]
+    }
+  },
+  "1693": {
+    "id": 1693,
+    "aegisName": "Magical_Y_Foxtail",
+    "name": "Magic Yellow Foxtail Staff [1]",
+    "unidName": "Staff",
+    "resName": "마력의노랑강아지풀",
+    "description": "Foxtail สีเหลืองและสุกพอดีที่มีแมลงปอนั่งอยู่\nMATK + 280, MATK + 3% ทุก ๆ การอัพเกรด 2 ขั้น\nเมื่อใช้สกิล [Fresh Shrimp] มีโอกาสเปิดใช้งาน Auto Spell [Arclouse Dash] Level 1 ให้กับตัวเอง เมื่อเรียนรู้สกิล [Arclouse Dash] แล้ว จะเปิดใช้งานตามเลเวลสกิล\nเมื่อใช้สกิล [Silvervine Stem Spear] มีโอกาสเปิดใช้งาน Auto Spell [Fresh Shrimp] Level 1 ให้กับตัวเอง เมื่อเรียนรู้สกิล [Fresh Shrimp] แล้ว จะเปิดใช้งานตามเลเวลสกิล\n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777140^000000\nน้ำหนัก : ^77777770^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777175^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 140,
+    "defense": null,
+    "weight": 70,
+    "requiredLevel": 175,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "matk": [
+        "280",
+        "7===112",
+        "8===56",
+        "9===56",
+        "10===56"
+      ],
+      "matkPercent": [
+        "2---3"
+      ],
+      "atk": [
+        "7===56",
+        "8===28",
+        "9===28",
+        "10===28"
+      ]
+    }
+  },
+  "1694": {
+    "id": 1694,
+    "aegisName": "Model_Foxtail",
+    "name": "Foxtail Model [3]",
+    "unidName": "Staff",
+    "resName": "커다란강아지풀",
+    "description": "โมเดลรูป Foxtail ที่ทำจากพลาสติก\nพลังโจมตีกายภาพระยะไกล + 8%, MHP + 100\nDEX + 2, MSP + 10 เพิ่มขึ้นทุก ๆ การอัพเกรด 3 ขั้น\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777150^000000\nน้ำหนัก : ^77777730^000000\nเลเวลอาวุธ : ^7777772^000000\nเลเวลที่ต้องการ : ^77777760^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 2,
+    "attack": 150,
+    "defense": null,
+    "weight": 30,
+    "requiredLevel": 60,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "range": [
+        "8"
+      ],
+      "hp": [
+        "100"
+      ],
+      "dex": [
+        "3---2"
+      ],
+      "sp": [
+        "3---10"
+      ]
+    }
+  },
+  "1695": {
+    "id": 1695,
+    "aegisName": "Detail_Model_Foxtail",
+    "name": "Fine Foxtail Model [2]",
+    "unidName": "Staff",
+    "resName": "커다란강아지풀",
+    "description": "โมเดลรูป Foxtail ที่ทำขึ้นอย่างประณีตงดงาม\nพลังโจมตีกายภาพระยะไกล + 8%, MHP + 200\nDEX + 3, MSP + 15 เพิ่มขึ้นทุก ๆ การอัพเกรด 3 ขั้น\n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป  เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777195^000000\nน้ำหนัก : ^77777730^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 3,
+    "attack": 195,
+    "defense": null,
+    "weight": 30,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "range": [
+        "8"
+      ],
+      "hp": [
+        "200"
+      ],
+      "dex": [
+        "3---3"
+      ],
+      "sp": [
+        "3---15"
+      ],
+      "atk": [
+        "7===78",
+        "8===39",
+        "9===39",
+        "10===39"
+      ]
+    }
+  },
+  "1696": {
+    "id": 1696,
+    "aegisName": "Ex_Model_Foxtail",
+    "name": "Exquisite Foxtail Model [2]",
+    "unidName": "Staff",
+    "resName": "커다란강아지풀",
+    "description": "โมเดลรูป Foxtail ที่ทำขึ้นอย่างซับซ้อนมาก\nพลังโจมตีกายภาพระยะไกล + 8%, MHP + 5%\nDEX + 3, MSP + 15 เพิ่มขึ้นทุก ๆการอัพเกรด 2 ขั้น\n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป  เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777240^000000\nน้ำหนัก : ^77777730^000000\nเลเวลอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^777777140^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 3,
+    "attack": 240,
+    "defense": null,
+    "weight": 30,
+    "requiredLevel": 140,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "range": [
+        "8"
+      ],
+      "hpPercent": [
+        "5"
+      ],
+      "dex": [
+        "2---3"
+      ],
+      "sp": [
+        "2---15"
+      ],
+      "atk": [
+        "7===96",
+        "8===48",
+        "9===48",
+        "10===48"
+      ]
+    }
+  },
+  "1697": {
+    "id": 1697,
+    "aegisName": "Ex_Y_Model_Foxtail",
+    "name": "Yellow Exquisite Foxtail Model [1]",
+    "unidName": "Staff",
+    "resName": "정교한노랑강아지풀모형",
+    "description": "โมเดลรูป Foxtail สีเหลืองที่ทำขึ้นอย่างซับซ้อนมาก\nพลังโจมตีกายภาพระยะไกล + 9%, MHP + 7%\nพลังโจมตีกายภาพระยะไกล+ 1%, MSP + 20 เพิ่มขึ้นทุก ๆ การอัพเกรด 2 ขั้น\nเมื่อใช้สกิล [Picky Peck] มีโอกาสเปิดใช้งาน Auto Spell [Fresh Shrimp] Level 1 ให้กับตัวเอง เมื่อเรียนรู้สกิล [Fresh Shrimp] แล้ว จะเปิดใช้งานตามเลเวลสกิล\n\n- ออปชั่นพิเศษสำหรับอาวุธ Doram - \nเมื่อ Refine ระดับ 7 จะเพิ่ม ATK&MATK ของอาวุธ 40%\nตั้งแต่ขั้นอัพเกรดมากกว่า 7 ขึ้นไป เมื่อเพิ่ม Refine 1 ระดับ จะเพิ่ม ATK&MATK ของอาวุธ 20%\n(Refine ได้ถึงระดับ 10)\nไม่สามารถทำลายได้\nประเภท : ^777777One-handed Staff^000000 โจมตี : ^777777270^000000\nน้ำหนัก : ^77777730^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777175^000000\nอาชีพที่ใส่ได้ : ^777777Doram^000000",
+    "slots": 1,
+    "itemTypeId": 1,
+    "itemSubTypeId": 265,
+    "itemLevel": 4,
+    "attack": 270,
+    "defense": null,
+    "weight": 30,
+    "requiredLevel": 175,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Doram"
+    ],
+    "script": {
+      "range": [
+        "9",
+        "2---1"
+      ],
+      "hpPercent": [
+        "7"
+      ],
+      "sp": [
+        "2---20"
+      ],
+      "atk": [
+        "7===108",
+        "8===54",
+        "9===54",
+        "10===54"
       ]
     }
   },
@@ -3111,6 +3491,41 @@
       ]
     }
   },
+  "2928": {
+    "id": 2928,
+    "aegisName": "Luk_Glove_",
+    "name": "Luk Glove [1]",
+    "unidName": "Accssory",
+    "resName": "행운의글러브",
+    "description": "ถุงมือที่ตอบสนองความต้องการของผู้ใช้\nMHP + 100, MSP + 20\nเพิ่ม CRI+1 ต่อ LUK 10 หน่วย\nCri Damage+1% เมื่อ LUK 110 ขึ้นไป\nประเภท : ^777777Accessary^000000 ป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nLv ที่ต้องการ : ^777777100^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 517,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "hp": [
+        "100"
+      ],
+      "sp": [
+        "20"
+      ],
+      "cri": [
+        "SUM[luk==10]---1"
+      ],
+      "criDmg": [
+        "SUM[luk==110]===1"
+      ]
+    }
+  },
   "2963": {
     "id": 2963,
     "aegisName": "Body_Power_Up_Ring",
@@ -4682,6 +5097,36 @@
       ]
     }
   },
+  "4430": {
+    "id": 4430,
+    "aegisName": "Ifrit_Card",
+    "name": "Ifrit Card",
+    "unidName": "Ifrit Card",
+    "resName": "이름없는카드",
+    "description": "ATK, CRI, HIT จะเพิ่มขึ้น โดยขึ้นทุกๆ 10 Job Level\nเพิ่มโอกาส 0.1% ในการร่ายสกิล Earthquake Lv.10 โดยอัตโนมัติ เมื่อได้รับการโจมตีทางกายภาพ\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "of Inferno",
+    "script": {
+      "atk": [
+        "SUM[jobLevel==10]---1"
+      ],
+      "cri": [
+        "SUM[jobLevel==10]---1"
+      ],
+      "hit": [
+        "SUM[jobLevel==10]---1"
+      ]
+    }
+  },
   "4441": {
     "id": 4441,
     "aegisName": "Fallen_Bishop_Card",
@@ -4895,6 +5340,36 @@
       "p_race_demon": [
         "20",
         "15===10"
+      ]
+    }
+  },
+  "4487": {
+    "id": 4487,
+    "aegisName": "Sealed_Ifrit_Card",
+    "name": "Sealed Ifrit Card",
+    "unidName": "Sealed Ifrit Card",
+    "resName": "이름없는카드",
+    "description": "ATK, CRI, HIT จะเพิ่มขึ้น โดยขึ้นทุกๆ 20 Job Level เพิ่มโอกาส 1% ในการร่ายสกิล Earthquake Lv.2 โดยอัตโนมัติ เมื่อได้รับการโจมตีทางกายภาพ\nประเภท : ^777777Card ^000000\nใช้กับ : ^777777Accessory^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 136,
+    "cardPrefix": "Half Inferno",
+    "script": {
+      "atk": [
+        "SUM[jobLevel==20]---1"
+      ],
+      "cri": [
+        "SUM[jobLevel==20]---1"
+      ],
+      "hit": [
+        "SUM[jobLevel==20]---1"
       ]
     }
   },
@@ -5501,6 +5976,62 @@
       ]
     }
   },
+  "4597": {
+    "id": 4597,
+    "aegisName": "LichternB_Card",
+    "name": "Lichtern Blue Card",
+    "unidName": "Lichtern Blue Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 10, พลังโจมตีทางเวทย์ธาตุ Water เพิ่มขึ้น 5%\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป พลังโจมตีทางเวทย์ธาตุ Water เพิ่มอีก 5%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Water",
+    "script": {
+      "matk": [
+        "10"
+      ],
+      "m_my_element_water": [
+        "5",
+        "9===5"
+      ]
+    }
+  },
+  "4598": {
+    "id": 4598,
+    "aegisName": "LichternY_Card",
+    "name": "Lichtern Green Card",
+    "unidName": "Lichtern Green Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 10, พลังโจมตีทางเวทย์ธาตุ Ghost เพิ่มขึ้น 5%\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป, พลังโจมตีทางเวทย์ธาตุ Ghost เพิ่มอีก 5%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Telekinesis",
+    "script": {
+      "matk": [
+        "10"
+      ],
+      "m_my_element_ghost": [
+        "5",
+        "9===5"
+      ]
+    }
+  },
   "4599": {
     "id": 4599,
     "aegisName": "LichternR_Card",
@@ -5524,6 +6055,34 @@
         "10"
       ],
       "m_my_element_fire": [
+        "5",
+        "9===5"
+      ]
+    }
+  },
+  "4600": {
+    "id": 4600,
+    "aegisName": "LichternG_Card",
+    "name": "Lichtern Yellow Card",
+    "unidName": "Lichtern Yellow Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 10, พลังโจมตีทางเวทย์ธาตุ Earth เพิ่มขึ้น 5%\nเมื่อขั้นอัพเกรดตั้งแต่ 9 ขึ้นไป, พลังโจมตีทางเวทย์ธาตุ Earth เพิ่มอีก 5%\nประเภท : ^777777Card^000000\nใส่กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Ground",
+    "script": {
+      "matk": [
+        "10"
+      ],
+      "m_my_element_earth": [
         "5",
         "9===5"
       ]
@@ -17174,6 +17733,44 @@
       ]
     }
   },
+  "18509": {
+    "id": 18509,
+    "aegisName": "RWC2010_Indonesia",
+    "name": "RWC 2010 Indonesia [1]",
+    "unidName": "Hat",
+    "resName": "RWC2010인도네시아",
+    "description": "หมวกที่เต็มเปี่ยมไปด้วยพลังอำนาจ เพื่อใช้ในการเฉลิมฉลอง RWC 2010 ณ ประเทศ Indonesia\n\nเพิ่มความต้านทานต่อศัตรูประเภท Demi-Human 10%\nCRI +10\nเพิ่มปริมาณการฟื้นฟูของ Red Potion, White Potion 100%\nASPD +1, LUK +5\nเพิ่ม Damage ทางกายภาพต่อศัตรูทุกประเภท 3%\nMATK +3%\n\nประเภท : ^777777Headgear^000000 พลังป้องกัน : ^7777776^000000\nตำแหน่ง : ^777777Upper^000000 น้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^77777715^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพยกเว้น Novice^000000",
+    "slots": 1,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 6,
+    "weight": 10,
+    "requiredLevel": 10,
+    "location": "Upper",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "cri": [
+        "10"
+      ],
+      "aspd": [
+        "1"
+      ],
+      "luk": [
+        "5"
+      ],
+      "p_class_all": [
+        "3"
+      ],
+      "matkPercent": [
+        "3"
+      ]
+    }
+  },
   "18522": {
     "id": 18522,
     "aegisName": "Evil_Marcher_Hat",
@@ -17248,6 +17845,35 @@
       "matkPercent": [
         "7===2",
         "9===5"
+      ]
+    }
+  },
+  "18536": {
+    "id": 18536,
+    "aegisName": "Foxtail",
+    "name": "Foxtail",
+    "unidName": "accessory",
+    "resName": "강아지풀",
+    "description": "ไอเทมสไตล์ Wanderer\nMATK + 10, ลด fixed cast time ของ skill ลง 0.1 วินาที\nประเภท : ^777777Headgear^000000 ป้องกัน : ^7777770^000000\nตำแหน่ง ^777777Lower ^000000 น้ำหนัก : ^77777710^000000\nLv ที่ต้องการ : ^7777771^000000\nอาชีพ : ^777777ทุกอาชีพ^000000",
+    "slots": 0,
+    "itemTypeId": 2,
+    "itemSubTypeId": 512,
+    "itemLevel": null,
+    "attack": null,
+    "defense": 0,
+    "weight": 10,
+    "requiredLevel": 1,
+    "location": "Lower",
+    "compositionPos": null,
+    "usableClass": [
+      "all"
+    ],
+    "script": {
+      "matk": [
+        "10"
+      ],
+      "fct": [
+        "0.1"
       ]
     }
   },
@@ -41042,6 +41668,12 @@
       "p_element_dark": [
         "EQUIP[Familiar Card]20"
       ],
+      "p_size_l": [
+        "EQUIP[Desert Wolf Card]15"
+      ],
+      "p_size_m": [
+        "EQUIP[Desert Wolf Card]15"
+      ],
       "vct": [
         "EQUIP[Phen Card]25"
       ],
@@ -41668,6 +42300,42 @@
       "p_race_demon": [
         "5",
         "EQUIP[Cursed Raydric Card]5"
+      ]
+    }
+  },
+  "27394": {
+    "id": 27394,
+    "aegisName": "S_Kathryn_Card",
+    "name": "Kathryn Wigner Card",
+    "unidName": "Kathryn Wigner Card",
+    "resName": "이름없는카드",
+    "description": "ลดระยะเวลาร่ายแบบแปรผัน 5%\nเมื่อใช้ร่วมกับ Spica Nerious Card และ Nihil M. Heine Card, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูขนาดเล็กและศัตรูประเภท Brute 7%\nเมื่อใช้ร่วมกับ Wolf Lugenburg Card และ Poe Richard Card, \nเพิ่ม Damage ทางเวทมนตร์ต่อศัตรูขนาดกลาง 7%, ลด Delay หลังใช้สกิล 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Headgear^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 769,
+    "cardPrefix": "of Virtuos Wigner",
+    "script": {
+      "vct": [
+        "5"
+      ],
+      "m_size_s": [
+        "EQUIP[Spica Nerious Card&&Nihil M. Heine Card]===7"
+      ],
+      "m_race_brute": [
+        "EQUIP[Spica Nerious Card&&Nihil M. Heine Card]===7"
+      ],
+      "m_size_m": [
+        "EQUIP[Wolf Lugenburg Card&&Poe Richard Card]===7"
+      ],
+      "acd": [
+        "EQUIP[Wolf Lugenburg Card&&Poe Richard Card]===5"
       ]
     }
   },
@@ -44001,6 +44669,43 @@
       ],
       "luk": [
         "EQUIP[Lucky Day]30"
+      ]
+    }
+  },
+  "28618": {
+    "id": 28618,
+    "aegisName": "Time_Kamiji",
+    "name": "Book of the Sun God [3]",
+    "unidName": "Book",
+    "resName": "Time_Kamiji",
+    "description": "หนังสือที่ถูกบันทึกเรื่องราวคำสอนจากเทพเจ้าชั้นสูง มีพลังดึงดูดมวลสารมากมาย\nทุก ๆ การอัพเกรด 1 ขั้น ASPD +1%, MaxHP +200, SP +50\nเมื่อโจมตีทางกายภาพ มีโอกาส 5% ที่จะใช้สกิล Meteor Storm Lv. 3 ต่อศัตรูโดยอัตโนมัติ\nเมื่ออัพเกรดตั้งแต่ 12 ขึ้นไป,\nโอกาสที่จะใช้สกิล Meteor Storm เพิ่มขึ้น 5%\nเลเวลสกิลที่ใช้เป็น Lv. 4\nเมื่ออัพเกรดตั้งแต่ 14 ขึ้นไป,\nโอกาสที่จะใช้สกิล Meteor Storm เพิ่มขึ้น 5%\nเลเวลสกิลที่ใช้เป็น Lv. 5\nMATK +170\nประเภท : ^777777Book^000000 พลังโจมตี : ^777777180^000000\nน้ำหนัก : ^77777750^000000\nเลเวลของอาวุธ : ^7777773^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Priest/Sage/Star Emperor^000000",
+    "slots": 3,
+    "itemTypeId": 1,
+    "itemSubTypeId": 271,
+    "itemLevel": 3,
+    "attack": 180,
+    "defense": null,
+    "weight": 50,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Priest",
+      "Sage",
+      "Star Emperor"
+    ],
+    "script": {
+      "aspdPercent": [
+        "1---1"
+      ],
+      "hp": [
+        "1---200"
+      ],
+      "sp": [
+        "1---50"
+      ],
+      "matk": [
+        "170"
       ]
     }
   },
@@ -53257,6 +53962,30 @@
       ]
     }
   },
+  "31023": {
+    "id": 31023,
+    "aegisName": "XM_Celine_Kimi_Card",
+    "name": "Celine Kimi Card",
+    "unidName": "Celine Kimi Card",
+    "resName": "이름없는카드",
+    "description": "MATK + 10%.\nเมื่อโจมตีด้วยเวทมนตร์ มีโอกาสที่จะทำให้ศัตรูติดสถานะ \"Critical Wound\" ให้แก่ตัวศัตรูเองและศัตรูที่อยู่ในระยะ 11*11 ช่อง\nทุกการอัพเกรด 3 ขั้น จะเพิ่มโอกาสสำเร็จในการที่จะทำให้ศัตรูติดสถานะ \"Critical Wound\"\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "Maniac",
+    "script": {
+      "matkPercent": [
+        "10"
+      ]
+    }
+  },
   "31390": {
     "id": 31390,
     "aegisName": "C_Let_It_Snow",
@@ -53375,6 +54104,37 @@
       ],
       "chance__atkPercent": [
         "EQUIP[Ancient Hero Boots]===15"
+      ]
+    }
+  },
+  "32019": {
+    "id": 32019,
+    "aegisName": "Boost_Lance_OS",
+    "name": "Boost Lance-OS [2]",
+    "unidName": "Spear",
+    "resName": "Boost_Lance_OS",
+    "description": "หอกที่มีการติดตั้งอุปกรณ์พุ่งทะลวงขนาดเล็กเอาไว้\nการที่ขนาดของมันเล็กกว่าหอกทั่วไป อาจเป็นไปเพื่อการพุ่งทะลวงนั้น\nเพิ่ม ASPD 3%\nเมื่ออัปเกรดถึงขั้น 7 เพิ่ม ASPD 7%\nเมื่ออัปเกรดถึงขั้น 9 เพิ่ม Damage สกิล Banishing Point 20%\nเมื่ออัปเกรดถึงขั้น 11 เพิ่ม Damage สกิล Banishing Point เพิ่มเติม 15%\n^ffffff_^000000\nประเภท : ^777777One-Handed Spear^000000 พลังโจมตี : ^777777190^000000\nน้ำหนัก : ^777777100^000000\nเลเวลอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777130^000000\nอาชีพที่ใส่ได้ : ^777777Royal Guard^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 259,
+    "itemLevel": 4,
+    "attack": 190,
+    "defense": null,
+    "weight": 100,
+    "requiredLevel": 130,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Royal Guard"
+    ],
+    "script": {
+      "aspdPercent": [
+        "3",
+        "7===7"
+      ],
+      "Banishing Point": [
+        "9===20",
+        "11===15"
       ]
     }
   },
@@ -57130,6 +57890,72 @@
       ]
     }
   },
+  "300128": {
+    "id": 300128,
+    "aegisName": "S_Wolf_Card",
+    "name": "Wolf Lugenburg Card",
+    "unidName": "Wolf Lugenburg Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูประเภท Insect 15%\nเมื่อใช้ร่วมกับ Poe Richard Card,\nATK +5%, MATK +5%, เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูขนาดกลาง 5%\n^ffffff_^000000\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Wolf Lugenburg",
+    "script": {
+      "p_race_insect": [
+        "15"
+      ],
+      "m_race_insect": [
+        "15"
+      ],
+      "atkPercent": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "matkPercent": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "p_size_m": [
+        "EQUIP[Poe Richard Card]===5"
+      ],
+      "m_size_m": [
+        "EQUIP[Poe Richard Card]===5"
+      ]
+    }
+  },
+  "300130": {
+    "id": 300130,
+    "aegisName": "S_Poe_Card",
+    "name": "Poe Richard Card",
+    "unidName": "Poe Richard Card",
+    "resName": "이름없는카드",
+    "description": "เพิ่ม Damage ทางกายภาพ/เวทมนตร์ต่อศัตรูประเภท Plant 15%\n\nประเภท : ^777777Card^000000\nใช้กับ : ^777777Weapon^000000\nน้ำหนัก : ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 0,
+    "cardPrefix": "of Richard",
+    "script": {
+      "p_race_plant": [
+        "15"
+      ],
+      "m_race_plant": [
+        "15"
+      ]
+    }
+  },
   "300141": {
     "id": 300141,
     "aegisName": "ILL_Obeaune_Card",
@@ -57154,6 +57980,30 @@
       ],
       "m_element_water": [
         "EQUIP[Boiling Water Piranha Card]15"
+      ]
+    }
+  },
+  "300149": {
+    "id": 300149,
+    "aegisName": "ILL_Phen_Card",
+    "name": "Abysmal Phen Card",
+    "unidName": "Abysmal Phen Card",
+    "resName": "이름없는카드",
+    "description": "Reduces damage taken from neutral property by 15%.\r\nIncreases wind property magical damage by 3% per refine rate.\r\nWhen equipped with Abysmal Obeaune Card, reduces damage taken from neutral property by additional 5%.\r\n^ffffff_^000000\r\nClass: ^777777Card^000000\r\nCompound on: ^777777Garment^000000\r\nWeight: ^7777771^000000",
+    "slots": 0,
+    "itemTypeId": 6,
+    "itemSubTypeId": 0,
+    "itemLevel": null,
+    "attack": null,
+    "defense": null,
+    "weight": 1,
+    "requiredLevel": null,
+    "location": null,
+    "compositionPos": 4,
+    "cardPrefix": "of Fish Killer",
+    "script": {
+      "m_my_element_wind": [
+        "1---3"
       ]
     }
   },
@@ -57466,7 +58316,7 @@
         "15",
         "EQUIP[Sniper Stone II (Upper)]15"
       ],
-      "vct__Aimed Bolt": [
+      "fix_vct__Aimed Bolt": [
         "EQUIP[Sniper Stone II (Middle)]1"
       ],
       "cd__No Limits": [
@@ -68121,7 +68971,7 @@
     "description": "บันทึกการสำรวจของกลุ่มอัศวินที่เข้าไปสำรวจยังพื้นที่ Tomb of Honor เป็นรายการบันทึกที่ดูเหมือนว่าเนื้อหาจะขาดหายไปบางส่วน\n\nATK + 5%\n\nทุก ๆ การเรียนรู้ Bash 2 เลเวล, ATK +15\nเมื่อสวมใส่ร่วมกับ Old Rune Circlet, เพิ่ม Damage ทางกายภาพระยะไกลต่อศัตรูทุกประเภท 15%\n\nเมื่อสวมใส่ร่วมกับ Old Casket of Protection\nลด Cooldown ของ Earth Drive 2.2 วินาที\nประเภท : ^777777Accessory^000000  พลังป้องกัน : ^7777770^000000\nน้ำหนัก : ^77777710^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777ทุกอาชีพ^000000",
     "slots": 1,
     "itemTypeId": 2,
-    "itemSubTypeId": 510,
+    "itemSubTypeId": 517,
     "itemLevel": null,
     "attack": null,
     "defense": 0,
@@ -72981,6 +73831,67 @@
       ],
       "int": [
         "EQUIP[Great Hero Boots]===10"
+      ]
+    }
+  },
+  "600001": {
+    "id": 600001,
+    "aegisName": "Boost_TH_Sword",
+    "name": "Boosting Two-Handed Sword [2]",
+    "unidName": "Two-Handed Sword",
+    "resName": "FullForce",
+    "description": "ดาบสองมือสุดพิเศษที่เตรียมไว้เพื่อทำให้นักผจญภัยพัฒนาไปอย่างรวดเร็ว\n\nCRI +10, MHP +3%\nทุก ๆ การอัพเกรด 1 ขั้น ATK +3\nทุก ๆ Base Lv. 15, ATK +3 (ใช้งานสูงสุดถึง Lv. 180)\nเมื่ออัพเกรดถึงขั้น 7 ทุก ๆ การเรียนรู้สกิล Two hand Quicken 1 เลเวล ASPD +1%\nเมื่ออัพเกรดถึงขั้น 9 Critical Damage +10%\n\nเมื่อสวมใส่ร่วมกับ Attacker Booster (Plate/Manteau/Greaves/Ring), \nASPD +2, Critical Damage +10%,\nทุก ๆ Base Lv. 15 เพิ่ม Damage สกิล Sonic Wave 2% (ใช้งานสูงสุดถึง Lv. 180),\nเมื่อใช้สกิล Spear Dynamo เพิ่ม Damage สกิล Sonic Wave ขึ้นอีก 35% เป็นเวลา 60 วินาที\n\nเมื่อสวมใส่ร่วมกับ Range Booster (Suit/Manteau/Boots/Brooch), \nMHP +10%, ลด Delay หลังใช้สกิล 15%,\nทุก ๆ Base Lv. 15 เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - WATER 1% (ใช้งานสูงสุดถึง Lv. 180),\nเมื่อใช้สกิล Spear Dynamo เพิ่ม Damage สกิล Dragon Breath, Dragon Breath - WATER ขึ้นอีก 20% เป็นเวลา 60 วินาที\nประเภท : ^777777Two-Handed Sword^000000 พลังโจมตี : ^777777250^000000\nน้ำหนัก : ^7777770^000000\nเลเวลของอาวุธ : ^7777774^000000\nเลเวลที่ต้องการ : ^777777100^000000\nอาชีพที่ใส่ได้ : ^777777Rune Knight Cls^000000",
+    "slots": 2,
+    "itemTypeId": 1,
+    "itemSubTypeId": 258,
+    "itemLevel": 4,
+    "attack": 250,
+    "defense": null,
+    "weight": 0,
+    "requiredLevel": 100,
+    "location": null,
+    "compositionPos": null,
+    "usableClass": [
+      "Rune Knight"
+    ],
+    "script": {
+      "cri": [
+        "10"
+      ],
+      "hpPercent": [
+        "3",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]===10"
+      ],
+      "atk": [
+        "1---3",
+        "SUM[level==15]---3",
+        "SUM[level==195]===-3"
+      ],
+      "aspdPercent": [
+        "REFINE[7]LEARN_SKILL[Two hand Quicken==1]---1"
+      ],
+      "criDmg": [
+        "9===10",
+        "EQUIP[Attacker Booster Plate&&Attacker Booster Manteau&&Attacker Booster Greaves&&Attacker Booster Ring]===10"
+      ],
+      "aspd": [
+        "EQUIP[Attacker Booster Plate&&Attacker Booster Manteau&&Attacker Booster Greaves&&Attacker Booster Ring]===2"
+      ],
+      "Sonic Wave": [
+        "EQUIP[Attacker Booster Plate&&Attacker Booster Manteau&&Attacker Booster Greaves&&Attacker Booster Ring]level:15---2",
+        "EQUIP[Attacker Booster Plate&&Attacker Booster Manteau&&Attacker Booster Greaves&&Attacker Booster Ring]level:195===-2",
+        "EQUIP[Attacker Booster Plate&&Attacker Booster Manteau&&Attacker Booster Greaves&&Attacker Booster Ring]ACTIVE_SKILL[Spear Dynamo]===35"
+      ],
+      "acd": [
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]===15"
+      ],
+      "Dragon Breath - WATER": [
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]level:15---1",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]level:195===-1",
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]ACTIVE_SKILL[Spear Dynamo]===20"
+      ],
+      "Dragon Breath": [
+        "EQUIP[Range Booster Suit&&Range Booster Manteau&&Range Booster Boots&&Range Booster Brooch]ACTIVE_SKILL[Spear Dynamo]===20"
       ]
     }
   },
